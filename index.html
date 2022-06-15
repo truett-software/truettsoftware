@@ -1,0 +1,2080 @@
+<!DOCTYPE html>
+<html amp lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width"/>
+<link rel="shortcut icon" href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg"/>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script
+      async
+      custom-element="amp-story"
+      src="https://cdn.ampproject.org/v0/amp-story-1.0.js"
+></script>
+<title>
+AMP Story Template
+</title>
+<link rel="canonical" href="index.html" />
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+
+<style amp-custom>
+
+#myContainer{
+    zoom: 0.65;
+    -moz-transform: scale(0.8);
+}
+
+/**
+*   MODEL @media
+*/
+
+/* ----------- iPhone SE ----------- */
+/* Portrait */
+@media all and (device-width: 375px) and (device-height: 667px) and (orientation: portrait) {
+	#myContainer {
+    zoom: 0.28;
+    -moz-transform: scale(0.28);
+	}
+}
+
+/* Landscape */
+@media all and (device-width: 667px) and (device-height: 375px) and (orientation: landscape) {
+	#myContainer {
+    zoom: 0.35;
+    -moz-transform: scale(0.35);
+	}
+}
+
+@media all and (device-width: 390px) and (device-height: 844px) and (orientation: portrait) {
+    #myContainer {
+    zoom: 0.28;
+    -moz-transform: scale(0.28);
+    }
+}
+
+/* Landscape */
+@media all and (device-width: 844px) and (device-height: 390px) and (orientation: landscape) {
+    #myContainer {
+    zoom: 0.35;
+    -moz-transform: scale(0.35);
+    }
+}
+@media screen and (min-width: 400px) and (max-width: 760px) {
+    #myContainer {
+    zoom: 0.28;
+    -moz-transform: scale(0.28);
+    }
+}
+
+@media screen and (min-width: 761px) and (max-width: 840px) {
+    #myContainer {
+    zoom: 0.58;
+    -moz-transform: scale(0.58);
+    }
+}
+@media screen and (min-width: 841px) and (max-width: 1000px) {
+    #myContainer {
+    zoom: 0.38;
+    -moz-transform: scale(0.38);
+    }
+}
+
+
+.pf {
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    margin: 0;
+    border: 0;
+}
+.pc {
+    position: absolute;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+    transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+}
+.bi {
+    position: absolute;
+    border: 0;
+    margin: 0;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.c {
+    position: absolute;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    display: block;
+}
+.t {
+    position: absolute;
+    white-space: pre;
+    font-size: 1px;
+    transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -webkit-transform-origin: 0 100%;
+    unicode-bidi: bidi-override;
+}
+.t:after {
+    content: "";
+}
+.t:before {
+    content: "";
+    display: inline-block;
+}
+.t span {
+    position: relative;
+    unicode-bidi: bidi-override;
+}
+._ {
+    display: inline-block;
+    color: transparent;
+    z-index: -1;
+}
+::selection {
+    background: rgba(127, 255, 255, 0.4);
+}
+::-moz-selection {
+    background: rgba(127, 255, 255, 0.4);
+}
+.d {
+    position: absolute;
+    transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -webkit-transform-origin: 0 100%;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes swing {
+    0% {
+        transform: rotate(0);
+    }
+    10% {
+        transform: rotate(0);
+    }
+    90% {
+        transform: rotate(720deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    }
+}
+@-webkit-keyframes swing {
+    0% {
+        -webkit-transform: rotate(0);
+    }
+    10% {
+        -webkit-transform: rotate(0);
+    }
+    90% {
+        -webkit-transform: rotate(720deg);
+    }
+    100% {
+        -webkit-transform: rotate(720deg);
+    }
+}
+@media screen {
+    .pf {
+        margin: 13px auto;
+        box-shadow: 1px 1px 3px 1px #333;
+        border-collapse: separate;
+    }
+}
+.ff0 {
+    font-family: sans-serif;
+    visibility: hidden;
+}
+@font-face {
+    font-family: ff1;
+    font-display: optional;
+    src: local("Calibri"),
+        url(https://s3.amazonaws.com/benetta.net/fonts/calibri/Calibri.woff)
+            format("woff");
+}
+.ff1 {
+    font-family: ff1;
+    line-height: 0.895996;
+    font-style: normal;
+    font-weight: 400;
+    visibility: visible;
+}
+@font-face {
+    font-family: ff2;
+    font-display: optional;
+    src: local("Calibri-BoldItalic"),
+        url(https://s3.amazonaws.com/benetta.net/fonts/calibri/Calibri-BoldItalic.woff2)
+            format("woff2");
+}
+.ff2 {
+    font-family: ff2;
+    line-height: 0.861816;
+    font-style: normal;
+    font-weight: 400;
+    visibility: visible;
+}
+@font-face {
+    font-family: ff3;
+    font-display: optional;
+    src: local("Wingdings"),
+        url(https://s3.amazonaws.com/benetta.net/fonts/wingdings/Wingdings.woff2)
+            format("woff2");
+}
+.ff3 {
+    font-family: ff3;
+    line-height: 0.758789;
+    font-style: normal;
+    font-weight: 400;
+    visibility: visible;
+}
+@font-face {
+    font-family: ff4;
+    font-display: optional;
+    src: local("Calibri-Bold"),
+        url(https://s3.amazonaws.com/benetta.net/fonts/calibri/Calibri-Bold.woff2)
+            format("woff2"),
+        url(https://s3.amazonaws.com/benetta.net/fonts/calibri/Calibri-Bold.woff)
+            format("woff");
+}
+.ff4 {
+    font-family: ff4;
+    line-height: 0.904297;
+    font-style: normal;
+    font-weight: 400;
+    visibility: visible;
+}
+@font-face {
+    font-family: ff5;
+    font-style: italic;
+    font-display: optional;
+    src: local("Calibri Italic"), local(Calibri-Italic),
+        url(https://s3.amazonaws.com/benetta.net/fonts/calibri/Calibri-Italic.woff2)
+            format("woff2"),
+        url(https://s3.amazonaws.com/benetta.net/fonts/calibri/Calibri-Italic.woff)
+            format("woff");
+}
+.ff5 {
+    font-family: ff5;
+    line-height: 0.861816;
+    font-style: normal;
+    font-weight: 400;
+    visibility: visible;
+}
+@font-face {
+    font-family: ff1;
+    font-display: optional;
+    src: local("Calibri"),
+        url(https://s3.amazonaws.com/benetta.net/fonts/calibri/Calibri.woff)
+            format("woff");
+}
+.ff6 {
+    font-family: ff6;
+    line-height: 0.895996;
+    font-style: normal;
+    font-weight: 400;
+    visibility: visible;
+}
+@font-face {
+    font-family: ff7;
+    font-display: optional;
+    src: local("Arial"),
+        url(https://s3.amazonaws.com/benetta.net/fonts/arial/Arial.woff2)
+            format("woff2"),
+        url(https://s3.amazonaws.com/benetta.net/fonts/arial/Arial.woff)
+            format("woff");
+}
+.ff7 {
+    font-family: ff7;
+    line-height: 0.727539;
+    font-style: normal;
+    font-weight: 400;
+    visibility: visible;
+}
+.m2 {
+    transform: matrix(0, 0.375, -0.375, 0, 0, 0);
+    -ms-transform: matrix(0, 0.375, -0.375, 0, 0, 0);
+    -webkit-transform: matrix(0, 0.375, -0.375, 0, 0, 0);
+}
+.m3 {
+    transform: matrix(0, -0.375, 0.375, 0, 0, 0);
+    -ms-transform: matrix(0, -0.375, 0.375, 0, 0, 0);
+    -webkit-transform: matrix(0, -0.375, 0.375, 0, 0, 0);
+}
+.m0 {
+    transform: matrix(0.375, 0, 0, 0.375, 0, 0);
+    -ms-transform: matrix(0.375, 0, 0, 0.375, 0, 0);
+    -webkit-transform: matrix(0.375, 0, 0, 0.375, 0, 0);
+}
+.m1 {
+    transform: matrix(1.5, 0, 0, 1.5, 0, 0);
+    -ms-transform: matrix(1.5, 0, 0, 1.5, 0, 0);
+    -webkit-transform: matrix(1.5, 0, 0, 1.5, 0, 0);
+}
+.ls8 {
+    letter-spacing: -1.34px;
+}
+.ls5 {
+    letter-spacing: -0.528px;
+}
+.ls7 {
+    letter-spacing: -0.2324px;
+}
+.ls4 {
+    letter-spacing: -0.096px;
+}
+.ls6 {
+    letter-spacing: -0.048px;
+}
+.ls0 {
+    letter-spacing: 0;
+}
+.ls9 {
+    letter-spacing: 0.0936px;
+}
+.ls2 {
+    letter-spacing: 0.096px;
+}
+.ls1 {
+    letter-spacing: 0.12px;
+}
+.ls3 {
+    letter-spacing: 0.24px;
+}
+.sc_ {
+    text-shadow: none;
+}
+.sc0 {
+    text-shadow: -0.015em 0 transparent, 0 0.015em transparent,
+        0.015em 0 transparent, 0 -0.015em transparent;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .sc_ {
+        -webkit-text-stroke: 0 transparent;
+    }
+    .sc0 {
+        -webkit-text-stroke: 0.015em transparent;
+        text-shadow: none;
+    }
+}
+.ws0 {
+    word-spacing: 0;
+}
+._40 {
+    margin-left: -931.569344px;
+}
+._1 {
+    margin-left: -7.62064px;
+}
+._2 {
+    margin-left: -6.61744px;
+}
+._3 {
+    margin-left: -4.32384px;
+}
+._4 {
+    margin-left: -2.415136px;
+}
+._0 {
+    margin-left: -1.12752px;
+}
+._6 {
+    width: 1.152px;
+}
+._17 {
+    width: 2.3832px;
+}
+._5 {
+    width: 31.776px;
+}
+._42 {
+    width: 44.44896px;
+}
+._37 {
+    width: 74.784px;
+}
+._3e {
+    width: 128.383136px;
+}
+._3a {
+    width: 136.52px;
+}
+._38 {
+    width: 159.55424px;
+}
+._3b {
+    width: 236.44px;
+}
+._3f {
+    width: 249.584px;
+}
+._e {
+    width: 277.272px;
+}
+._3c {
+    width: 281.08px;
+}
+._3d {
+    width: 286.84px;
+}
+._d {
+    width: 304.576px;
+}
+._b {
+    width: 333.04px;
+}
+._9 {
+    width: 370.912px;
+}
+._39 {
+    width: 375.16px;
+}
+._12 {
+    width: 385.135136px;
+}
+._16 {
+    width: 399.184px;
+}
+._10 {
+    width: 400.24px;
+}
+._19 {
+    width: 408.832px;
+}
+._1f {
+    width: 445.768px;
+}
+._a {
+    width: 456.77136px;
+}
+._22 {
+    width: 459.544px;
+}
+._f {
+    width: 461.35536px;
+}
+._20 {
+    width: 463.96px;
+}
+._11 {
+    width: 476.40336px;
+}
+._14 {
+    width: 479.92px;
+}
+._15 {
+    width: 481.05888px;
+}
+._c {
+    width: 490.53792px;
+}
+._1d {
+    width: 510.424px;
+}
+._27 {
+    width: 516.35152px;
+}
+._1b {
+    width: 536.872px;
+}
+._13 {
+    width: 545.898016px;
+}
+._2a {
+    width: 553.704px;
+}
+._28 {
+    width: 559.12752px;
+}
+._18 {
+    width: 562.536px;
+}
+._1a {
+    width: 565.742656px;
+}
+._2b {
+    width: 567.336px;
+}
+._32 {
+    width: 575.943136px;
+}
+._2f {
+    width: 586.632px;
+}
+._25 {
+    width: 590.104px;
+}
+._2e {
+    width: 595.512px;
+}
+._35 {
+    width: 597.07152px;
+}
+._2c {
+    width: 611.304px;
+}
+._21 {
+    width: 613.1304px;
+}
+._30 {
+    width: 614.712px;
+}
+._23 {
+    width: 619.6584px;
+}
+._24 {
+    width: 622.01408px;
+}
+._2d {
+    width: 631.15152px;
+}
+._34 {
+    width: 633.048px;
+}
+._33 {
+    width: 641.16px;
+}
+._7 {
+    width: 649.144px;
+}
+._31 {
+    width: 667.443072px;
+}
+._1e {
+    width: 675.710176px;
+}
+._41 {
+    width: 681.65776px;
+}
+._1c {
+    width: 696.74256px;
+}
+._8 {
+    width: 746.016px;
+}
+._26 {
+    width: 756.662656px;
+}
+._29 {
+    width: 967.944px;
+}
+._36 {
+    width: 1131.71216px;
+}
+.fc3 {
+    color: #604a7b;
+}
+.fc0 {
+    color: #898989;
+}
+.fc6 {
+    color: #e46c0a;
+}
+.fc9 {
+    color: #77933c;
+}
+.fc2 {
+    color: #000;
+}
+.fc5 {
+    color: #0070c0;
+}
+.fc1 {
+    color: #17375e;
+}
+.fc7 {
+    color: #a6a6a6;
+}
+.fc4 {
+    color: #953735;
+}
+.fc8 {
+    color: red;
+}
+.fs6 {
+    font-size: 39.84px;
+}
+.fs7 {
+    font-size: 44.16px;
+}
+.fsc {
+    font-size: 44.256px;
+}
+.fs8 {
+    font-size: 48px;
+}
+.fs9 {
+    font-size: 48.096px;
+}
+.fs1 {
+    font-size: 53.28px;
+}
+.fsb {
+    font-size: 56.16px;
+}
+.fs10 {
+    font-size: 56.256px;
+}
+.fs11 {
+    font-size: 72px;
+}
+.fs12 {
+    font-size: 72.096px;
+}
+.fs0 {
+    font-size: 80.16px;
+}
+.fs2 {
+    font-size: 80.256px;
+}
+.fs5 {
+    font-size: 96px;
+}
+.fs4 {
+    font-size: 111.84px;
+}
+.fs3 {
+    font-size: 144px;
+}
+.y0 {
+    bottom: 0;
+}
+.y72 {
+    bottom: 34.164px;
+}
+.y134 {
+    bottom: 46.44px;
+}
+.y20 {
+    bottom: 67.968px;
+}
+.y133 {
+    bottom: 68.04px;
+}
+.y6b {
+    bottom: 70.524px;
+}
+.y8a {
+    bottom: 76.248px;
+}
+.y27 {
+    bottom: 77.544px;
+}
+.y3f {
+    bottom: 78.048px;
+}
+.y11e {
+    bottom: 80.49px;
+}
+.y11a {
+    bottom: 80.535px;
+}
+.y61 {
+    bottom: 81.936px;
+}
+.y21 {
+    bottom: 82.692px;
+}
+.y79 {
+    bottom: 90px;
+}
+.y132 {
+    bottom: 91.98px;
+}
+.y26 {
+    bottom: 99.972px;
+}
+.y3e {
+    bottom: 103.032px;
+}
+.y25 {
+    bottom: 108.972px;
+}
+.y11d {
+    bottom: 111.96px;
+}
+.y131 {
+    bottom: 113.58px;
+}
+.y121 {
+    bottom: 117.936px;
+}
+.y117 {
+    bottom: 118.476px;
+}
+.y98 {
+    bottom: 119.988px;
+}
+.y60 {
+    bottom: 121.536px;
+}
+.y3d {
+    bottom: 128.016px;
+}
+.y95 {
+    bottom: 128.988px;
+}
+.y23 {
+    bottom: 135px;
+}
+.y78 {
+    bottom: 136.656px;
+}
+.y115 {
+    bottom: 139.176px;
+}
+.y149 {
+    bottom: 139.608px;
+}
+.y120 {
+    bottom: 142.776px;
+}
+.y3c {
+    bottom: 153px;
+}
+.y9d {
+    bottom: 153.39px;
+}
+.y148 {
+    bottom: 159.405px;
+}
+.y114 {
+    bottom: 159.87px;
+}
+.y1c {
+    bottom: 160.89px;
+}
+.y5f {
+    bottom: 161.13px;
+}
+.y119 {
+    bottom: 161.64px;
+}
+.y71 {
+    bottom: 163.95px;
+}
+.y113 {
+    bottom: 164.37px;
+}
+.y11f {
+    bottom: 167.61px;
+}
+.y6a {
+    bottom: 170.82px;
+}
+.y13e {
+    bottom: 171.69px;
+}
+.y50 {
+    bottom: 171.93px;
+}
+.y24 {
+    bottom: 177.585px;
+}
+.y3b {
+    bottom: 177.99px;
+}
+.y116 {
+    bottom: 180.57px;
+}
+.y6e {
+    bottom: 182.37px;
+}
+.y4 {
+    bottom: 191.37px;
+}
+.y11c {
+    bottom: 192.45px;
+}
+.y7f {
+    bottom: 196.38px;
+}
+.y13d {
+    bottom: 196.89px;
+}
+.y4f {
+    bottom: 199.23px;
+}
+.y66 {
+    bottom: 199.41px;
+}
+.y5e {
+    bottom: 200.73px;
+}
+.y112 {
+    bottom: 201.27px;
+}
+.y1f {
+    bottom: 202.575px;
+}
+.y89 {
+    bottom: 210.96px;
+}
+.y110 {
+    bottom: 211.65px;
+}
+.y3a {
+    bottom: 215.28px;
+}
+.y11b {
+    bottom: 217.335px;
+}
+.y6c {
+    bottom: 218.415px;
+}
+.y14d {
+    bottom: 219.495px;
+}
+.y111 {
+    bottom: 222.015px;
+}
+.y13c {
+    bottom: 222.12px;
+}
+.y3 {
+    bottom: 227.415px;
+}
+.y4e {
+    bottom: 228.93px;
+}
+.y144 {
+    bottom: 229.53px;
+}
+.y8d {
+    bottom: 229.575px;
+}
+.y5d {
+    bottom: 240.375px;
+}
+.y12a {
+    bottom: 241.95px;
+}
+.y118 {
+    bottom: 242.175px;
+}
+.y10f {
+    bottom: 242.715px;
+}
+.y22 {
+    bottom: 244.545px;
+}
+.y74 {
+    bottom: 245.235px;
+}
+.y87 {
+    bottom: 246.99px;
+}
+.y13b {
+    bottom: 247.32px;
+}
+.y39 {
+    bottom: 252.57px;
+}
+.y143 {
+    bottom: 254.73px;
+}
+.y4d {
+    bottom: 258.63px;
+}
+.y8c {
+    bottom: 259.275px;
+}
+.y129 {
+    bottom: 259.95px;
+}
+.y1e {
+    bottom: 260.1px;
+}
+.y1 {
+    bottom: 263.415px;
+}
+.y1d {
+    bottom: 263.595px;
+}
+.y94 {
+    bottom: 263.7px;
+}
+.y8b {
+    bottom: 263.73px;
+}
+.y140 {
+    bottom: 265.65px;
+}
+.y76 {
+    bottom: 267.45px;
+}
+.y10d {
+    bottom: 267.915px;
+}
+.y2 {
+    bottom: 272.415px;
+}
+.y13a {
+    bottom: 272.52px;
+}
+.y38 {
+    bottom: 277.56px;
+}
+.y128 {
+    bottom: 277.995px;
+}
+.y142 {
+    bottom: 279.93px;
+}
+.y5c {
+    bottom: 279.975px;
+}
+.y123 {
+    bottom: 281.235px;
+}
+.y9f {
+    bottom: 282.135px;
+}
+.y10e {
+    bottom: 284.115px;
+}
+.y13f {
+    bottom: 285.45px;
+}
+.y4c {
+    bottom: 288.33px;
+}
+.y161 {
+    bottom: 289.98px;
+}
+.y127 {
+    bottom: 295.995px;
+}
+.y93 {
+    bottom: 299.955px;
+}
+.y37 {
+    bottom: 302.55px;
+}
+.y97 {
+    bottom: 302.835px;
+}
+.y10c {
+    bottom: 304.815px;
+}
+.y141 {
+    bottom: 305.175px;
+}
+.y9e {
+    bottom: 311.835px;
+}
+.y126 {
+    bottom: 313.995px;
+}
+.y4b {
+    bottom: 318.06px;
+}
+.y5b {
+    bottom: 319.575px;
+}
+.y160 {
+    bottom: 322.41px;
+}
+.y122 {
+    bottom: 324.435px;
+}
+.y10b {
+    bottom: 325.515px;
+}
+.y14c {
+    bottom: 327.495px;
+}
+.y36 {
+    bottom: 327.525px;
+}
+.y73 {
+    bottom: 329.22px;
+}
+.y77 {
+    bottom: 329.4px;
+}
+.y92 {
+    bottom: 329.655px;
+}
+.y125 {
+    bottom: 331.995px;
+}
+.y96 {
+    bottom: 332.535px;
+}
+.y147 {
+    bottom: 334.335px;
+}
+.y5a {
+    bottom: 341.175px;
+}
+.y107 {
+    bottom: 346.215px;
+}
+.y4a {
+    bottom: 347.76px;
+}
+.y108 {
+    bottom: 350.715px;
+}
+.y35 {
+    bottom: 352.545px;
+}
+.y146 {
+    bottom: 354.135px;
+}
+.y15f {
+    bottom: 354.81px;
+}
+.y7e {
+    bottom: 358.41px;
+}
+.y59 {
+    bottom: 362.775px;
+}
+.y10a {
+    bottom: 366.915px;
+}
+.y64 {
+    bottom: 368.25px;
+}
+.y124 {
+    bottom: 370.83px;
+}
+.y155 {
+    bottom: 372.135px;
+}
+.y9a {
+    bottom: 372.75px;
+}
+.y145 {
+    bottom: 373.935px;
+}
+.y49 {
+    bottom: 377.46px;
+}
+.y34 {
+    bottom: 377.535px;
+}
+.y7b {
+    bottom: 379.695px;
+}
+.y15e {
+    bottom: 387.21px;
+}
+.y109 {
+    bottom: 387.645px;
+}
+.y58 {
+    bottom: 402.405px;
+}
+.y99 {
+    bottom: 402.45px;
+}
+.y15 {
+    bottom: 402.585px;
+}
+.y9 {
+    bottom: 404.925px;
+}
+.y48 {
+    bottom: 407.16px;
+}
+.y106 {
+    bottom: 408.345px;
+}
+.y154 {
+    bottom: 411.045px;
+}
+.y33 {
+    bottom: 415.005px;
+}
+.y130 {
+    bottom: 416.055px;
+}
+.y15d {
+    bottom: 419.61px;
+}
+.y57 {
+    bottom: 424.005px;
+}
+.y32 {
+    bottom: 427.425px;
+}
+.y104 {
+    bottom: 429.045px;
+}
+.y12e {
+    bottom: 433.83px;
+}
+.y14b {
+    bottom: 435.525px;
+}
+.y47 {
+    bottom: 436.86px;
+}
+.y12f {
+    bottom: 437.655px;
+}
+.y10 {
+    bottom: 438.12px;
+}
+.y56 {
+    bottom: 445.605px;
+}
+.y105 {
+    bottom: 449.745px;
+}
+.y153 {
+    bottom: 449.925px;
+}
+.y15c {
+    bottom: 452.01px;
+}
+.y30 {
+    bottom: 452.55px;
+}
+.y31 {
+    bottom: 464.97px;
+}
+.y7d {
+    bottom: 466.41px;
+}
+.y46 {
+    bottom: 466.59px;
+}
+.y103 {
+    bottom: 470.445px;
+}
+.y2f {
+    bottom: 477.39px;
+}
+.y5 {
+    bottom: 479.955px;
+}
+.y15b {
+    bottom: 484.41px;
+}
+.y55 {
+    bottom: 485.205px;
+}
+.y88 {
+    bottom: 486.21px;
+}
+.y152 {
+    bottom: 488.805px;
+}
+.y102 {
+    bottom: 491.145px;
+}
+.y8 {
+    bottom: 491.325px;
+}
+.y45 {
+    bottom: 496.29px;
+}
+.y12c {
+    bottom: 496.545px;
+}
+.y2e {
+    bottom: 502.455px;
+}
+.y68 {
+    bottom: 505.47px;
+}
+.y83 {
+    bottom: 510.27px;
+}
+.y9b {
+    bottom: 510.63px;
+}
+.y8f {
+    bottom: 511.23px;
+}
+.y12d {
+    bottom: 511.665px;
+}
+.y101 {
+    bottom: 511.845px;
+}
+.y15a {
+    bottom: 516.855px;
+}
+.y12b {
+    bottom: 518.145px;
+}
+.y6d {
+    bottom: 524.445px;
+}
+.y54 {
+    bottom: 524.805px;
+}
+.y81 {
+    bottom: 525.45px;
+}
+.y44 {
+    bottom: 525.99px;
+}
+.y151 {
+    bottom: 527.685px;
+}
+.y9c {
+    bottom: 528.045px;
+}
+.y100 {
+    bottom: 532.545px;
+}
+.y70 {
+    bottom: 536.25px;
+}
+.y7a {
+    bottom: 538.455px;
+}
+.y63 {
+    bottom: 538.635px;
+}
+.y2d {
+    bottom: 539.745px;
+}
+.y82 {
+    bottom: 539.97px;
+}
+.y62 {
+    bottom: 540.69px;
+}
+.y84 {
+    bottom: 542.775px;
+}
+.y14a {
+    bottom: 543.525px;
+}
+.y159 {
+    bottom: 549.255px;
+}
+.y6f {
+    bottom: 552.45px;
+}
+.y67 {
+    bottom: 555.27px;
+}
+.y43 {
+    bottom: 555.69px;
+}
+.y138 {
+    bottom: 559.05px;
+}
+.y8e {
+    bottom: 561.135px;
+}
+.y16 {
+    bottom: 562.425px;
+}
+.y17 {
+    bottom: 564.09px;
+}
+.y53 {
+    bottom: 564.45px;
+}
+.y150 {
+    bottom: 566.61px;
+}
+.y136 {
+    bottom: 568.335px;
+}
+.y12 {
+    bottom: 571.17px;
+}
+.y2c {
+    bottom: 577.05px;
+}
+.y7 {
+    bottom: 577.77px;
+}
+.y137 {
+    bottom: 580.65px;
+}
+.y158 {
+    bottom: 581.655px;
+}
+.y69 {
+    bottom: 581.91px;
+}
+.y1b {
+    bottom: 582.09px;
+}
+.y42 {
+    bottom: 585.39px;
+}
+.y7c {
+    bottom: 585.51px;
+}
+.y11 {
+    bottom: 589.17px;
+}
+.y13 {
+    bottom: 594.36px;
+}
+.y2b {
+    bottom: 602.025px;
+}
+.y52 {
+    bottom: 604.05px;
+}
+.y80 {
+    bottom: 604.95px;
+}
+.y14f {
+    bottom: 605.49px;
+}
+.y75 {
+    bottom: 612.15px;
+}
+.y157 {
+    bottom: 614.055px;
+}
+.y41 {
+    bottom: 615.09px;
+}
+.y14 {
+    bottom: 616.65px;
+}
+.y90 {
+    bottom: 619.59px;
+}
+.y91 {
+    bottom: 619.95px;
+}
+.y2a {
+    bottom: 627.015px;
+}
+.y135 {
+    bottom: 629.79px;
+}
+.y85 {
+    bottom: 637.635px;
+}
+.y86 {
+    bottom: 637.95px;
+}
+.y51 {
+    bottom: 643.65px;
+}
+.y40 {
+    bottom: 643.83px;
+}
+.y14e {
+    bottom: 644.37px;
+}
+.y156 {
+    bottom: 646.455px;
+}
+.y29 {
+    bottom: 653.115px;
+}
+.y18 {
+    bottom: 659.19px;
+}
+.y65 {
+    bottom: 663.69px;
+}
+.y1a {
+    bottom: 668.19px;
+}
+.y139 {
+    bottom: 676.95px;
+}
+.y19 {
+    bottom: 681.09px;
+}
+.y6 {
+    bottom: 747.36px;
+}
+.y28 {
+    bottom: 750.6px;
+}
+.h13 {
+    height: 19.516875px;
+}
+.h7 {
+    height: 28.596094px;
+}
+.h14 {
+    height: 28.665px;
+}
+.h11 {
+    height: 28.926797px;
+}
+.h9 {
+    height: 31.696875px;
+}
+.h10 {
+    height: 31.765781px;
+}
+.h8 {
+    height: 32.063437px;
+}
+.h15 {
+    height: 34.851562px;
+}
+.h2 {
+    height: 38.242969px;
+}
+.he {
+    height: 38.390625px;
+}
+.h18 {
+    height: 40.310156px;
+}
+.h19 {
+    height: 40.379063px;
+}
+.h17 {
+    height: 45.822656px;
+}
+.h1c {
+    height: 49.21875px;
+}
+.h1f {
+    height: 49.284375px;
+}
+.h1d {
+    height: 51.679688px;
+}
+.h1e {
+    height: 51.748594px;
+}
+.h1 {
+    height: 57.536719px;
+}
+.h3 {
+    height: 57.605625px;
+}
+.h1a {
+    height: 59.376328px;
+}
+.h1b {
+    height: 59.447437px;
+}
+.h6 {
+    height: 71.109375px;
+}
+.h5 {
+    height: 76.453125px;
+}
+.h4 {
+    height: 98.4375px;
+}
+.h16 {
+    height: 173.88px;
+}
+.h12 {
+    height: 289.8px;
+}
+.h0 {
+    height: 810px;
+}
+.w2 {
+    width: 112.68px;
+}
+.w1 {
+    width: 171px;
+}
+.w3 {
+    width: 427.32px;
+}
+.w0 {
+    width: 1080px;
+}
+.x0 {
+    left: 0;
+}
+.x50 {
+    left: 29.448px;
+}
+.x24 {
+    left: 31.896px;
+}
+.x8 {
+    left: 37.8px;
+}
+.x14 {
+    left: 41.832px;
+}
+.x89 {
+    left: 44.568px;
+}
+.x60 {
+    left: 48.816px;
+}
+.x7 {
+    left: 50.112px;
+}
+.x7e {
+    left: 51.768px;
+}
+.x85 {
+    left: 54.108px;
+}
+.x88 {
+    left: 63.828px;
+}
+.x84 {
+    left: 71.028px;
+}
+.x53 {
+    left: 80.496px;
+}
+.x3e {
+    left: 82.8px;
+}
+.x3f {
+    left: 86.976px;
+}
+.x67 {
+    left: 88.416px;
+}
+.x15 {
+    left: 95.832px;
+}
+.x68 {
+    left: 99.756px;
+}
+.x86 {
+    left: 102.816px;
+}
+.x94 {
+    left: 107.28px;
+}
+.x6a {
+    left: 115.848px;
+}
+.x62 {
+    left: 126.756px;
+}
+.x9d {
+    left: 141.516px;
+}
+.x7a {
+    left: 142.524px;
+}
+.x51 {
+    left: 145.008px;
+}
+.x2f {
+    left: 148.284px;
+}
+.x26 {
+    left: 156.39px;
+}
+.x2a {
+    left: 158.19px;
+}
+.x34 {
+    left: 159.45px;
+}
+.x33 {
+    left: 160.71px;
+}
+.x32 {
+    left: 162.51px;
+}
+.x27 {
+    left: 163.95px;
+}
+.x29 {
+    left: 165.93px;
+}
+.x28 {
+    left: 167.37px;
+}
+.x2b {
+    left: 168.45px;
+}
+.x35 {
+    left: 170.07px;
+}
+.x1 {
+    left: 171.105px;
+}
+.x3a {
+    left: 173.235px;
+}
+.x39 {
+    left: 174.315px;
+}
+.x3d {
+    left: 176.655px;
+}
+.x37 {
+    left: 179.535px;
+}
+.x9 {
+    left: 181.83px;
+}
+.x3b {
+    left: 183.135px;
+}
+.x38 {
+    left: 184.215px;
+}
+.x3c {
+    left: 188.355px;
+}
+.x13 {
+    left: 189.795px;
+}
+.x69 {
+    left: 194.25px;
+}
+.x16 {
+    left: 207px;
+}
+.x5e {
+    left: 208.44px;
+}
+.x8e {
+    left: 219.495px;
+}
+.x5 {
+    left: 222.27px;
+}
+.x74 {
+    left: 228.09px;
+}
+.x43 {
+    left: 236.73px;
+}
+.x21 {
+    left: 244.08px;
+}
+.x91 {
+    left: 251.97px;
+}
+.x90 {
+    left: 257.22px;
+}
+.x44 {
+    left: 260.64px;
+}
+.x9c {
+    left: 264.165px;
+}
+.x48 {
+    left: 278.79px;
+}
+.x95 {
+    left: 290.985px;
+}
+.x17 {
+    left: 293.865px;
+}
+.x1b {
+    left: 298.59px;
+}
+.x92 {
+    left: 306.645px;
+}
+.x18 {
+    left: 320.865px;
+}
+.x1e {
+    left: 325.77px;
+}
+.x47 {
+    left: 334.65px;
+}
+.x82 {
+    left: 341.385px;
+}
+.x9b {
+    left: 344.775px;
+}
+.x7c {
+    left: 347.61px;
+}
+.x30 {
+    left: 352.29px;
+}
+.x7d {
+    left: 359.85px;
+}
+.x8b {
+    left: 361.62px;
+}
+.x61 {
+    left: 362.73px;
+}
+.x5a {
+    left: 368.82px;
+}
+.x1c {
+    left: 373.035px;
+}
+.x2c {
+    left: 376.23px;
+}
+.x78 {
+    left: 381.345px;
+}
+.x6 {
+    left: 384.81px;
+}
+.x56 {
+    left: 388.335px;
+}
+.x52 {
+    left: 394.275px;
+}
+.x70 {
+    left: 405.795px;
+}
+.x9f {
+    left: 410.07px;
+}
+.x8c {
+    left: 420.12px;
+}
+.x36 {
+    left: 425.625px;
+}
+.x1a {
+    left: 430.53px;
+}
+.x4a {
+    left: 435.45px;
+}
+.x6b {
+    left: 438.015px;
+}
+.x40 {
+    left: 443.625px;
+}
+.x25 {
+    left: 446.76px;
+}
+.x20 {
+    left: 449.31px;
+}
+.x6f {
+    left: 452.55px;
+}
+.x73 {
+    left: 453.75px;
+}
+.x23 {
+    left: 457.17px;
+}
+.x5d {
+    left: 460.95px;
+}
+.x6e {
+    left: 465.48px;
+}
+.x99 {
+    left: 469.005px;
+}
+.x41 {
+    left: 470.235px;
+}
+.x79 {
+    left: 489.675px;
+}
+.x42 {
+    left: 490.755px;
+}
+.x22 {
+    left: 502.02px;
+}
+.x71 {
+    left: 509.25px;
+}
+.x19 {
+    left: 522.645px;
+}
+.x5c {
+    left: 538.02px;
+}
+.x5b {
+    left: 539.82px;
+}
+.x1d {
+    left: 544.68px;
+}
+.x46 {
+    left: 551.91px;
+}
+.x45 {
+    left: 573.15px;
+}
+.x72 {
+    left: 588.93px;
+}
+.x8d {
+    left: 604.29px;
+}
+.x49 {
+    left: 625.425px;
+}
+.x1f {
+    left: 631.83px;
+}
+.x98 {
+    left: 634.395px;
+}
+.x54 {
+    left: 637.305px;
+}
+.x8f {
+    left: 643.935px;
+}
+.x9a {
+    left: 679.86px;
+}
+.x6d {
+    left: 686.49px;
+}
+.x75 {
+    left: 692.1px;
+}
+.x93 {
+    left: 693.72px;
+}
+.x2 {
+    left: 708.51px;
+}
+.x3 {
+    left: 712.83px;
+}
+.x4e {
+    left: 723.63px;
+}
+.x58 {
+    left: 725.115px;
+}
+.x77 {
+    left: 728.82px;
+}
+.x4d {
+    left: 732.315px;
+}
+.x4b {
+    left: 733.575px;
+}
+.x63 {
+    left: 750.06px;
+}
+.x76 {
+    left: 753.12px;
+}
+.x7b {
+    left: 755.43px;
+}
+.x7f {
+    left: 762.735px;
+}
+.x59 {
+    left: 773.79px;
+}
+.x64 {
+    left: 774.795px;
+}
+.x65 {
+    left: 780.735px;
+}
+.x83 {
+    left: 785.625px;
+}
+.x4f {
+    left: 790.53px;
+}
+.x6c {
+    left: 797.91px;
+}
+.x11 {
+    left: 805.68px;
+}
+.x31 {
+    left: 815.295px;
+}
+.x2d {
+    left: 828.975px;
+}
+.x8a {
+    left: 831.93px;
+}
+.x55 {
+    left: 845.61px;
+}
+.x5f {
+    left: 846.645px;
+}
+.x81 {
+    left: 851.37px;
+}
+.x2e {
+    left: 854.175px;
+}
+.x96 {
+    left: 856.23px;
+}
+.x57 {
+    left: 861.45px;
+}
+.x4c {
+    left: 869.655px;
+}
+.x66 {
+    left: 884.085px;
+}
+.x4 {
+    left: 900.255px;
+}
+.x87 {
+    left: 905.43px;
+}
+.x9e {
+    left: 918.15px;
+}
+.x12 {
+    left: 922.575px;
+}
+.x97 {
+    left: 933.3px;
+}
+.x10 {
+    left: 940.035px;
+}
+.x80 {
+    left: 965.985px;
+}
+.y01
+{
+    bottom: 590px;
+}
+.y02
+{
+    bottom: 335px;
+    left: 165.625px;
+}
+.y03
+{
+    bottom: 93px;
+   left: 155.235px;
+}
+.y04
+{
+    bottom: 543px;
+    left: 403.755px;
+}
+.y05
+{
+    bottom: 470px;
+    left: 643.73px;
+}
+.y06
+{
+    bottom: 361px;
+    left: 855.64px;
+}
+.y0a
+{
+    bottom: 200px;
+    left: 838.79px;
+}
+.i-amphtml-layout-responsive
+{
+    position: unset;
+}
+</style>
+</head>
+<body>
+
+<amp-story
+  standalone
+  title="Template"
+  publisher=""
+  publisher-logo-src="https://benetta.net/media/background-svg/background-sun-tornado-w2000-h1500.svg"
+  poster-portrait-src="https://benetta.net/media/background-svg/background-sun-tornado-w2000-h1500.svg"
+  poster-square-src="https://benetta.net/media/background-svg/background-sun-tornado-w2000-h1500.svg"
+  poster-landscape-src="https://benetta.net/media/background-svg/background-sun-tornado-w2000-h1500.svg"
+  supports-landscape
+>
+<amp-story-page id="slide_3">
+
+<amp-story-grid-layer
+  template="vertical"
+  class=""
+>
+<amp-img data-hero="" src="https://benetta.net/media/background-svg/background-animated-w1440-h560.svg" srcset="https://benetta.net/media/background-svg/background-animated-w1440-h560.svg 1920w,
+                        https://benetta.net/media/background-svg/background-animated-w1440-h560.svg 1438w,
+                        https://benetta.net/media/background-svg/background-animated-w1440-h560.svg 1000w,
+                      https://benetta.net/media/background-svg/background-animated-w1440-h560.svg 700w,
+                        https://benetta.net/media/background-svg/background-animated-w1440-h560.svg 500w,
+                       https://benetta.net/media/background-svg/background-animated-w1440-h560.svg 300w" width="1920" height="1080" layout="responsive" class="i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="responsive" alt="" ><i-amphtml-sizer slot="i-amphtml-svc" ></i-amphtml-sizer><img decoding="async" sizes="(max-width: 1280px) 1280px, 100vw" alt="" srcset="https://benetta.net/media/background-svg/background-animated-w1440-h560.svg 1920w,
+                        https://benetta.net/media/background-svg/background-animated-w1440-h560.svg 1438w,
+                       https://benetta.net/media/background-svg/background-animated-w1440-h560.svg 1000w,
+                        https://benetta.net/media/background-svg/background-animated-w1440-h560.svg 700w,
+                        https://benetta.net/media/background-svg/background-animated-w1440-h560.svg 500w,
+                       https://benetta.net/media/background-svg/background-animated-w1440-h560.svg 300w" src="https://benetta.net/media/background-svg/background-animated-w1440-h560.svg" data-hero="" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+
+<div id="myContainer">
+<div id="pf7" class="pf w0 h0" data-page-no="7">
+<div class="pc pc7 w0 h0">
+
+<amp-img class="bi x0 y0 w0 h0"
+       src="images/image2-w1440-h1080.webp"
+    srcset="images/image2-w1440-h1080.webp 1440w,
+            images/image2-w1400-h1050.webp 1400w,
+            images/image2-w1177-h882.webp 1177w,
+            images/image2-w760-h570.webp 760w,
+            images/image2-w200-h150.webp 200w"
+    width="1420"
+    height="1080"
+    layout="responsive">
+</amp-img>
+
+<div class="t m0 x3f h9 y01 ff1 fs7 fc2 sc0 ls0 ws0">compound:CID10507504 </div>
+<div class="t m0 x40 h9 y02 ff1 fs7 fc2 sc0 ls0 ws0">compound:CID60823</div>
+<div class="t m0 x41 h9 y03 ff6 fs7 fc2 sc0 ls0 ws0">compound:CID23665101</div>
+<div class="t m0 x42 h9 y04 ff1 fs7 fc2 sc0 ls0 ws0">compound:CID10507504 </div>
+<div class="t m0 x43 h9 y05 ff1 fs7 fc2 sc0 ls0 ws0">compound:CID10507504 </div>
+<div class="t m0 x44 h9 y06 ff1 fs7 fc2 sc0 ls0 ws0">compound:CID10030610</div>
+<div class="t m0 x48 h9 y0a ff1 fs7 fc2 sc0 ls0 ws0"> compound:CID11330946</div>
+</div>
+</div>
+</div>
+</amp-story-grid-layer>
+</amp-story-page>
+
+</amp-story>
+</body>
+</html>
