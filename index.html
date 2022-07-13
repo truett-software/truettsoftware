@@ -25,23 +25,368 @@ AMP Story Template
 <script  async  src="https://cdn.ampproject.org/v0.js"></script>
 <script  async custom-element="amp-story"  src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
 
+<!--SOWA-->
+
+<link rel="preload" as="font" href="https://s3.amazonaws.com/benetta.net/fonts/arial/Arial.woff2" crossorigin />
+<link rel="preload" as="font" href="https://s3.amazonaws.com/benetta.net/fonts/arial/Arial-Bold.woff2" crossorigin />
+<link rel="preload" as="font" href="https://s3.amazonaws.com/benetta.net/fonts/arial/Arial-BoldItalic.woff2" crossorigin />
+<link rel="preload" as="font" href="https://s3.amazonaws.com/benetta.net/fonts/times-new-roman/TimesNewRoman.woff2" crossorigin />
+<link rel="preload" as="font" href="https://s3.amazonaws.com/benetta.net/fonts/times-new-roman/TimesNewRoman-Bold.woff2" crossorigin />
+<link rel="preload" as="font" href="https://s3.amazonaws.com/benetta.net/fonts/times-new-roman/TimesNewRoman-BoldItalic.woff2" crossorigin />
+<link rel="preload" as="font" href="https://s3.amazonaws.com/benetta.net/fonts/lucida-sans-unicode/LucidaSansUnicode.woff2" crossorigin />
+<link rel="preload" as="font" href="https://s3.amazonaws.com/benetta.net/fonts/noto-sans/noto-sans-v11-latin-regular.woff2" crossorigin />
+
+<link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js"/>
+
+
+
 <style amp-custom>
+
+
+
+/* Sowa Css*/
+
+.pf0 {
+    margin: 13px auto;
+    box-shadow: 1px 1px 3px 1px #333;
+    border-collapse: separate;
+}
+.pf0 {
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    margin: ;
+    border: 0;
+}
+.w00 {
+    width: 1080px;
+}
+.h00 {
+    height: 550px;
+}
+
+.bf{position:absolute;border:0;margin:0;top:0;bottom:0;width:100%;height:100%;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none;user-select:none}
+.bi{position:absolute;border:0;margin:0;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none;user-select:none}
+
+
+@media print{.pf{margin:0;box-shadow:none;page-break-after:always;page-break-inside:avoid}@-moz-document url-prefix(){.pf{overflow:visible;}.pc{overflow:visible}}}
+
+.c{position:absolute;border:0;padding:0;margin:0;overflow:hidden;display:block}
+.t{position:absolute;white-space:pre;font-size:1px;transform-origin:0 100%;-ms-transform-origin:0 100%;-webkit-transform-origin:0 100%;unicode-bidi:bidi-override;-moz-font-feature-settings:"liga" 0}
+.t:after{content:''}
+.t:before{content:'';display:inline-block}
+.t span{position:relative;unicode-bidi:bidi-override}
+._{display:inline-block;color:transparent;z-index:-1}
+::selection{background:rgba(127,255,255,.4)}
+::-moz-selection{background:rgba(127,255,255,.4)}
+.pi{display:none}
+.d{position:absolute;transform-origin:0 100%;-ms-transform-origin:0 100%;-webkit-transform-origin:0 100%}
+.it{border:0;background-color:rgba(255,255,255,0)}
+
+
+
+@media screen{#page-container{background-color:#9e9e9e;background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjOWU5ZTllIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDVMNSAwWk02IDRMNCA2Wk0tMSAxTDEgLTFaIiBzdHJva2U9IiM4ODgiIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPgo8L3N2Zz4=);-webkit-transition:left .5s;transition:left .5s}.pf{margin:13px auto;border-collapse:separate}}
+
+
+@font-face {font-family:ff8;font-display:optional;src:local("Arial Bold Italic"),local("Arial-BoldItalic"),url(https://s3.amazonaws.com/benetta.net/fonts/arial/Arial-BoldItalic.woff2) format("woff2");}
+.ff8{font-family:ff8;line-height:.938477;font-style:normal;font-weight:400;visibility:visible}
+
+@font-face {font-family:ff9;font-display:optional;src:local("Times New Roman Bold"),local("TimesNewRoman-Bold"),url(https://s3.amazonaws.com/benetta.net/fonts/times-new-roman/TimesNewRoman-Bold.woff2) format("woff2");}
+.ff9{font-family:ff9;line-height:.882324;font-style:normal;font-weight:400;visibility:visible}
+
+
+.v0{vertical-align:0}
+.ls0{letter-spacing:0}
+.sc_{text-shadow:none}
+.sc1{text-shadow:-.015em 0 #000,0 .015em #000,.015em 0 #000,0 -.015em #000}
+
+
+
+/**********************
+* Sowa Attachment DL-DT-DD
+*/
+
+#page-container{
+   zoom: 0.95;
+    -moz-transform: scale(0.95);
+
+}
+
+
+#page-container h2 {
+    color: #000;
+    padding-top: 2%;
+}
+#sowah4{
+    margin-left: 1em;
+}
+
+/* test switch to em */
+.chartlegend span {
+    display: inline-block;
+    height: 0.65rem;
+    width: 0.65rem;
+    border-radius: 0.25rem;
+}
+
+.av {
+    font-family: NotoSerif;
+    font-size: 1.4em;
+    font-weight: 400;
+    color: #130f30;
+    border: none;
+}
+
+p {
+    font-family: NotoSerif;
+    font-size: 1.1em;
+    font-weight: 400;
+    /* line-height: 1.6rem; */
+    line-height: 1.6em;
+    color: #000;
+    border: none;
+}
+
+dt {
+    font-family: NotoSerif;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 2em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin-left: 1em;
+    color: #130f30;
+    border: none;
+}
+
+dd {
+    font-family: NotoSerif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.4em;
+    margin-left: 2em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    border: none;
+}
+.li {
+    font-family: NotoSerif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.4em;
+    text-indent: 0em;
+    margin-left: 4em;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.mr-s {
+    margin-right: 1em;
+}
+
+.p-s {
+    padding-left: 1em;
+}
+/* source: https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/ */
+
+blockquote {
+    font-family: NotoSerif;
+    line-height: 1.4em;
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+/* end attachment */
+
+/************************
+*   from sequence 10 - 58
+*   E:_rosetta-unified-data-table+color.xlsx
+*   E:_color-palette__2.xlsx
+*/
+
+.c-c0334d {
+    background-color: #c0334d;
+}
+.c-f3d480 {
+    background-color: #f3d480;
+}
+.c-f1931b {
+    background-color: #f1931b;
+}
+.c-8f715b {
+    background-color: #8f715b;
+}
+.c-78d68c {
+    background-color: #78d68c;
+}
+.c-720017 {
+    background-color: #720017;
+}
+.c-d8d583 {
+    background-color: #d8d583;
+}
+.c-d98c2a {
+    background-color: #d98c2a;
+}
+.c-36688d {
+    background-color: #36688d;
+}
+.c-a3586d {
+    background-color: #a3586d;
+}
+.c-aba6bf {
+    background-color: #aba6bf;
+}
+.c-595775 {
+    background-color: #595775;
+}
+.c-84a45a {
+    background-color: #84a45a;
+}
+.c-583e2e {
+    background-color: #583e2e;
+}
+.c-bf988f {
+    background-color: #bf988f;
+}
+.c-a7414a {
+    background-color: #a7414a;
+}
+.c-6a8a82 {
+    background-color: #6a8a82;
+}
+.c-a37c27 {
+    background-color: #a37c27;
+}
+.c-4fd993 {
+    background-color: #4fd993;
+}
+.c-704404 {
+    background-color: #704404;
+}
+.c-4e7ba7 {
+    background-color: #4e7ba7;
+}
+.c-d28f1b {
+    background-color: #d28f1b;
+}
+.c-1ecfd6 {
+    background-color: #1ecfd6;
+}
+.c-edd179 {
+    background-color: #edd179;
+}
+.c-c05640 {
+    background-color: #c05640;
+}
+.c-728ca3 {
+    background-color: #728ca3;
+}
+.c-73c0f4 {
+    background-color: #73c0f4;
+}
+.c-f3e46c {
+    background-color: #f3e46c;
+}
+.c-582a20 {
+    background-color: #582a20;
+}
+.c-9499a6 {
+    background-color: #9499a6;
+}
+.c-c59cdb {
+    background-color: #c59cdb;
+}
+.c-a67b04 {
+    background-color: #a67b04;
+}
+.c-525b56 {
+    background-color: #525b56;
+}
+.c-93a806 {
+    background-color: #93a806;
+}
+.c-f08b33 {
+    background-color: #f08b33;
+}
+.c-d75404 {
+    background-color: #d75404;
+}
+.c-8a2c02 {
+    background-color: #8a2c02;
+}
+.c-d75b66 {
+    background-color: #d75b66;
+}
+.c-23345c {
+    background-color: #23345c;
+}
+.c-bfafa0 {
+    background-color: #bfafa0;
+}
+.c-515b51 {
+    background-color: #515b51;
+}
+.c-8c7547 {
+    background-color: #8c7547;
+}
+.c-efa747 {
+    background-color: #efa747;
+}
+.c-52733b {
+    background-color: #52733b;
+}
+.c-bda728 {
+    background-color: #bda728;
+}
+.c-704307 {
+    background-color: #704307;
+}
+.c-f7b178 {
+    background-color: #f7b178;
+}
+.c-253f5b {
+    background-color: #253f5b;
+}
+.c-4f728e {
+    background-color: #4f728e;
+}
+
+
+
+/* Pubmed story css*/
 
 #myContainer{
     zoom: 0.55;
     -moz-transform: scale(0.8);
 }
 
+/* Knowledge graph css*/
+
+#repurposing{
+     zoom: 0.32;
+    -moz-transform: scale(0.32);
+}
+
 /**
 *   MODEL @media
 */
 
-
-
-
 .pf {
     position: relative;
-    background-color: #fff;
+   
     overflow: hidden;
     margin: 0;
     border: 0;
@@ -162,7 +507,7 @@ AMP Story Template
 @media screen {
     .pf {
         margin: 13px auto;
-        box-shadow: 1px 1px 3px 1px #333;
+     
         border-collapse: separate;
     }
 }
@@ -488,7 +833,8 @@ h4 {
     margin-top: 0.3em;
 }
 h4 {
-    font-size: calc(3.0 * var(--story-page-vw));
+    font-size: calc(2.0 * var(--story-page-vw));
+    line-height: 1.5;
 }
 
 h4:hover {
@@ -510,7 +856,10 @@ h5 {
     border: none;
     transition: 1s;
 }
-
+h5 {
+    font-size: 1.2rem;
+    margin-left: 3em;
+}
 h5:hover {
     font-weight: 800;
     --CRSV: 0;
@@ -617,6 +966,9 @@ h5:hover {
     .sc0 {
         -webkit-text-stroke: 0.015em transparent;
         text-shadow: none;
+    }
+    .sc1{
+        -webkit-text-stroke:.015em #000;text-shadow:none
     }
 }
 
@@ -825,7 +1177,7 @@ h5:hover {
     color: #604a7b;
 }
 .fc0 {
-    color: #898989;
+    color: #000;
 }
 .fc6 {
     color: #e46c0a;
@@ -864,7 +1216,7 @@ h5:hover {
     font-size: 48px;
 }
 .fs9 {
-    font-size: 48.096px;
+    font-size: 91px;
 }
 .fs1 {
     font-size: 53.28px;
@@ -888,7 +1240,7 @@ h5:hover {
     font-size: 80.256px;
 }
 .fs5 {
-    font-size: 96px;
+    font-size: 144px;
 }
 .fs4 {
     font-size: 111.84px;
@@ -906,7 +1258,7 @@ h5:hover {
     bottom: 46.44px;
 }
 .y20 {
-    bottom: 67.968px;
+    bottom: 649.75px;
 }
 .y133 {
     bottom: 68.04px;
@@ -1065,7 +1417,7 @@ h5:hover {
     bottom: 201.27px;
 }
 .y1f {
-    bottom: 202.575px;
+    bottom: 735.35px;
 }
 .y89 {
     bottom: 210.96px;
@@ -1656,7 +2008,7 @@ h5:hover {
     height: 19.516875px;
 }
 .h7 {
-    height: 28.596094px;
+    height: 104.835938px;
 }
 .h14 {
     height: 28.665px;
@@ -1998,7 +2350,7 @@ h5:hover {
     left: 425.625px;
 }
 .x1a {
-    left: 430.53px;
+    left: 90.35px;
 }
 .x4a {
     left: 435.45px;
@@ -2049,7 +2401,7 @@ h5:hover {
     left: 509.25px;
 }
 .x19 {
-    left: 522.645px;
+    left: 245.55px;
 }
 .x5c {
     left: 538.02px;
@@ -2309,6 +2661,19 @@ bottom: 265px;
 {
     position: unset;
 }
+.i-amphtml-layout-geneonto {
+    display: block;
+    position: relative !important;
+}
+.i-amphtml-layout-repurposing{
+    display: block;
+    position: relative !important;
+    width:60%;
+    height:50%;
+    left:15%;
+}
+
+
 .c04
 {
     bottom: 515px;
@@ -2940,7 +3305,7 @@ h2 {
 }
 
 h2 {
-    font-size: 3.5rem;
+    font-size: 3.0rem;
 }
 
 .myContainer h2 {
@@ -2965,8 +3330,8 @@ h2 {
    }
 
    [orientation=landscape] [position=landscape-half-left] {
-    width: 55%!important;
-    left: 0!important;
+    width: 50%!important;
+    left: 3%!important;
     right: auto!important;
 }
 
@@ -2990,13 +3355,13 @@ h2 {
    
 }
 
-.slide5 p{
-   font-size:30px;
+.slide5 h4{
+   font-size: 26px;
    position:relative;
    
    margin-left: 0%;
 }
-.slide5 p {
+.slide5 h4 {
     
    position:relative;
     color: #000000;
@@ -3005,183 +3370,71 @@ h2 {
     margin-top: 0.5em;
 }
 
-p:hover {
+h4:hover {
     font-weight: 800;
     --CRSV: 0;
     transition: 1s;
 }
-.slide5 p {
+.slide5 h4 {
     display: list-item;                       
     list-style-type: square;     
     list-style-position: inside; 
 }
-
+.slide5 h3 {
+    display: list-item;                       
+    list-style-type: square;     
+    list-style-position: inside; 
+    color: #000;
+    font-size: 30px;
+}
     
 
-.v01 {
-   left: 37.619979px;
-}
-.v02 {
-   left: 66.034979px;
-}
-.v03 {
-  left: 108.554979px;
-}
-.v04 {
-    left: 66.034979px;
-}
-.v05 {
-    left: 108.154979px;
-}
-.v06 {
-    left: 66.034979px;
-}
-.v07 {
-   left: 114.894979px;
-}
+
 .v08 {
-   left: 699.235px;
+    left: 325.235px;
 }
 .v09 {
-    left: 699.235px;
+    left: 325.235px;
 }
 .v10 {
-    left: 699.235px;
+    left: 458.235px;
 }
 .v11 {
-    left: 657.235px;
+   left: 266.235px;
 }
 .v12 {
-    left: 657.235px;
+   left: 266.235px;
 }
 .v13 {
-    left: 657.235px;
+   left: 266.235px;
 }
 
 
 
-.j01{
-   bottom: 747.54px;
-}
-.j02{
-   bottom: 604.25px;
-}
-.j03{
-    bottom: 563.84px;
-}
-.j04{
-    bottom: 405.39px;
-}
-.j05{
-    bottom: 353.445px;
-}
-.j06{
-   bottom: 195.964px;
-}
-.j07{
-    bottom: 144.184px;
-}
 .j08{
-   bottom: 645.936px;
+    bottom: 676.936px;
 }
 .j09{
-   bottom: 615.936px;
+   bottom: 653.936px;
 }
 .j10{
-    bottom: 245.936px;
+  bottom: 397.936px;
 }
 .j11{
-    bottom: 148.936px;
+    bottom: 340.936px;
 }
 .j12{
-    bottom: 113.936px;
+   bottom:320.936px;
 }
 .j13{
-    bottom: 80.936px;
+   bottom: 300.936px;
 }
 
 
-.n1 {
-    height: 81.925781px;
-}
-.n2 {
-    height: 117.191719px;
-}
-.n3 {
-   height: 57.9375px;
-}
-.n4 {
-   height: 85.299844px;
-}
-.n5 {
-   height: 57.9375px;
-}
-.n6 {
-    height: 85.299844px;
-}
-.n7 {
-   height: 57.9375px;
-}
-.n8 {
-    height: 31.696875px;
-}
-.n9 {
-    height: 31.696875px;
-}
-.na {
-    height: 31.696875px;
-}
-.nb {
-    height: 31.696875px;
-}
-.nc {
-    height: 31.696875px;
-}
-.nd {
-    height: 31.696875px;
-}
-
-
-
-.fm1 {
-    font-size: 176.16px;
-}
-.fm2 {
-    font-size: 111.84px;
-}
-.fm3 {
-    font-size: 72px;
-}
-.fm4 {
-    font-size: 111.84px;
-}
-.fm5 {
-    font-size: 72px;
-}
-.fm6 {
-   font-size: 111.84px;
-}
-.fm7 {
-    font-size: 72px;
-}
 .fm8 {
-   font-size: 67px;
+  font-size: 37px;
 }
-.fm9 {
-   font-size: 67px;
-}
-.fm0 {
-    font-size: 67px;
-}
-.fmx {
-   font-size: 67px;
-}
-.fmy {
-    font-size: 67px;
-}
-.fmz {
-    font-size: 67px;
-}
+
 
 
 #number {
@@ -3194,6 +3447,11 @@ p:hover {
     display: list-item;                        
     list-style-type: disc;     
     list-style-position: inside; 
+    
+}
+#start{
+    color:#000000;
+
 }
 .fc3 {
     color: #808080;
@@ -3357,16 +3615,6 @@ p:hover {
 .r04 {
     left: 693.235px;
 }
-.r05 {
-    left: 478.235px;
-}
-.r06 {
-   left: 478.235px;
-}
-
-
-
-
 .t01{
  bottom: 721.54px;
 }
@@ -3381,35 +3629,27 @@ p:hover {
 .t04{
   bottom: 80.54px;
 }
+
+
+
+.r05 {
+   left: 21.235px;
+}
+.r06 {
+   left: 21.235px;
+}
 .t05{
-   bottom: 617.54px;
+   bottom: 645.54px;
 }
 .t06{
-   bottom: 125.54px;
-}
-
-
-
-
-.fy1{
-   font-size: 159.54px;
-}
-.fy2{
-  font-size: 103.54px;
-}
-.fy3{
-   font-size: 103.54px;
-}
-.fy4{
-   font-size:  47.54px;
+   bottom: 30.54px;
 }
 .fy5{
-  font-size: 48.54px;
+  font-size: 56.54px;
 }
 .fy6{
-   font-size: 48.54px;
+  font-size: 56.54px;
 }
-
 .cl0{
 
 	color:#337816;
@@ -3545,37 +3785,37 @@ p:hover {
     left: 113.235px;
 }
 .lma {
-   left: 69.235px;
+   left: 33.235px;
 }
 .lmb {
-  left: 857.235px;
+  left: 913.235px;
 }
 .lmc {
-  left: 88.527979px;
+  left: 81.527979px;
 }
 .lmd {
-    left: 515.194979px;
+    left:512.194979px;
 }
 .lme {
-    left: 905.235px;
+    left: 916.235px;
 }
 .lmf {
-    left: 660.235px;
+    left: 705.235px;
 }
 .lmg {
-   left: 241.235px;
+   left: 242.235px;
 }
 .lmh {
-  left: 460.235px;
+  left: 478.235px;
 }
 .lmi {
-   left: 460.235px;
+   left: 478.235px;
 }
 .lmj {
-   left: 460.235px;
+   left: 478.235px;
 }
 .lmk {
-   left: 515.194979px;
+   left: 512.194979px;
 }
 .lmq {
    left: 395.235px;
@@ -3586,8 +3826,6 @@ p:hover {
 }
 
 
-
-
 .bcd{
   bottom: 714.54px;
 }
@@ -3595,37 +3833,37 @@ p:hover {
    bottom: 633.54px;
 }
 .bch{
-  bottom: 215.54px;
+  bottom: 305.54px;
 }
 .bci{
-   bottom: 206.54px;
+   bottom: 320.54px;
 }
 .bcj{
-  bottom: 318.48px;
+  bottom: 321.48px;
 }
 .bck{
-  bottom: 318.48px;
+  bottom: 321.48px;
 }
 .bcl{
-  bottom: 318.48px;
+  bottom: 321.48px;
 }
 .bcm{
-  bottom: 239.54px;
+  bottom: 245.54px;
 }
 .bcn{
-  bottom: 239.54px;
+  bottom: 245.54px;
 }
 .bco{
-  bottom: 199.54px;
+  bottom: 281.54px;
 }
 .bcp{
-  bottom: 170.54px;
+  bottom: 247.54px;
 }
 .bcq{
-  bottom: 141.54px;
+  bottom: 212.54px;
 }
 .bcr{
-  bottom: 444.54px;
+  bottom: 451.54px;
 }
 .bcf{
    bottom: 37.54px;
@@ -3636,7 +3874,6 @@ p:hover {
 
 
 
-
 .fjk{
    font-size: 131.54px;
 }
@@ -3644,10 +3881,10 @@ p:hover {
   font-size: 131.54px;
 }
 .fjm{
-  font-size: 55.54px;
+  font-size: 62.54px;
 }
 .fjn{
-   font-size: 55.54px;
+   font-size: 62.54px;
 }
 .fjo{
   font-size: 176.16px;
@@ -3674,7 +3911,7 @@ p:hover {
    font-size: 58.84px;
 }
 .fjw{
-   font-size: 128.16px;
+   font-size: 137.16px;
 }
 .fjx{
      font-size: 53px;
@@ -3685,20 +3922,20 @@ p:hover {
 
 
 .lqa {
-   left: 64.235px;
+   left: 61.235px;
 }
 .lqb {
-   left: 896.235px;
+   left: 894.235px;
 }
 .lqc {
   left: 491.235px;
 }
 
 .bqa{
-   bottom: 198.54px;
+   bottom: 221.54px;
 }
 .bqb{
-  bottom: 197.54px;
+  bottom: 220.54px;
 }
 .bqc{
   bottom: 203.54px;
@@ -3903,10 +4140,10 @@ span{
 
 
 .cb1 {
- bottom: 750.79px;
+ bottom: 730.79px;
 }
 .cb2 {
- bottom: 328.87px;
+ bottom: 283.87px;
  line-height: 1;
 }
 .cb3{
@@ -3914,24 +4151,24 @@ span{
   line-height: 1;
 }
 .cb4{
-  bottom: 446.87px;
+  bottom: 439.87px;
 }
 .cb5{
-  bottom: 168.87px;
+  bottom: 190.87px;
 }
 .cb6 {
-   bottom: 437.825px;
+   bottom: 459.825px;
 }
 .cb7 {
-  bottom: 428.87px;
+  bottom: 422.87px;
   line-height: 1.1;
 }
 .cb8 {
-  bottom: 203.87px;
+  bottom: 224.87px;
    
 }
 .cb9 {
-  bottom: 183.54px;
+  bottom: 172.54px;
   line-height: 1.1;
 }
 
@@ -3943,11 +4180,243 @@ span{
    font-size: 65px;
 }
 
+.xyz {
+   left: 383.194979px;
+}
+.zyx {
+  bottom: 666.54px;
+}
 
+
+}
 /**
 *   MODEL @media
 */
 /*---------Mobile view----------------*/
+@media only screen and (min-width: 1466px){
+
+
+.fy5 {
+   font-size: 36.54px;
+}
+.t05 {
+    bottom: 643.54px;
+}
+.r05 {
+    left: 39.235px;
+}
+.fy6 {
+    font-size: 36.54px;
+}
+.t06 {
+    bottom: 260.54px;
+}
+.r06 {
+    left: 39.235px;
+}
+
+.fm8 {
+    font-size: 43px;
+}
+.j08 {
+   bottom: 666.936px;
+}
+.v08 {
+    left: 358.235px;
+}
+.j09 {
+    bottom: 642.936px;
+}
+.v09 {
+    left: 358.235px;
+}
+.j10 {
+   bottom: 365.936px;
+}
+.v10 {
+    left: 485.235px;
+}
+.j11 {
+    bottom: 308.936px;
+}
+.v11 {
+    left: 288.235px;
+}
+.j12 {
+    bottom: 285.936px;
+}
+.v12 {
+    left: 288.235px;
+}
+.j13 {
+    bottom: 264.936px;
+}
+.v13 {
+    left: 288.235px;
+}
+
+
+
+.fjm {
+    font-size: 36.54px;
+}
+.bch {
+    bottom: 392.54px;
+}
+.lma {
+    left: 50.235px;
+}
+
+}
+
+
+@media only screen and (min-width: 736px) and (max-height: 414px) {
+  #myContainer {
+    zoom: 0.30;
+    -moz-transform: scale(0.30);
+    }
+    .myContainer h3{
+    font-size: 15px;
+    
+}
+.myContainer h4{
+    font-size: 20px;
+    margin-top: 0.6em;
+}
+  .myContainer h2 {
+    text-align: center;
+    margin-bottom: 19px;
+}
+  a {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+amp-story-grid-layer {
+    box-sizing: border-box!important;
+    padding: 45px 32px 32px;
+    }
+    .slide5 {
+    zoom: 0.6;
+    -moz-transform: scale(0.6);
+    margin-top: 3%;
+    }
+    #graph {
+        margin-bottom: 42px;
+    margin-top: 1%;
+    font-size: 42px;
+   }  
+    .slide5 p {
+    font-size: 22px;
+}
+   
+   
+    .slide5 svg{
+    width: 731px;
+    height: 895px;
+    position: absolute;
+    top: 13%;
+    left: 50%;
+}
+a .quick{
+    margin-left: 16%;
+    margin-top: 56%;
+    font-size: 17px;
+    color: blue;
+    text-decoration-line: underline;
+}
+#abc{
+	font-size: 2.5rem;
+    color: #000;
+}
+#swan{
+	font-size: 10px;
+    color: #000;
+    padding-left: 46%;
+    padding-top: 35%;
+}
+#generic {
+    padding-left: 8%;
+}
+
+#article {
+	    font-size: 12px;
+    color: revert;
+    padding-left: 46%;
+    padding-top: 35%;
+    text-decoration: underline;
+}
+
+.slide5 h4 {
+    font-size: 20px;
+    }
+#sparol {
+    font-size: 18px;
+    }
+
+
+.fy5 {
+    font-size: 15.54px;
+}
+.t05 {
+    bottom: 724.54px;
+}
+.r05 {
+    left: 36.235px;
+}
+.fy6 {
+    font-size: 15.54px;
+}
+.t06 {
+    bottom: 545.54px;
+}
+.r06 {
+    left: 36.235px;
+}
+
+
+.fm8 {
+    font-size: 23px;
+}
+.j08 {
+    bottom: 733.936px;
+}
+.v08 {
+    left: 174.235px;
+}
+.j09 {
+    bottom: 720.936px;
+}
+.v09 {
+    left: 174.235px;
+}
+.j10 {
+   bottom: 593.936px;
+}
+.v10 {
+    left: 237.235px;
+}
+.j11 {
+    bottom: 579.936px;
+}
+.v11 {
+    left: 143.235px;
+}
+.j12 {
+    bottom: 564.936px;
+}
+.v12 {
+    left: 143.235px;
+}
+.j13 {
+    bottom: 549.936px;
+}
+.v13 {
+    left: 143.235px;
+}
+
+
+	}
 
 /* Portrait */
 @media all and (device-width: 320px) and (device-height: 570px) and (orientation: portrait) {
@@ -4005,6 +4474,10 @@ span{
     zoom: 0.28;
     -moz-transform: scale(0.28);
     }
+    #repurposing {
+    zoom: 0.17;
+    -moz-transform: scale(0.17);
+}
      .myContainer h3{
     font-size: 15px;
     padding-top: 5px;
@@ -4016,7 +4489,7 @@ span{
 }
   .myContainer h2 {
     text-align: center;
-    font-size: 50px;
+    font-size: 28px;
 }
   a {
     font-size: 15px;
@@ -4106,9 +4579,13 @@ span{
 /* Landscape */
 @media all and (device-width: 667px) and (device-height: 375px) and (orientation: landscape) {
     #myContainer {
-    zoom: 0.30;
-    -moz-transform: scale(0.30);
+    zoom: 0.27;
+    -moz-transform: scale(0.27);
     }
+    #repurposing {
+    zoom: 0.17;
+    -moz-transform: scale(0.17);
+}
     .myContainer h3{
     font-size: 15px;
     /*padding-top: 2px;*/
@@ -4211,6 +4688,74 @@ amp-story-grid-layer {
     text-decoration: underline;
 }
 
+.slide5 h4 {
+    font-size: 18px;
+    }
+#sparol {
+    font-size: 18px;
+    }
+
+
+.fy5 {
+    font-size: 15.54px;
+}
+.t05 {
+    bottom: 731.54px;
+}
+.r05 {
+    left: 36.235px;
+}
+.fy6 {
+    font-size: 15.54px;
+}
+.t06 {
+    bottom: 570.54px;
+}
+.r06 {
+    left: 36.235px;
+}
+
+
+.fm8 {
+    font-size: 23px;
+}
+.j08 {
+    bottom: 733.936px;
+}
+.v08 {
+    left: 159.235px;
+}
+.j09 {
+    bottom: 720.936px;
+}
+.v09 {
+    left: 159.235px;
+}
+.j10 {
+    bottom: 613.936px;
+}
+.v10 {
+    left: 207.235px;
+}
+.j11 {
+    bottom: 594.936px;
+}
+.v11 {
+    left: 143.235px;
+}
+.j12 {
+    bottom: 583.936px;
+}
+.v12 {
+    left: 143.235px;
+}
+.j13 {
+    bottom: 572.936px;
+}
+.v13 {
+    left: 143.235px;
+}
+
 
 }
 
@@ -4225,6 +4770,7 @@ amp-story-grid-layer {
     zoom: 0.28;
     -moz-transform: scale(0.28);
     }
+
      .myContainer h3{
     font-size: 15px;
     padding-top: 5px;
@@ -4234,11 +4780,12 @@ amp-story-grid-layer {
     font-size: 20px;
     padding-top: 10px;
 }
-  .myContainer h2 {
+.myContainer h2 {
     text-align: center;
-    font-size: 50px;
+    font-size: 28px;
 }
-  a {
+
+a {
     font-size: 15px;
     color: white;
     text-decoration: none;
@@ -4327,6 +4874,10 @@ a .quick {
     zoom: 0.30;
     -moz-transform: scale(0.30);
     }
+    #repurposing {
+    zoom: 0.17;
+    -moz-transform: scale(0.17);
+}
     .myContainer h3{
     font-size: 15px;
     padding-top: 2px;
@@ -4415,6 +4966,66 @@ amp-story-grid-layer {
     padding-top: 35%;
     text-decoration: underline;
 }
+.fy5 {
+    font-size: 20.54px;
+}
+.t05 {
+     bottom: 713.54px;
+}
+.r05 {
+    left: 36.235px;
+}
+.fy6 {
+    font-size: 20.54px;
+}
+.t06 {
+   bottom: 487.54px;
+}
+.r06 {
+    left: 36.235px;
+}
+
+
+.fm8 {
+    font-size: 23px;
+}
+.j08 {
+    bottom: 718.936px;
+}
+.v08 {
+    left: 218.235px;
+}
+.j09 {
+    bottom: 704.936px;
+}
+.v09 {
+    left: 218.235px;
+}
+.j10 {
+   bottom: 552.936px;
+}
+.v10 {
+    left: 292.235px;
+}
+.j11 {
+    bottom: 520.936px;
+}
+.v11 {
+    left: 180.235px;
+}
+.j12 {
+    bottom: 505.936px;
+}
+.v12 {
+    left: 180.235px;
+}
+.j13 {
+    bottom: 491.936px;
+}
+.v13 {
+    left: 180.235px;
+}
+
 
 }
 
@@ -4439,7 +5050,7 @@ amp-story-grid-layer {
 }
   .myContainer h2 {
     text-align: center;
-    font-size: 50px;
+    font-size: 28px;
 }
   a {
     font-size: 15px;
@@ -4511,6 +5122,10 @@ a .quick {
     zoom: 0.30;
     -moz-transform: scale(0.30);
     }
+    #repurposing {
+    zoom: 0.17;
+    -moz-transform: scale(0.17);
+}
     .myContainer h3{
     font-size: 15px;
     
@@ -4580,6 +5195,75 @@ a .quick{
     padding-top: 34%;
     text-decoration: underline;
 }
+
+.slide5 h4 {
+    font-size: 20px;
+    }
+#sparol {
+    font-size: 18px;
+    }
+
+.fy5 {
+    font-size: 20.54px;
+}
+.t05 {
+   bottom:716.54px;
+}
+.r05 {
+    left: 36.235px;
+}
+.fy6 {
+    font-size: 20.54px;
+}
+.t06 {
+    bottom: 504.54px;
+}
+.r06 {
+    left: 36.235px;
+}
+
+
+
+.fm8 {
+    font-size: 23px;
+}
+.j08 {
+    bottom: 718.936px;
+}
+.v08 {
+    left: 218.235px;
+}
+.j09 {
+    bottom: 704.936px;
+}
+.v09 {
+    left: 218.235px;
+}
+.j10 {
+   bottom: 552.936px;
+}
+.v10 {
+    left: 292.235px;
+}
+.j11 {
+    bottom: 527.936px;
+}
+.v11 {
+    left: 180.235px;
+}
+.j12 {
+    bottom:513.936px;
+}
+.v12 {
+    left: 180.235px;
+}
+.j13 {
+    bottom: 499.936px;
+}
+.v13 {
+    left: 180.235px;
+}
+
 
 }
 
@@ -4670,11 +5354,18 @@ a .quick {
 
 /* Landscape */
 
-@media only screen and (min-device-width: 736px) and (max-device-height: 414px) and (orientation: landscape) {
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3) { 
     #myContainer {
     zoom: 0.30;
     -moz-transform: scale(0.30);
     }
+    #repurposing {
+    zoom: 0.17;
+    -moz-transform: scale(0.17);
+}
     .myContainer h3{
     font-size: 15px;
     
@@ -4746,6 +5437,25 @@ a .quick{
     padding-top: 35%;
     text-decoration: underline;
 }
+.fy5 {
+    font-size: 15.54px;
+}
+.t05 {
+    bottom: 685.54px;
+}
+.r05 {
+    left: 36.235px;
+}
+.fy6 {
+    font-size: 15.54px;
+}
+.t06 {
+    bottom: 506.54px;
+}
+.r06 {
+    left: 36.235px;
+}
+
 
 }
 
@@ -4757,6 +5467,11 @@ a .quick{
     zoom: 0.30;
     -moz-transform: scale(0.30);
     }
+    #repurposing {
+    zoom: 0.17;
+    -moz-transform: scale(0.17);
+}
+
       .myContainer h3{
     font-size: 15px;
     padding-top: 5px;
@@ -4768,7 +5483,7 @@ a .quick{
 }
   .myContainer h2 {
     text-align: center;
-    font-size: 50px;
+    font-size: 28px;
 }
   a {
     font-size: 15px;
@@ -4837,6 +5552,12 @@ a .quick {
     zoom: 0.30;
     -moz-transform: scale(0.30);
     }
+
+#repurposing {
+    zoom: 0.17;
+    -moz-transform: scale(0.17);
+}
+
      .myContainer h3{
     font-size: 15px;
     
@@ -4906,6 +5627,66 @@ a .quick{
     padding-top: 35%;
     text-decoration: underline;
 }
+.fy5 {
+    font-size: 15.54px;
+}
+.t05 {
+    bottom: 719.54px;
+}
+.r05 {
+    left: 36.235px;
+}
+.fy6 {
+    font-size: 15.54px;
+}
+.t06 {
+    bottom: 517.54px;
+}
+.r06 {
+    left: 36.235px;
+}
+
+.fm8 {
+    font-size: 23px;
+}
+.j08 {
+    bottom: 718.936px;
+}
+.v08 {
+    left: 218.235px;
+}
+.j09 {
+    bottom: 704.936px;
+}
+.v09 {
+    left: 218.235px;
+}
+.j10 {
+   bottom: 552.936px;
+}
+.v10 {
+    left: 292.235px;
+}
+.j11 {
+    bottom: 542.936px;
+}
+.v11 {
+    left: 180.235px;
+}
+.j12 {
+    bottom: 528.936px;
+}
+.v12 {
+    left: 180.235px;
+}
+.j13 {
+    bottom: 513.936px;
+}
+.v13 {
+    left: 180.235px;
+}
+
+
 
 }
 
@@ -4916,6 +5697,10 @@ a .quick{
     zoom: 0.28;
     -moz-transform: scale(0.28);
     }
+    #repurposing {
+    zoom: 0.17;
+    -moz-transform: scale(0.17);
+}
      .myContainer h3{
     font-size: 15px;
     padding-top: 5px;
@@ -4927,7 +5712,7 @@ a .quick{
 }
   .myContainer h2 {
     text-align: center;
-    font-size: 50px;
+    font-size: 28px;
 }
   a {
     font-size: 15px;
@@ -4996,6 +5781,11 @@ a .quick {
     zoom: 0.30;
     -moz-transform: scale(0.30);
     }
+
+    #repurposing {
+    zoom: 0.17;
+    -moz-transform: scale(0.17);
+}
     .myContainer h3{
     font-size: 15px;
     
@@ -5067,6 +5857,73 @@ a .quick{
     text-decoration: underline;
 }
 
+.slide5 h4 {
+    font-size: 20px;
+    }
+#sparol {
+    font-size: 18px;
+    }
+
+.fy5 {
+    font-size: 15.54px;
+}
+.t05 {
+    bottom: 724.54px;
+}
+.r05 {
+    left: 36.235px;
+}
+.fy6 {
+    font-size: 15.54px;
+}
+.t06 {
+    bottom: 545.54px;
+}
+.r06 {
+    left: 36.235px;
+}
+
+
+.fm8 {
+    font-size: 23px;
+}
+.j08 {
+    bottom: 733.936px;
+}
+.v08 {
+    left: 174.235px;
+}
+.j09 {
+    bottom: 720.936px;
+}
+.v09 {
+    left: 174.235px;
+}
+.j10 {
+   bottom: 593.936px;
+}
+.v10 {
+    left: 237.235px;
+}
+.j11 {
+    bottom: 579.936px;
+}
+.v11 {
+    left: 143.235px;
+}
+.j12 {
+    bottom: 564.936px;
+}
+.v12 {
+    left: 143.235px;
+}
+.j13 {
+    bottom: 549.936px;
+}
+.v13 {
+    left: 143.235px;
+}
+
 }
 
 /* ----------- Samsung galaxy S20 ultra  ----------- */
@@ -5087,7 +5944,7 @@ a .quick{
 }
   .myContainer h2 {
     text-align: center;
-    font-size: 50px;
+    font-size: 28px;
 }
   a {
     font-size: 15px;
@@ -5157,6 +6014,10 @@ a .quick {
     zoom: 0.30;
     -moz-transform: scale(0.30);
     }
+    #repurposing {
+    zoom: 0.17;
+    -moz-transform: scale(0.17);
+}
     .myContainer h3{
     font-size: 15px;
     
@@ -5226,6 +6087,68 @@ a .quick{
     padding-top: 35%;
     text-decoration: underline;
 }
+.fy5 {
+    font-size: 20.54px;
+}
+.t05 {
+   bottom: 712.54px;
+}
+.r05 {
+    left: 36.235px;
+}
+.fy6 {
+    font-size: 20.54px;
+}
+.t06 {
+   bottom: 480.54px;
+}
+.r06 {
+    left: 36.235px;
+}
+
+
+
+.fm8 {
+    font-size: 23px;
+}
+.j08 {
+    bottom: 718.936px;
+}
+.v08 {
+    left: 218.235px;
+}
+.j09 {
+    bottom: 704.936px;
+}
+.v09 {
+    left: 218.235px;
+}
+.j10 {
+   bottom: 552.936px;
+}
+.v10 {
+    left: 292.235px;
+}
+.j11 {
+    bottom: 527.936px;
+}
+.v11 {
+    left: 180.235px;
+}
+.j12 {
+    bottom:513.936px;
+}
+.v12 {
+    left: 180.235px;
+}
+.j13 {
+    bottom: 499.936px;
+}
+.v13 {
+    left: 180.235px;
+}
+
+
 }
 
 /* ----------- Samsung galaxy A51/71 ----------- */
@@ -5245,7 +6168,7 @@ a .quick{
 }
   .myContainer h2 {
     text-align: center;
-    font-size: 50px;
+    font-size: 28px;
 }
   a {
     font-size: 15px;
@@ -5313,6 +6236,10 @@ a .quick {
     zoom: 0.30;
     -moz-transform: scale(0.30);
     }
+    #repurposing {
+    zoom: 0.17;
+    -moz-transform: scale(0.17);
+}
     .myContainer h3{
     font-size: 15px;
     
@@ -5384,6 +6311,66 @@ a .quick{
     padding-top: 35%;
     text-decoration: underline;
 }
+.fy5 {
+    font-size: 20.54px;
+}
+.t05 {
+   bottom: 671.54px;
+}
+.r05 {
+    left: 36.235px;
+}
+.fy6 {
+    font-size: 20.54px;
+}
+.t06 {
+   bottom: 442.54px;
+}
+.r06 {
+    left: 36.235px;
+}
+
+
+.fm8 {
+    font-size: 23px;
+}
+.j08 {
+    bottom: 718.936px;
+}
+.v08 {
+    left: 218.235px;
+}
+.j09 {
+    bottom: 704.936px;
+}
+.v09 {
+    left: 218.235px;
+}
+.j10 {
+   bottom: 552.936px;
+}
+.v10 {
+    left: 292.235px;
+}
+.j11 {
+    bottom: 527.936px;
+}
+.v11 {
+    left: 180.235px;
+}
+.j12 {
+    bottom:513.936px;
+}
+.v12 {
+    left: 180.235px;
+}
+.j13 {
+    bottom: 499.936px;
+}
+.v13 {
+    left: 180.235px;
+}
+
 
 }
 /* ----------- Samsung galaxy fold ----------- */
@@ -5521,13 +6508,21 @@ a .quick{
     padding-top: 37%;
     text-decoration: underline;
 }
+
+.slide5 h4 {
+    font-size: 69px;
+    }
+  .slide5 h3 {
+    font-size: 62px;
+}
+
 }
 
 /* Landscape */
 
 @media only screen and (device-width: 1180px) and (device-height: 820px) and (orientation : landscape) {
       #myContainer {
-    zoom: 0.75;
+    zoom: 0.50;
     -moz-transform: scale(0.28);
     }
     .myContainer h3{
@@ -5601,9 +6596,67 @@ a .quick{
     text-decoration: underline;
 }
 #sparol{
-   font-size: 40px;
+   font-size: 27px;
+}
+
+.fy5 {
+    font-size: 31.54px;
+}
+.t05 {
+    bottom: 668.54px;
+}
+.r05 {
+    left: 39.235px;
+}
+.fy6 {
+    font-size: 31.54px;
+}
+.t06 {
+    bottom:356.54px;
+}
+.r06 {
+    left: 38.235px;
 }
  
+.fm8 {
+    font-size: 37px;
+}
+.j08 {
+    bottom: 675.936px;
+}
+.v08 {
+    left: 297.235px;
+}
+.j09 {
+    bottom: 653.936px;
+}
+.v09 {
+    left: 297.235px;
+} 
+.j10 {
+    bottom: 444.936px;
+}
+.v10 {
+    left: 385.235px;
+}
+.j11 {
+    bottom: 411.936px;
+}
+.v11 {
+    left: 266.235px;
+}
+.j12 {
+    bottom: 388.936px;
+}
+.v12 {
+    left: 266.235px;
+}
+.j13 {
+    bottom: 364.936px;
+}
+.v13 {
+    left: 266.235px;
+}
 
 }
 
@@ -5628,6 +6681,7 @@ a .quick{
 }
   .myContainer h2 {
     text-align: center;
+    font-size: 65px;
 
 }
   a {
@@ -5695,14 +6749,25 @@ a .quick {
    
     font-size: 50px;
 }
+.slide5 h2 {
+    font-size: 3.5rem;
+}
+
+.slide5 h4 {
+    font-size: 69px;
+    }
+
+ .slide5 h3 {
+    font-size: 62px;
+}
 }
 
 /* Landscape */
 @media all and (width: 1024px) and (height: 768px) and (orientation:landscape){
 
     #myContainer {
-    zoom: 0.38;
-    -moz-transform: scale(0.38);
+    zoom: 0.43;
+    -moz-transform: scale(0.43);
     }
       .myContainer h3{
     font-size: 15px;
@@ -5713,6 +6778,7 @@ a .quick {
 }
   .myContainer h2 {
     text-align: center;
+    font-size: 40px;
 
 }
   a {
@@ -5772,7 +6838,66 @@ a .quick{
     text-decoration: underline;
 }
 #sparol{
-   font-size: 40px;
+   font-size: 27px;
+}
+.fy5 {
+    font-size: 27.54px;
+}
+.t05 {
+    bottom: 679.54px;
+}
+.r05 {
+    left: 39.235px;
+}
+.fy6 {
+    font-size: 27.54px;
+}
+.t06 {
+    bottom: 415.54px;
+}
+.r06 {
+    left: 38.235px;
+}
+
+
+.fm8 {
+    font-size: 37px;
+}
+.j08 {
+    bottom: 675.936px;
+}
+.v08 {
+    left: 271.235px;
+}
+.j09 {
+    bottom: 653.936px;
+}
+.v09 {
+   left: 271.235px;
+} 
+.j10 {
+   bottom: 486.936px;
+}
+.v10 {
+    left: 332.235px;
+}
+.j11 {
+   bottom: 461.936px;
+}
+.v11 {
+    left: 219.235px;
+}
+.j12 {
+   bottom: 443.936px;
+}
+.v12 {
+    left: 219.235px;
+}
+.j13 {
+    bottom: 424.936px;
+}
+.v13 {
+     left: 219.235px;
 }
 
 }
@@ -5861,15 +6986,10 @@ a .quick{
     }
 }
 
-
-
-
-
-
-
-
-
 </style>
+<style>.i-amphtml-story-page-open-attachment{-ms-flex-align:center!important;align-items:center!important;-ms-flex-direction:column!important;flex-direction:column!important;position:absolute!important;bottom:0!important;left:0!important;width:100%!important;pointer-events:none!important;z-index:3!important;-webkit-touch-callout:default!important;text-decoration:none!important;--i-amphtml-chip-background-color:hsla(0,0%,100%,0.5)!important;--i-amphtml-img-background-color:#fff!important;--i-amphtml-label-text-color:#fff!important;--i-amphtml-arrow-color:#000!important;--i-amphtml-page-attachment-ui-animation-delay:1s!important;--i-amphtml-page-attachment-ui-animation-duration:.6s!important;display:none!important}[theme=dark].i-amphtml-story-page-open-attachment{--i-amphtml-chip-background-color:rgba(0,0,0,0.5)!important;--i-amphtml-img-background-color:#000!important;--i-amphtml-label-text-color:#000!important;--i-amphtml-arrow-color:#fff!important}.i-amphtml-story-page-open-attachment[active]{display:-ms-flexbox!important;display:flex!important}.i-amphtml-story-page-open-attachment>*{cursor:pointer!important;pointer-events:auto!important}.i-amphtml-story-page-open-attachment-label{position:relative!important;padding:12px 32px 20px!important;height:16px!important;max-width:calc(100% - 64px)!important;color:#fff!important;line-height:16px!important;text-shadow:0px 0px 6px rgba(0,0,0,0.36)!important}.i-amphtml-story-page-attachment-label,.i-amphtml-story-page-open-attachment-label{font-family:Roboto,sans-serif!important;font-size:16px!important;font-weight:700!important;letter-spacing:0.3px;overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important}.i-amphtml-story-page-attachment-label{max-width:210px!important;line-height:18px!important}.i-amphtml-story-page-open-attachment-label{color:var(--i-amphtml-label-text-color)!important}.i-amphtml-story-inline-page-attachment-chip{background-color:var(--i-amphtml-chip-background-color)!important;display:-ms-flexbox!important;display:flex!important;border-radius:24px!important;-ms-flex-align:center!important;align-items:center!important;overflow:hidden!important;margin-bottom:12px!important}.i-amphtml-story-page-open-attachment-inline[active] .i-amphtml-story-inline-page-attachment-chip{animation:i-amphtml-tap-scale var(--i-amphtml-page-attachment-ui-animation-duration) var(--i-amphtml-page-attachment-ui-animation-delay) both!important}.i-amphtml-story-inline-page-attachment-chip:only-child{margin-bottom:20px!important}.i-amphtml-story-inline-page-attachment-img{background-size:contain!important;background-repeat:no-repeat!important;height:48px!important;width:48px!important;background-color:var(--i-amphtml-img-background-color)!important}.i-amphtml-story-inline-page-attachment-img:nth-child(2){margin-inline-start:1px!important}.i-amphtml-story-inline-page-attachment-arrow{position:relative!important;height:32px!important;width:32px!important;border-radius:50%!important;background-color:var(--i-amphtml-img-background-color)!important}.i-amphtml-story-inline-page-attachment-arrow:not(:only-child){margin:8px!important}.i-amphtml-story-inline-page-attachment-arrow:before{content:""!important;position:absolute!important;top:0!important;left:0!important;width:100%!important;height:100%!important;background-image:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="8"><path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"/></svg>')!important;background-position:50%!important;background-size:auto!important;background-repeat:no-repeat!important}.i-amphtml-story-page-open-attachment-inline[active] .i-amphtml-story-inline-page-attachment-arrow:before{animation:i-amphtml-move-up-arrow-in-circle var(--i-amphtml-page-attachment-ui-animation-duration) var(--i-amphtml-page-attachment-ui-animation-delay) both!important}[theme=dark] .i-amphtml-story-inline-page-attachment-arrow:before{background-image:url('data:image/svg+xml;charset=utf-8,<svg fill="%23fff" xmlns="http://www.w3.org/2000/svg" width="20" height="8"><path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"/></svg>')!important}.i-amphtml-story-page-open-attachment-inline .i-amphtml-story-page-attachment-label{margin-bottom:20px!important;color:var(--i-amphtml-label-text-color)!important}.i-amphtml-story-page-open-attachment-inline{background:linear-gradient(0,rgba(0,0,0,0.15),transparent)!important;border:none!important;padding:0!important}[theme=dark].i-amphtml-story-page-open-attachment-inline{background:linear-gradient(0,hsla(0,0%,100%,0.25),hsla(0,0%,100%,0))!important}.i-amphtml-story-page-open-attachment-outlink{--i-amphtml-outlink-cta-background-color:#fff!important;--i-amphtml-outlink-cta-text-color:#000!important}[theme=dark].i-amphtml-story-page-open-attachment-outlink{--i-amphtml-outlink-cta-background-color:#000!important;--i-amphtml-outlink-cta-text-color:#fff!important}.i-amphtml-story-page-open-attachment-outlink[active]:not(.i-amphtml-story-page-open-attachment-outlink-no-animation-exp){animation:i-amphtml-tap-scale var(--i-amphtml-page-attachment-ui-animation-duration) var(--i-amphtml-page-attachment-ui-animation-delay) both!important}.i-amphtml-story-outlink-page-attachment-arrow{display:block!important;cursor:pointer!important;margin-bottom:10px!important;fill:var(--i-amphtml-outlink-cta-background-color)!important;filter:drop-shadow(0px 2px 6px rgba(0,0,0,0.3))!important}.i-amphtml-story-page-open-attachment[active]:not(.i-amphtml-story-page-open-attachment-outlink-no-animation-exp) .i-amphtml-story-outlink-page-attachment-arrow{animation:i-amphtml-move-up-arrow var(--i-amphtml-page-attachment-ui-animation-duration) var(--i-amphtml-page-attachment-ui-animation-delay) both!important}@keyframes i-amphtml-move-up-arrow{0%,to{opacity:1;transform:translateY(0)}45%{opacity:0;transform:translateY(-7px)}45.01%{transform:translateY(5px)}}@keyframes i-amphtml-move-up-arrow-in-circle{0%,to{opacity:1;transform:translateY(0)}45%{opacity:0;transform:translateY(-4px)}45.01%{transform:translateY(3px)}}@keyframes i-amphtml-tap-scale{0%,to{transform:scale(1)}45%{transform:scale(.9)}}.i-amphtml-story-outlink-page-attachment-outlink-chip{display:-ms-flexbox!important;display:flex!important;position:relative!important;padding:10px 6px!important;margin:0 0 20px!important;height:16px!important;max-width:calc(100% - 64px)!important;border-radius:30px!important;background:var(--i-amphtml-outlink-cta-background-color)!important;place-items:center!important;box-shadow:0px 4px 10px rgba(0,0,0,.15)!important}.i-amphtml-story-outlink-page-attachment-img{height:24px!important;width:24px!important;vertical-align:middle!important;background-size:cover!important;background-repeat:no-repeat!important;background-position:50%!important;border-radius:50%!important}.i-amphtml-story-page-open-attachment-outlink .i-amphtml-story-page-attachment-label{padding-inline-start:6px!important;padding-inline-end:8px!important;color:var(--i-amphtml-outlink-cta-text-color)!important}.i-amphtml-story-outlink-page-attachment-label:only-child,.i-amphtml-story-page-open-attachment-outlink .i-amphtml-story-page-attachment-label:only-child{padding-inline-start:8px!important}.i-amphtml-story-page-open-attachment-link-icon{width:24px!important;height:24px!important;fill:var(--i-amphtml-outlink-cta-text-color)!important}
+/*# sourceURL=/extensions/amp-story-page-attachment/0.1/amp-story-open-page-attachment.css*/</style>
+
 </head>
 <body>
 
@@ -6297,160 +7417,328 @@ a .quick{
 </amp-story-grid-layer>
 </amp-story-page>
 
-<amp-story-page id="item-16" data-item-label="einstein-riddle">
-<amp-story-grid-layer template="fill"><amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-130F30-constellation" src="images/strip-light-bright-wallpaper-preview.jpg" width="997" height="997" layout="responsive"></amp-img></amp-story-grid-layer>
+
+
+
+
+<!-- Knowledge Graph-->
+
+
+<amp-story-page 
+     id="item-truett-1" 
+     data-item-label="ontology"
+     role="region"
+     aria-hidden="false">
+
+<amp-story-grid-layer template="fill">
+
+<amp-img id="" 
+         data-item-role="background" 
+         data-item-type="static" 
+         data-item-label="strip-light" 
+         src="images/strip-light-bright-wallpaper-preview.jpg" 
+         width="997" 
+         height="997" 
+         layout="responsive">
+</amp-img>
+</amp-story-grid-layer>
+
 <amp-story-grid-layer template="thirds" aspect-ratio="">
 <div grid-area="upper-third">
-<div class="myContainer" id="title" animate-in="fade-in" animate-in-duration="4s">
+
+<div 
+     class="myContainer" 
+     id="title" 
+     animate-in="fade-in" 
+     animate-in-duration="4s">
+
 <h2>Ontology</h2>
 </div>
-<div class="myContainer" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="1s">
+
+<div 
+     class="myContainer" 
+     animate-in="fade-in" 
+     animate-in-duration="4s" 
+     animate-in-delay="1s">
+
 <h4> •&nbsp; The word comes from philosophy:</h4>
 <h3> •&nbsp; “The branch of metaphysics dealing with the nature of being” </h3>
-
 <h4> •&nbsp;  In practice they are:</h4>
 <h3> •&nbsp;  A set of concepts, definitions and inter-relationships.</h3>
 <h3> •&nbsp;  (The dividing line between “controlled vocabulary”, “thesaurus”, “ontology” is</h3>
 <h3 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hazy and not terribly important for practical purposes.)</h3>
-
 <h4> •&nbsp;  We have hundreds of ontologies in biology, e.g. see:</h4>
 <h3> •&nbsp;<a href =" http://www.obofoundry.org/">http://www.obofoundry.org/</a> (100+)</h3>
 <h3> •&nbsp;<a href=" http://bioportal.bioontology.org/">http://bioportal.bioontology.org/</a> (500+)</h3>
 </div> 
+
 </div>
 </amp-story-grid-layer>
-
 </amp-story-page>
 
-<amp-story-page id="slide_8">
-<amp-story-grid-layer template="fill"><amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-130F30-constellation" src="images/strip-light-bright-wallpaper-preview.jpg" width="997" height="997" layout="responsive"></amp-img></amp-story-grid-layer>
 
-<amp-story-grid-layer
-  template="vertical"
-  class="center"
+
+
+
+
+<amp-story-page
+  id="item-truett-2"
+  data-item-label="gene-ontology"
+  role="region"
+  aria-hidden="false"
 >
-<div id="myContainer">
-<div id="pf7" class="pf w0 h0" data-page-no="7">
-<div class="pc pc7 w0 h0">
+  <amp-story-grid-layer template="fill">
+    <amp-img
+      id=""
+      data-item-role="background"
+      data-item-type="static"
+      data-item-label="istockphoto"
+      src="images/istockphoto-1174989482-170667a.jpg"
+      width="997"
+      height="997"
+      layout="responsive"
+    >
+    </amp-img>
+  </amp-story-grid-layer>
 
-<amp-img class="bi x0 y0 w0 h0"
-       src="images/image3-w1920-h1080.webp"
-    srcset="images/image3-w1920-h1080.webp 1440w,
-            images/image3-w1400-h787.webp 1400w,
-            images/image3-w760-h427.webp 1177w,
-            images/image3-w760-h427.webp 760w,
-            images/image3-w200-h122.webp 200w"
-    width="920"
-    height="880"
+  <amp-story-grid-layer template="vertical" position="landscape-half-left">
+    <div
+      class="darken"
+      animate-in="fade-in"
+      animate-in-duration="4s"
+      animate-in-delay="0.5s"
+      style="opacity: 1;"
+    >
+    <div id="myContainer">
+    <div id="pf7" class="pf w0 h0" data-page-no="7">
+      <amp-img
+        src="images/image3-w1920-h1080.webp"
+        layout="responsive"
+        width="1920"
+        height="1080"
+      ></amp-img>
+    </div>
+    </div>
+    </div>
+  </amp-story-grid-layer>
+
+  <amp-story-grid-layer
+    template="vertical"
+    position="landscape-half-right"
+    class=""
+  >
+    <div
+      class="myContainer"
+      id="title"
+      animate-in="fade-in"
+      animate-in-duration="4s"
+    >
+      <h2 id="start">The Gene Ontology</h2>
+    </div>
+    <div
+      class="slide5"
+      animate-in="fade-in"
+      animate-in-duration="4s"
+      animate-in-delay="1s"
+    >
+      <h4>Started in 1999</h4>
+      <h4>As a collaboration between 3 Model Organism Databases</h4>
+    </div>
+  </amp-story-grid-layer>
+</amp-story-page>
+
+
+
+
+
+
+<amp-story-page 
+      id="item-truett-3" 
+      data-item-label="The Gene Ontology"  
+      role="region"  
+      aria-hidden="false">
+
+<amp-story-grid-layer template="fill">
+<amp-img 
+    id="" 
+    data-item-role="background" 
+    data-item-type="static" 
+    data-item-label="istockphoto" 
+    src="images/istockphoto-1174989482-170667a.jpg" 
+    width="997" 
+    height="997" 
     layout="responsive">
 </amp-img>
-
-<div class="t m0 s01 m1 n01 ff1 fa1 fc2 sc0 ls0 ws0">The Gene Ontology</div>
-<div class="t m0 s02 m1 n02 ff1 fa2 fc2 sc0 ls0 ws0" id="bullet">Started in 1999</div>
-<div class="t m0 s03 m1 n03 ff1 fa3 fc2 sc0 ls0 ws0" id="bullet">As a collaboration between 3 Model Organism Databases</div>
-
-</div>
-</div>
-</div>
 </amp-story-grid-layer>
-</amp-story-page>
 
-<amp-story-page id="slide" class="i-amphtml-element i-amphtml-layout-container i-amphtml-built i-amphtml-layout i-amphtml-story-page-loaded" i-amphtml-layout="container" role="region" distance="0" aria-hidden="false" active="">
-<amp-story-grid-layer template="fill" class="i-amphtml-element i-amphtml-layout-container i-amphtml-story-layer i-amphtml-built i-amphtml-layout" i-amphtml-layout="container"><amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-130F30-constellation" src="images/strip-light-bright-wallpaper-preview.jpg" width="997" height="997" layout="responsive" class="i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="responsive" alt="" style="--loader-delay-offset:13ms !important;"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="images/strip-light-bright-wallpaper-preview.jpg" data-item-role="background" data-item-type="static" data-item-label="background-130F30-constellation" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img></amp-story-grid-layer>
+<amp-story-grid-layer template="vertical" position="landscape-half-left">
 
-<amp-story-grid-layer template="vertical" class="center i-amphtml-element i-amphtml-layout-container i-amphtml-story-layer i-amphtml-built i-amphtml-layout" i-amphtml-layout="container">
+<div class="darken" 
+     animate-in="fade-in" 
+     animate-in-duration="4s" 
+     animate-in-delay="0.5s" 
+     style="opacity: 1;">
+
 <div id="myContainer">
 <div id="pf7" class="pf w0 h0" data-page-no="7">
 <div class="pc pc7 w0 h0">
+<amp-img 
+       src="images/image4-w1920-h1080.png" 
+       layout="responsive" 
+       width="1368" 
+       height="768"ddddd>
+</amp-img>
 
-<amp-img class="bi x0 y0 w0 h0 i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" 
-src="images/image4-w1920-h1080.webp" 
-srcset="images/image4-w1920-h1080.webp 1440w,
-            images/image4-w1400-h787.webp 1400w,
-            images/image4-w760-h427.webp 1177w,
-            images/image4-w760-h427.webp 760w,
-            images/image4-w200-h122.webp 200w" width="920" height="880" layout="responsive" i-amphtml-layout="responsive" alt="" style="--loader-delay-offset:13ms !important;"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 95.6522%;"></i-amphtml-sizer>
-<img decoding="async" sizes="(max-width: 1517px) 1080px, 100vw" alt="" srcset="images/image8-w1920-h1080.webp 1440w,
-            images/image4-w1400-h787.webp 1400w,
-            images/image4-w760-h427.webp 1177w,
-            images/image4-w760-h427.webp 760w,
-            images/image4-w200-h122.webp 200w"
-            src="images/image4-w1920-h1080.webp" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-
-<div class="t m0 r01 n1 t01 ff1 fy1 fc2 sc0 ls0 ws0">The Gene Ontology</div>
-<div class="t m0 r02 n2 t02 ff1 fy2 fc2 sc0 ls0 ws0" id="bullet1">A way to capture biological <br>knowledge for individual gene <br>products in a computable form</div>
-<div class="t m0 r03 n2 t03 ff1 fy3 fc2 sc0 ls0 ws0" id="bullet1">A set of concepts and their<br>relationships to each other<br>arranged as a hierarchy</div>
-<div class="t m0 r04 n6 t04 ff1 fy4 fc2 sc0 ls0 ws0" ><a id="thing" href="http://www.ebi.ac.uk/QuickGO">http://www.ebi.ac.uk/QuickGO</a></div>
 <div class="t m0 r05 n2 t05 ff1 fy5 cl0 sc0 ls0 ws0" >Less specific concepts</div>
 <div class="t m0 r06 n2 t06 ff1 fy6 cl0 sc0 ls0 ws0" >More specific concepts</div>
-
-
+</div>
 </div>
 </div>
 </div>
 </amp-story-grid-layer>
-<div class="i-amphtml-story-spinner" aria-hidden="true" aria-label="Loading video"><div class="i-amphtml-story-spinner-container"><div class="i-amphtml-story-spinner-layer"><div class="i-amphtml-story-spinner-circle-clipper left"></div><div class="i-amphtml-story-spinner-circle-clipper right"></div></div></div></div>
+
+<amp-story-grid-layer template="vertical" position="landscape-half-right">
+
+<div class="myContainer" 
+     id="title" 
+     animate-in="fade-in" 
+     animate-in-duration="4s">
+<h2 id="start">The Gene Ontology</h2>
+</div>
+
+<div class="slide5" 
+     animate-in="fade-in"
+    animate-in-duration="4s" 
+    animate-in-delay="1s">
+<h4 > A way to capture biological knowledge for individual gene products in a computable form</h4>
+<h4 > A set of concepts and their relationships to each other arranged as a hierarchy</h4>
+</div> 
+</amp-story-grid-layer>
+
+<a class="i-amphtml-story-page-open-attachment i-amphtml-story-page-open-attachment-outlink" 
+   role="button" 
+   target="_top" 
+   theme="custom" 
+   aria-label="More about query" 
+   href="http://www.ebi.ac.uk/QuickGO" 
+   style="--i-amphtml-outlink-cta-background-color:#FFF !important; --i-amphtml-outlink-cta-text-color:#1F64FF !important;" active="">
+   
+   <svg class="i-amphtml-story-outlink-page-attachment-arrow"  
+   id="attach" 
+   viewBox="0 0 20 8" 
+   width="20px" 
+   height="8px">
+   <path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z">
+   </path>
+   </svg>
+   <div class="i-amphtml-story-outlink-page-attachment-outlink-chip">
+   <div class="i-amphtml-story-outlink-page-attachment-img">
+   </div>
+   <span class="i-amphtml-story-page-attachment-label">More about QuickGO</span>
+   </div>
+</a>
 </amp-story-page>
 
 
 
 
 
-<amp-story-page id="slide" class="i-amphtml-element i-amphtml-layout-container i-amphtml-built i-amphtml-layout i-amphtml-story-page-loaded" i-amphtml-layout="container" role="region" distance="0" aria-hidden="false" active="">
-<amp-story-grid-layer template="fill" class="i-amphtml-element i-amphtml-layout-container i-amphtml-story-layer i-amphtml-built i-amphtml-layout" i-amphtml-layout="container"><amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-130F30-constellation" src="images/strip-light-bright-wallpaper-preview.jpg" width="997" height="997" layout="responsive" class="i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="responsive" alt="" style="--loader-delay-offset:13ms !important;"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="images/strip-light-bright-wallpaper-preview.jpg" data-item-role="background" data-item-type="static" data-item-label="background-130F30-constellation" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img></amp-story-grid-layer>
 
-<amp-story-grid-layer template="vertical" class="center i-amphtml-element i-amphtml-layout-container i-amphtml-story-layer i-amphtml-built i-amphtml-layout" i-amphtml-layout="container">
+
+<amp-story-page 
+     id="item-truett-4" 
+     data-item-label="GO branches" 
+     role="region" 
+     aria-hidden="false">
+
+<amp-story-grid-layer template="fill">
+
+<amp-img 
+     id="" 
+     data-item-role="background" 
+     data-item-type="static" 
+     data-item-label="istockphoto" 
+     src="images/istockphoto-1174989482-170667a.jpg" 
+     width="997" 
+     height="997" 
+     layout="responsive">
+</amp-img>
+</amp-story-grid-layer>
+
+<amp-story-grid-layer template="vertical" position="landscape-half-left">
+
+<div class="darken" 
+     animate-in="fade-in" 
+     animate-in-duration="4s" 
+     animate-in-delay="0.5s" 
+     style="opacity: 1;">
+
 <div id="myContainer">
 <div id="pf7" class="pf w0 h0" data-page-no="7">
-<div class="pc pc7 w0 h0">
 
-<amp-img class="bi x0 y0 w0 h0 i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" 
-src="image5-w1920-h1080.webp" 
-srcset="image5-w1920-h1080.webp 1440w,
-            image5-w1400-h787.webp 1400w,
-            image5-w760-h427.webp 1177w,
-            image5-w760-h427.webp 760w,
-            image5-w200-h122.webp 200w" width="920" height="880" layout="responsive" i-amphtml-layout="responsive" alt="" style="--loader-delay-offset:13ms !important;"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 95.6522%;"></i-amphtml-sizer>
-<img decoding="async" sizes="(max-width: 1517px) 1080px, 100vw" alt="" srcset="images/image5-w1920-h1080.webp 1440w,
-            image5-w1400-h787.webp 1400w,
-            image5-w760-h427.webp 1177w,
-            image5-w760-h427.webp 760w,
-            image5-w200-h122.webp 200w"
-            src="image5-w1920-h1080.webp" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-
-<div class="t m0 v01 n1 j01 ff1 fm1 fc2 sc0 ls0 ws0">The GO branches</div>
-<div class="t m0 v02 n2 j02 ff1 fm2 fc2 sc0 ls0 ws0" id="number">Molecular Function</div>
-<div class="t m0 v03 n3 j03 ff1 fm3 fc3 sc0 ls0 ws0" >An elemental activity or task or job</div>
-<div class="t m0 v04 n4 j04 ff1 fm4 fc2 sc0 ls0 ws0" id="number">Biological Process</div>
-<div class="t m0 v05 n5 j05 ff1 fm5 fc3 sc0 ls0 ws0" >A commonly recognized series of events</div>
-<div class="t m0 v06 n6 j06 ff1 fm6 fc2 sc0 ls0 ws0" id="number">Cellular Component</div>
-<div class="t m0 v07 n7 j07 ff1 fm7 fc3 sc0 ls0 ws0" >Where a gene product is located</div>
-<div class="t m0 v08 n8 j08 ff1 fm8 fc2 sc0 ls0 ws0" id="bullet1">protein kinase activity</div>
-<div class="t m0 v09 n9 j09 ff1 fm9 fc2 sc0 ls0 ws0" id="bullet1">insulin receptor activity</div>
-<div class="t m0 v10 na j10 ff1 fm0 fc2 sc0 ls0 ws0" id="bullet1">cell division</div>
-<div class="t m0 v11 nb j11 ff1 fmx fc2 sc0 ls0 ws0" id="bullet1">mitochondrion</div>
-<div class="t m0 v12 nc j12 ff1 fmy fc2 sc0 ls0 ws0" id="bullet1">mitochondrial matrix</div>
-<div class="t m0 v13 nd j13 ff1 fmz fc2 sc0 ls0 ws0" id="bullet1">mitochondrial inner membrane</div>
-
-
+<amp-img 
+    src="images/gene-ontology-avec-text-w902-h1097.png" 
+    layout="responsive" 
+    width="1368" 
+    height="768">
+</amp-img>
+</div>
 </div>
 </div>
 </div>
 </amp-story-grid-layer>
-<div class="i-amphtml-story-spinner" aria-hidden="true" aria-label="Loading video"><div class="i-amphtml-story-spinner-container"><div class="i-amphtml-story-spinner-layer"><div class="i-amphtml-story-spinner-circle-clipper left"></div><div class="i-amphtml-story-spinner-circle-clipper right"></div></div></div></div></amp-story-page>
+
+<amp-story-grid-layer template="vertical" position="landscape-half-right">
+<div class="myContainer" 
+     id="title" 
+     animate-in="fade-in" 
+     animate-in-duration="4s">
+<h2 id="start">The GO branches</h2>
+</div>
+
+<div class="slide5" 
+     animate-in="fade-in" 
+     animate-in-duration="4s" 
+     animate-in-delay="1s">
+<h4 >Molecular Function</h4>
+<h3 >An elemental activity or task or job</h3>
+
+<h4> Biological Process</h4>
+<h3>A commonly recognized series of events</h3>
+
+<h4>Cellular Component</h4>
+<h3>Where a gene product is located</h3>
+</div> 
+</amp-story-grid-layer>
+</amp-story-page>
 
 
-<amp-story-page id="item-13" data-item-label="how-to-know" class="i-amphtml-element i-amphtml-layout-container i-amphtml-built i-amphtml-layout i-amphtml-story-page-loaded" i-amphtml-layout="container" role="region" active="" distance="0" aria-hidden="false">
-<amp-story-grid-layer template="fill" class="i-amphtml-element i-amphtml-layout-container i-amphtml-story-layer i-amphtml-built i-amphtml-layout" i-amphtml-layout="container"><amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-440044-constellation" 
-    src="images/istockphoto-1174989482-170667a.jpg" width="997" height="997" layout="responsive" class="i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="responsive" alt="" style="--loader-delay-offset:361ms !important;"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt=""
-     src="images/istockphoto-1174989482-170667a.jpg" data-item-role="background" data-item-type="static" data-item-label="background-440044-constellation" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img></amp-story-grid-layer>
-<amp-story-grid-layer template="vertical" position="landscape-half-left" class="i-amphtml-element i-amphtml-layout-container i-amphtml-story-layer i-amphtml-built i-amphtml-layout" i-amphtml-layout="container">
 
+<amp-story-page id="item-truett-5" 
+                data-item-label="knowledge graph" 
+                role="region" 
+                aria-hidden="false">
 
+<amp-story-grid-layer template="fill">
+<amp-img 
+        id="" 
+        data-item-role="background" 
+        data-item-type="static" 
+        data-item-label="istockphoto" 
+        src="images/istockphoto-1174989482-170667a.jpg" 
+        width="997" 
+        height="997" 
+        layout="responsive">
+</amp-img>
+</amp-story-grid-layer>
 
+<amp-story-grid-layer template="vertical" position="landscape-half-left">
 
-
-<div class="darken" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="0.5s" style="opacity: 1;">
+<div class="darken" 
+     animate-in="fade-in" 
+     animate-in-duration="4s" 
+     animate-in-delay="0.5s" 
+     style="opacity: 1;">
 
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="-50 0 982.5 515.77">
 <defs>
@@ -6489,32 +7777,62 @@ srcset="image5-w1920-h1080.webp 1440w,
 <path d="M819.07,244.45l5.37,11.79c.8,1.75,3.39.23,2.59-1.51l-5.37-11.8c-.8-1.75-3.39-.23-2.59,1.52Z" transform="translate(-160 -84.11)"/>
 </svg>
 </div>
-
-
-
-
 </amp-story-grid-layer>
-<amp-story-grid-layer template="vertical" position="landscape-half-right" class="i-amphtml-element i-amphtml-layout-container i-amphtml-story-layer i-amphtml-built i-amphtml-layout" i-amphtml-layout="container">
-<div class="slide5" id="header" animate-in="fade-in" animate-in-duration="4s">
+
+<amp-story-grid-layer template="vertical" position="landscape-half-right">
+
+<div class="slide5" 
+     id="header" 
+     animate-in="fade-in" 
+     animate-in-duration="4s">
 <h2 id="graph">Knowledge Graphs</h2>
 </div>
-<div class="slide5" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="1s">
-<p>  Also called “knowledge bases” to distinguish them from databases.</p>
-<p>  An integrated collection of assertions or claims represented in something that can be visualized as a graph and is technically very much like a database.</p>
 
+<div class="slide5" 
+     animate-in="fade-in" 
+     animate-in-duration="4s" 
+     animate-in-delay="1s">
+<h4>  Also called “knowledge bases” to distinguish them from databases.</h4>
+<h4>  An integrated collection of assertions or claims represented in something that can be visualized as a graph and is technically very much like a database.</h4>
 </div>
 </amp-story-grid-layer>
 </amp-story-page>
 
 
-<amp-story-page id="item-16" data-item-label="einstein-riddle">
-<amp-story-grid-layer template="fill"><amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-130F30-constellation" src="images/strip-light-bright-wallpaper-preview.jpg" width="997" height="997" layout="responsive"></amp-img></amp-story-grid-layer>
+
+
+
+
+<amp-story-page 
+     id="item-truett-6" 
+     data-item-label="Example knowledge graphs">
+
+<amp-story-grid-layer template="fill">
+    <amp-img 
+         id="" 
+         data-item-role="background" 
+         data-item-type="static" 
+         data-item-label="background-130F30-constellation" 
+         src="images/strip-light-bright-wallpaper-preview.jpg" 
+         width="997" 
+         height="997" 
+         layout="responsive">
+    </amp-img>
+</amp-story-grid-layer>
 <amp-story-grid-layer template="thirds" aspect-ratio="">
 <div grid-area="upper-third">
-<div class="myContainer" id="title" animate-in="fade-in" animate-in-duration="4s">
+
+<div class="myContainer" 
+     id="title" 
+     animate-in="fade-in" 
+     animate-in-duration="4s">
 <h2 id="exam">Example knowledge graphs</h2>
 </div>
-<div class="myContainer" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="1s">
+
+<div class="myContainer" 
+     animate-in="fade-in" 
+     animate-in-duration="4s" 
+     animate-in-delay="1s">
 <h4 id="bullet1"> Wikidata:  The structured equivalent of Wikipedia</h4>
 <h3 id="bullet1"><a href ="http://wikidata.org/">http://wikidata.org/</a> </h3>
 
@@ -6523,271 +7841,462 @@ srcset="image5-w1920-h1080.webp 1440w,
 
 <h4 id="bullet1"> Microsoft Knowledge Graph (“Satori”)</h4>
 <h4 id="bullet1"> Google Knowledge Graph</h4>
-
-
 </div> 
 </div>
 </amp-story-grid-layer>
-
 </amp-story-page>
 
 
 
-<amp-story-page id="slide" class="i-amphtml-element i-amphtml-layout-container i-amphtml-built i-amphtml-layout i-amphtml-story-page-loaded" i-amphtml-layout="container" role="region" distance="0" aria-hidden="false" active="">
-<amp-story-grid-layer template="fill" class="i-amphtml-element i-amphtml-layout-container i-amphtml-story-layer i-amphtml-built i-amphtml-layout" i-amphtml-layout="container"><amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-130F30-constellation" src="images/strip-light-bright-wallpaper-preview.jpg" width="997" height="997" layout="responsive" class="i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="responsive" alt="" style="--loader-delay-offset:13ms !important;"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="images/strip-light-bright-wallpaper-preview.jpg" data-item-role="background" data-item-type="static" data-item-label="background-130F30-constellation" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img></amp-story-grid-layer>
 
-<amp-story-grid-layer template="vertical" class="center i-amphtml-element i-amphtml-layout-container i-amphtml-story-layer i-amphtml-built i-amphtml-layout" i-amphtml-layout="container">
+
+<amp-story-page id="item-truett-7" 
+                data-item-label="Google Knowledge Graph" 
+                role="region" 
+                aria-hidden="false">
+
+<amp-story-grid-layer template="fill">
+
+	<amp-img 
+           id="" 
+           data-item-role="background" 
+           data-item-type="static" 
+           data-item-label="istockphoto" 
+           src="images/istockphoto-1174989482-170667a.jpg" 
+           width="997" 
+           height="997" 
+           layout="responsive">
+    </amp-img>
+</amp-story-grid-layer>
+
+<amp-story-grid-layer template="vertical" position="landscape-half-left">
+<div class="darken" 
+     animate-in="fade-in" 
+     animate-in-duration="4s" 
+     animate-in-delay="0.5s" 
+     style="opacity: 1;">
+
 <div id="myContainer">
 <div id="pf7" class="pf w0 h0" data-page-no="7">
 <div class="pc pc7 w0 h0">
 
-<amp-img class="bi x0 y0 w0 h0 i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" 
-src="images/image8-w1920-h1080.webp" 
-srcset="images/image8-w1920-h1080.webp 1440w,
-            images/image8-w1400-h787.webp 1400w,
-            images/image8-w760-h427.webp 1177w,
-            images/image8-w760-h427.webp 760w,
-            images/image8-w200-h122.webp 200w" width="920" height="880" layout="responsive" i-amphtml-layout="responsive" alt="" style="--loader-delay-offset:13ms !important;"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 95.6522%;"></i-amphtml-sizer>
-<img decoding="async" sizes="(max-width: 1517px) 1080px, 100vw" alt="" srcset="images/image8-w1920-h1080.webp 1440w,
-            images/image8-w1400-h787.webp 1400w,
-            images/image8-w760-h427.webp 1177w,
-            images/image8-w760-h427.webp 760w,
-            images/image8-w200-h122.webp 200w"
-            src="images/image8-w1920-h1080.webp" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-
-<div class="t m0 zj1 n1 bv1 ff1 fml fc2 sc0 ls0 ws0">Example: “Google Knowledge Graph” (GKG)</div>
-<div class="t m0 zj2 n2 bv2 ff1 fmm fc2 sc0 ls0 ws0" >Vemurafenib</div>
-<div class="t m0 zj3 n3 bv3 ff1 fmn fc2 sc0 ls0 ws0" >405,000 results</div>
-<div class="t m0 zj4 n4 bv4 ff1 fmo fc2 sc0 ls0 ws0" >1 infobox</div>
-<div class="t m0 zj5 n5 bv5 ff1 fmp fc2 sc0 ls0 ws0" >1 node in GKG</div>
-<div class="t m0 zj6 n6 bv6 ff1 fmj fc2 sc0 ls0 ws0" ><a id="thing" href="https://googleblog.blogspot.com/2012/05/introducing-knowledge-graph-things-not.html">https://googleblog.blogspot.com/2012/05/introducing-knowledge-graph-things-not.html</a></div>
-
-
+<amp-img 
+     src="images/image8-w1134-h826.png" 
+     layout="responsive" 
+     width="1368" 
+     height="768">
+</amp-img>
+</div>
 </div>
 </div>
 </div>
 </amp-story-grid-layer>
-<div class="i-amphtml-story-spinner" aria-hidden="true" aria-label="Loading video"><div class="i-amphtml-story-spinner-container"><div class="i-amphtml-story-spinner-layer"><div class="i-amphtml-story-spinner-circle-clipper left"></div><div class="i-amphtml-story-spinner-circle-clipper right"></div></div></div></div></amp-story-page>
 
 
-<amp-story-page id="slide" class="i-amphtml-element i-amphtml-layout-container i-amphtml-built i-amphtml-layout i-amphtml-story-page-loaded" i-amphtml-layout="container" role="region" distance="0" aria-hidden="false" active="">
-<amp-story-grid-layer template="fill" class="i-amphtml-element i-amphtml-layout-container i-amphtml-story-layer i-amphtml-built i-amphtml-layout" i-amphtml-layout="container"><amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-130F30-constellation" src="images/strip-light-bright-wallpaper-preview.jpg" width="997" height="997" layout="responsive" class="i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="responsive" alt="" style="--loader-delay-offset:13ms !important;"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="images/strip-light-bright-wallpaper-preview.jpg" data-item-role="background" data-item-type="static" data-item-label="background-130F30-constellation" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img></amp-story-grid-layer>
+<amp-story-grid-layer template="vertical" position="landscape-half-right">
 
-<amp-story-grid-layer template="vertical" class="center i-amphtml-element i-amphtml-layout-container i-amphtml-story-layer i-amphtml-built i-amphtml-layout" i-amphtml-layout="container">
-<div id="myContainer">
-<div id="pf7" class="pf w0 h0" data-page-no="7">
-<div class="pc pc7 w0 h0">
-
-<amp-img class="bi x0 y0 w0 h0 i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" 
-       src="images/image9-w1920-h1080.webp" 
-    srcset="images/image9-w1920-h1080.webp 1440w,
-            images/image9-w1400-h787.webp 1400w,
-            images/image9-w760-h427.webp 1177w,
-            images/image9-w760-h427.webp 760w,
-            images/image9-w200-h122.webp 200w" width="920" height="880" layout="responsive" i-amphtml-layout="responsive" alt="" style="--loader-delay-offset:13ms !important;"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 95.6522%;"></i-amphtml-sizer>
-<img decoding="async" sizes="(max-width: 1517px) 1080px, 100vw" alt="" 
-    srcset="images/image9-w1920-h1080.webp 1440w,
-            images/image9-w1400-h787.webp 1400w,
-            images/image9-w760-h427.webp 1177w,
-            images/image9-w760-h427.webp 760w,
-            images/image9-w200-h122.webp 200w"
-       src="images/image9-w1920-h1080.webp" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-
-<div class="t m0 zj1 n1 bv1 ff1 fml fc2 sc0 ls0 ws0">Why Knowledge Graphs?</div>
-<div class="t m0 zj2 n2 bva ff1 fmm fc2 sc0 ls0 ws0" id="bullet1">Answer explicit questions</div>
-<div class="t m0 zj3 n3 bvb ff1 fmn fc2 sc0 ls0 ws0" id="bullet1">Uncover implicit relations</div>
-
-
-
+<div class="myContainer" 
+     id="title" 
+     animate-in="fade-in" 
+     animate-in-duration="4s">
+<h2 id="start">Example: “Google Knowledge Graph” (GKG)</h2>
 </div>
-</div>
-</div>
+<div class="slide5" 
+     animate-in="fade-in" 
+     animate-in-duration="4s" 
+     animate-in-delay="1s">
+<h4> Vemurafenib</h4>
+<h4> 405,000 results</h4>
+<h4> 1 infobox</h4>
+<h4> 1 node in GKG</h4>
+
+</div> 
 </amp-story-grid-layer>
-<div class="i-amphtml-story-spinner" aria-hidden="true" aria-label="Loading video"><div class="i-amphtml-story-spinner-container"><div class="i-amphtml-story-spinner-layer"><div class="i-amphtml-story-spinner-circle-clipper left"></div><div class="i-amphtml-story-spinner-circle-clipper right"></div></div></div></div></amp-story-page>
 
 
-
-<amp-story-page id="slide" class="i-amphtml-element i-amphtml-layout-container i-amphtml-built i-amphtml-layout i-amphtml-story-page-loaded" i-amphtml-layout="container" role="region" distance="0" aria-hidden="false" active="">
-<amp-story-grid-layer template="fill" class="i-amphtml-element i-amphtml-layout-container i-amphtml-story-layer i-amphtml-built i-amphtml-layout" i-amphtml-layout="container"><amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-130F30-constellation" src="images/strip-light-bright-wallpaper-preview.jpg" width="997" height="997" layout="responsive" class="i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="responsive" alt="" style="--loader-delay-offset:13ms !important;"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="images/strip-light-bright-wallpaper-preview.jpg" data-item-role="background" data-item-type="static" data-item-label="background-130F30-constellation" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img></amp-story-grid-layer>
-
-<amp-story-grid-layer template="vertical" class="center i-amphtml-element i-amphtml-layout-container i-amphtml-story-layer i-amphtml-built i-amphtml-layout" i-amphtml-layout="container">
-<div id="myContainer">
-<div id="pf7" class="pf w0 h0" data-page-no="7">
-<div class="pc pc7 w0 h0">
-
-<amp-img class="bi x0 y0 w0 h0 i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built 
-i-amphtml-layout" 
-src="images/image10-w1920-h1080.webp" 
-srcset="images/image10-w1920-h1080.webp 1440w,
-            images/image10-w1400-h787.webp 1400w,
-            images/image10-w1177-h662.webp 1177w,
-            images/image10-w760-h427.webp 760w,
-            images/image10-w200-h112.webp 200w" width="920" height="880" layout="responsive" i-amphtml-layout="responsive" alt="" style="--loader-delay-offset:13ms !important;"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 95.6522%;"></i-amphtml-sizer>
-<img decoding="async" sizes="(max-width: 1517px) 1080px, 100vw" alt="" 
-            srcset="images/image10-w1920-h1080.webp 1440w,
-            images/image10-w1400-h787.webp 1400w,
-            images/image10-w1177-h662.webp 1177w,
-            images/image10-w760-h427.webp 760w,
-            images/image10-w200-h112.webp 200w"
-            src="images/image10-w1920-h1080.webp" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-
-<div class="t m0 lmn n1 bcd ff1 fjk fc2 sc0 ls0 ws0">Implicit relations for hypothesis generation</div>
-<div class="t m0 lmm n2 bce ff1 fjl fc2 sc0 ls0 ws0" >ABC model</div>
-
-<div class="t m0 lma n2 bch ff1 fjm fvj sc0 ls0 ws0" >Raynaud’s<br>Syndrome</div>
-<div class="t m0 lmb n2 bci ff1 fjn fvj sc0 ls0 ws0" > Dietary fish oil</div>
-<div class="t m0 lmc n2 bcj ff1 fjo fc2 sc0 ls0 ws0" >A</div>
-<div class="t m0 lmd n2 bck ff1 fjp fc2 sc0 ls0 ws0" >B</div>
-<div class="t m0 lme n2 bcl ff1 fjq fc2 sc0 ls0 ws0" >C</div>
-<div class="t m0 lmf n2 bcm ff1 fjr fc2 sc0 ls0 ws0" >Co-occurs in an<br>article with</div>
-<div class="t m0 lmg n2 bcn ff1 fjs fc2 sc0 ls0 ws0" >Co-occurs in an<br>article with</div>
-<div class="t m0 lmh n2 bco ff1 fjt fc2 sc0 ls0 ws0" id="bulletin">Platelet inhibition</div>
-<div class="t m0 lmi n2 bcp ff1 fju fc2 sc0 ls0 ws0" id="bulletin">Vasodilation </div>
-<div class="t m0 lmj n2 bcq ff1 fjv fc2 sc0 ls0 ws0" id="bulletin">Lower blood viscosity</div>
-<div class="t m0 lmk n2 bcr ff1 fjw fj1 sc0 ls0 ws0" >?</div>
-
-
-
-<div class="t m0 lmq n3 bcf ff1 fjx fc2 sc0 ls0 ws0" >Swanson (1986) Fish oil, Raynaud’s syndrome and undiscovered public knowledge</div>
-
-
-
-</div>
-</div>
-</div>
-</amp-story-grid-layer>
-<div class="i-amphtml-story-spinner" aria-hidden="true" aria-label="Loading video"><div class="i-amphtml-story-spinner-container"><div class="i-amphtml-story-spinner-layer"><div class="i-amphtml-story-spinner-circle-clipper left"></div><div class="i-amphtml-story-spinner-circle-clipper right"></div></div></div></div>
-
-
-
-<div class="i-amphtml-story-page-open-attachment-host" role="button"></div>
-<style>.i-amphtml-story-page-open-attachment{-ms-flex-align:center!important;align-items:center!important;-ms-flex-direction:column!important;flex-direction:column!important;position:absolute!important;bottom:0!important;left:0!important;width:100%!important;pointer-events:none!important;z-index:3!important;-webkit-touch-callout:default!important;text-decoration:none!important;--i-amphtml-chip-background-color:hsla(0,0%,100%,0.5)!important;--i-amphtml-img-background-color:#fff!important;--i-amphtml-label-text-color:#fff!important;--i-amphtml-arrow-color:#000!important;--i-amphtml-page-attachment-ui-animation-delay:1s!important;--i-amphtml-page-attachment-ui-animation-duration:.6s!important;display:none!important}[theme=dark].i-amphtml-story-page-open-attachment{--i-amphtml-chip-background-color:rgba(0,0,0,0.5)!important;--i-amphtml-img-background-color:#000!important;--i-amphtml-label-text-color:#000!important;--i-amphtml-arrow-color:#fff!important}.i-amphtml-story-page-open-attachment[active]{display:-ms-flexbox!important;display:flex!important}.i-amphtml-story-page-open-attachment>*{cursor:pointer!important;pointer-events:auto!important}.i-amphtml-story-page-open-attachment-label{position:relative!important;padding:12px 32px 20px!important;height:16px!important;max-width:calc(100% - 64px)!important;color:#fff!important;line-height:16px!important;text-shadow:0px 0px 6px rgba(0,0,0,0.36)!important}.i-amphtml-story-page-attachment-label,.i-amphtml-story-page-open-attachment-label{font-family:Roboto,sans-serif!important;font-size:16px!important;font-weight:700!important;letter-spacing:0.3px;overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important}.i-amphtml-story-page-attachment-label{max-width:210px!important;line-height:18px!important}.i-amphtml-story-page-open-attachment-label{color:var(--i-amphtml-label-text-color)!important}.i-amphtml-story-inline-page-attachment-chip{background-color:var(--i-amphtml-chip-background-color)!important;display:-ms-flexbox!important;display:flex!important;border-radius:24px!important;-ms-flex-align:center!important;align-items:center!important;overflow:hidden!important;margin-bottom:12px!important}.i-amphtml-story-page-open-attachment-inline[active] .i-amphtml-story-inline-page-attachment-chip{animation:i-amphtml-tap-scale var(--i-amphtml-page-attachment-ui-animation-duration) var(--i-amphtml-page-attachment-ui-animation-delay) both!important}.i-amphtml-story-inline-page-attachment-chip:only-child{margin-bottom:20px!important}.i-amphtml-story-inline-page-attachment-img{background-size:contain!important;background-repeat:no-repeat!important;height:48px!important;width:48px!important;background-color:var(--i-amphtml-img-background-color)!important}.i-amphtml-story-inline-page-attachment-img:nth-child(2){margin-inline-start:1px!important}.i-amphtml-story-inline-page-attachment-arrow{position:relative!important;height:32px!important;width:32px!important;border-radius:50%!important;background-color:var(--i-amphtml-img-background-color)!important}.i-amphtml-story-inline-page-attachment-arrow:not(:only-child){margin:8px!important}.i-amphtml-story-inline-page-attachment-arrow:before{content:""!important;position:absolute!important;top:0!important;left:0!important;width:100%!important;height:100%!important;background-image:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="8"><path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"/></svg>')!important;background-position:50%!important;background-size:auto!important;background-repeat:no-repeat!important}.i-amphtml-story-page-open-attachment-inline[active] .i-amphtml-story-inline-page-attachment-arrow:before{animation:i-amphtml-move-up-arrow-in-circle var(--i-amphtml-page-attachment-ui-animation-duration) var(--i-amphtml-page-attachment-ui-animation-delay) both!important}[theme=dark] .i-amphtml-story-inline-page-attachment-arrow:before{background-image:url('data:image/svg+xml;charset=utf-8,<svg fill="%23fff" xmlns="http://www.w3.org/2000/svg" width="20" height="8"><path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"/></svg>')!important}.i-amphtml-story-page-open-attachment-inline .i-amphtml-story-page-attachment-label{margin-bottom:20px!important;color:var(--i-amphtml-label-text-color)!important}.i-amphtml-story-page-open-attachment-inline{background:linear-gradient(0,rgba(0,0,0,0.15),transparent)!important;border:none!important;padding:0!important}[theme=dark].i-amphtml-story-page-open-attachment-inline{background:linear-gradient(0,hsla(0,0%,100%,0.25),hsla(0,0%,100%,0))!important}.i-amphtml-story-page-open-attachment-outlink{--i-amphtml-outlink-cta-background-color:#fff!important;--i-amphtml-outlink-cta-text-color:#000!important}[theme=dark].i-amphtml-story-page-open-attachment-outlink{--i-amphtml-outlink-cta-background-color:#000!important;--i-amphtml-outlink-cta-text-color:#fff!important}.i-amphtml-story-page-open-attachment-outlink[active]:not(.i-amphtml-story-page-open-attachment-outlink-no-animation-exp){animation:i-amphtml-tap-scale var(--i-amphtml-page-attachment-ui-animation-duration) var(--i-amphtml-page-attachment-ui-animation-delay) both!important}.i-amphtml-story-outlink-page-attachment-arrow{display:block!important;cursor:pointer!important;margin-bottom:10px!important;fill:var(--i-amphtml-outlink-cta-background-color)!important;filter:drop-shadow(0px 2px 6px rgba(0,0,0,0.3))!important}.i-amphtml-story-page-open-attachment[active]:not(.i-amphtml-story-page-open-attachment-outlink-no-animation-exp) .i-amphtml-story-outlink-page-attachment-arrow{animation:i-amphtml-move-up-arrow var(--i-amphtml-page-attachment-ui-animation-duration) var(--i-amphtml-page-attachment-ui-animation-delay) both!important}@keyframes i-amphtml-move-up-arrow{0%,to{opacity:1;transform:translateY(0)}45%{opacity:0;transform:translateY(-7px)}45.01%{transform:translateY(5px)}}@keyframes i-amphtml-move-up-arrow-in-circle{0%,to{opacity:1;transform:translateY(0)}45%{opacity:0;transform:translateY(-4px)}45.01%{transform:translateY(3px)}}@keyframes i-amphtml-tap-scale{0%,to{transform:scale(1)}45%{transform:scale(.9)}}.i-amphtml-story-outlink-page-attachment-outlink-chip{display:-ms-flexbox!important;display:flex!important;position:relative!important;padding:10px 6px!important;margin:0 0 20px!important;height:16px!important;max-width:calc(100% - 64px)!important;border-radius:30px!important;background:var(--i-amphtml-outlink-cta-background-color)!important;place-items:center!important;box-shadow:0px 4px 10px rgba(0,0,0,.15)!important}.i-amphtml-story-outlink-page-attachment-img{height:24px!important;width:24px!important;vertical-align:middle!important;background-size:cover!important;background-repeat:no-repeat!important;background-position:50%!important;border-radius:50%!important}.i-amphtml-story-page-open-attachment-outlink .i-amphtml-story-page-attachment-label{padding-inline-start:6px!important;padding-inline-end:8px!important;color:var(--i-amphtml-outlink-cta-text-color)!important}.i-amphtml-story-outlink-page-attachment-label:only-child,.i-amphtml-story-page-open-attachment-outlink .i-amphtml-story-page-attachment-label:only-child{padding-inline-start:8px!important}.i-amphtml-story-page-open-attachment-link-icon{width:24px!important;height:24px!important;fill:var(--i-amphtml-outlink-cta-text-color)!important}
-/*# sourceURL=/extensions/amp-story-page-attachment/0.1/amp-story-open-page-attachment.css*/</style>
-<a class="i-amphtml-story-page-open-attachment i-amphtml-story-page-open-attachment-outlink" role="button" target="_top" theme="custom" aria-label="More about Netflix" href="http://muse.jhu.edu/article/403510/pdf system-architectures-for-personalization-and-recommendation-e081aa94b5d8#25fd" style="--i-amphtml-outlink-cta-background-color:#FFF !important; --i-amphtml-outlink-cta-text-color:#1F64FF !important;" active="">
-
-	<svg class="i-amphtml-story-outlink-page-attachment-arrow"  id="attach" viewBox="0 0 20 8" width="20px" height="8px"><path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"></path></svg><div class="i-amphtml-story-outlink-page-attachment-outlink-chip"><div class="i-amphtml-story-outlink-page-attachment-img" ></div><span class="i-amphtml-story-page-attachment-label">More about Swanson</span></div></a>
-<svg class="i-amphtml-story-outlink-page-attachment-arrow" viewBox="0 0 20 8" width="20px" height="8px"><path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"></path></svg>
-<div class="i-amphtml-story-outlink-page-attachment-outlink-chip"><div class="i-amphtml-story-outlink-page-attachment-img"></div><span class="i-amphtml-story-page-attachment-label">More about Swanson</span></div>
+<a class="i-amphtml-story-page-open-attachment i-amphtml-story-page-open-attachment-outlink" 
+   role="button" 
+   target="_top" 
+   theme="custom" 
+   aria-label="More about google" 
+   href="https://googleblog.blogspot.com/2012/05/introducing-knowledge-graph-things-not.html" 
+   style="--i-amphtml-outlink-cta-background-color:#FFF !important; --i-amphtml-outlink-cta-text-color:#1F64FF !important;" active="">
+   
+   <svg class="i-amphtml-story-outlink-page-attachment-arrow"  
+   id="attach" 
+   viewBox="0 0 20 8" 
+   width="20px" 
+   height="8px">
+   <path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z">
+   </path>
+   </svg>
+   <div class="i-amphtml-story-outlink-page-attachment-outlink-chip">
+   <div class="i-amphtml-story-outlink-page-attachment-img">
+   </div>
+   <span class="i-amphtml-story-page-attachment-label">More about Google</span>
+   </div>
 </a>
-</div>
 </amp-story-page>
 
 
 
 
-<amp-story-page id="slide" class="i-amphtml-element i-amphtml-layout-container i-amphtml-built i-amphtml-layout i-amphtml-story-page-loaded" i-amphtml-layout="container" role="region" distance="0" aria-hidden="false" active="">
-<amp-story-grid-layer template="fill" class="i-amphtml-element i-amphtml-layout-container i-amphtml-story-layer i-amphtml-built i-amphtml-layout" i-amphtml-layout="container"><amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-130F30-constellation" src="images/strip-light-bright-wallpaper-preview.jpg" width="997" height="997" layout="responsive" class="i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="responsive" alt="" style="--loader-delay-offset:13ms !important;"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="images/strip-light-bright-wallpaper-preview.jpg" data-item-role="background" data-item-type="static" data-item-label="background-130F30-constellation" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img></amp-story-grid-layer>
+<amp-story-page id="item-truett-8" 
+                data-item-label="Why Knowledge Graphs" 
+                role="region" 
+                aria-hidden="false">
 
-<amp-story-grid-layer template="vertical" class="center i-amphtml-element i-amphtml-layout-container i-amphtml-story-layer i-amphtml-built i-amphtml-layout" i-amphtml-layout="container">
+<amp-story-grid-layer template="fill">
+
+    <amp-img 
+           id="" 
+           data-item-role="background" 
+           data-item-type="static" 
+           data-item-label="istockphoto" 
+           src="images/istockphoto-1174989482-170667a.jpg" 
+           width="997" 
+           height="997" 
+           layout="responsive">
+    </amp-img>
+</amp-story-grid-layer>
+
+<amp-story-grid-layer template="vertical" position="landscape-half-left">
+<div class="darken" 
+     animate-in="fade-in" 
+     animate-in-duration="4s" 
+     animate-in-delay="0.5s" 
+     style="opacity: 1;">
+
 <div id="myContainer">
 <div id="pf7" class="pf w0 h0" data-page-no="7">
 <div class="pc pc7 w0 h0">
 
-<amp-img class="bi x0 y0 w0 h0 i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" 
-       src="images/image11-w1920-h1080.webp" 
-    srcset="images/image11-w1920-h1080.webp 1440w,
-            images/image11-w1400-h787.webp 1400w,
-            images/image11-w760-h427.webp 1177w,
-            images/image11-w760-h427.webp 760w,
-            images/image11-w200-h122.webp 200w" width="920" height="880" layout="responsive" i-amphtml-layout="responsive" alt="" style="--loader-delay-offset:13ms !important;"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 95.6522%;"></i-amphtml-sizer>
-<img decoding="async" sizes="(max-width: 1517px) 1080px, 100vw" alt="" 
-    srcset="images/image11-w1920-h1080.webp 1440w,
-            images/image11-w1400-h787.webp 1400w,
-            images/image11-w760-h427.webp 1177w,
-            images/image11-w760-h427.webp 760w,
-            images/image11-w200-h122.webp 200w"
-       src="images/image11-w1920-h1080.webp" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+<amp-img 
+     src="images/why-knowledge-graph.png" 
+     layout="responsive" 
+     width="1368" 
+     height="768">
+</amp-img>
 
-<div class="t m0 zjx n1 bvx ff1 fml fc2 sc0 ls0 ws0">Open Discovery and Closed Discovery</div>
-<div class="t m0 zjy n2 bvy ff1 fmm fc2 sc0 ls0 ws0" id="bullet1">Open, you don’t know what C or B is (e.g. disease -> ?drug)</div>
-<div class="t m0 zjz n3 bvz ff1 fmn fc2 sc0 ls0 ws0" id="bullet1">Closed, you know what C is and are looking for B (e.g. disease – why? – drug)</div>
-<div class="t m0 lnc n2 baj ff1 fjo fc2 sc0 ls0 ws0" >A</div>
-<div class="t m0 lnd n2 bak ff1 fjp fc2 sc0 ls0 ws0" >B</div>
-<div class="t m0 lne n2 bal ff1 fjq fc2 sc0 ls0 ws0" >C</div>
-<div class="t m0 lnk n2 bar ff1 fjw fj1 sc0 ls0 ws0" >?</div>
-
+    <div class="t m0 xyz n2 zyx ff1 fjw fj1 sc0 ls0 ws0" >?</div>
+</div>
 </div>
 </div>
 </div>
 </amp-story-grid-layer>
-<div class="i-amphtml-story-spinner" aria-hidden="true" aria-label="Loading video"><div class="i-amphtml-story-spinner-container"><div class="i-amphtml-story-spinner-layer"><div class="i-amphtml-story-spinner-circle-clipper left"></div><div class="i-amphtml-story-spinner-circle-clipper right"></div></div></div></div></amp-story-page>
+
+<amp-story-grid-layer template="vertical" position="landscape-half-right">
+
+<div class="myContainer" 
+     id="title" 
+     animate-in="fade-in" 
+     animate-in-duration="4s">
+
+<h2 id="start">Why Knowledge Graphs?</h2>
+</div>
+
+<div class="slide5" 
+     animate-in="fade-in" 
+     animate-in-duration="4s" 
+     animate-in-delay="1s">
+
+<h4 >Answer explicit questions</h4>
+<h4 >Uncover implicit relations</h4>
+</div> 
+</amp-story-grid-layer>
+</amp-story-page>
 
 
 
-<amp-story-page id="slide" class="i-amphtml-element i-amphtml-layout-container i-amphtml-built i-amphtml-layout i-amphtml-story-page-loaded" i-amphtml-layout="container" role="region" distance="0" aria-hidden="false" active="">
-<amp-story-grid-layer template="fill" class="i-amphtml-element i-amphtml-layout-container i-amphtml-story-layer i-amphtml-built i-amphtml-layout" i-amphtml-layout="container"><amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-130F30-constellation" src="images/strip-light-bright-wallpaper-preview.jpg" width="997" height="997" layout="responsive" class="i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="responsive" alt="" style="--loader-delay-offset:13ms !important;"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="images/strip-light-bright-wallpaper-preview.jpg" data-item-role="background" data-item-type="static" data-item-label="background-130F30-constellation" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img></amp-story-grid-layer>
 
-<amp-story-grid-layer template="vertical" class="center i-amphtml-element i-amphtml-layout-container i-amphtml-story-layer i-amphtml-built i-amphtml-layout" i-amphtml-layout="container">
+
+
+<amp-story-page id="item-truett-9" 
+                data-item-label="Implicit relations for hypothesis generation ABC model" 
+                role="region" 
+                aria-hidden="false">
+
+<amp-story-grid-layer template="fill">
+
+    <amp-img 
+           id="" 
+           data-item-role="background" 
+           data-item-type="static" 
+           data-item-label="istockphoto" 
+           src="images/istockphoto-1174989482-170667a.jpg" 
+           width="997" 
+           height="997" 
+           layout="responsive">
+    </amp-img>
+</amp-story-grid-layer>
+
+<amp-story-grid-layer template="vertical" position="landscape-half-left">
+<div class="darken" 
+     animate-in="fade-in" 
+     animate-in-duration="4s" 
+     animate-in-delay="0.5s" 
+     style="opacity: 1;">
+
 <div id="myContainer">
 <div id="pf7" class="pf w0 h0" data-page-no="7">
 <div class="pc pc7 w0 h0">
 
-<amp-img class="bi x0 y0 w0 h0 i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built 
-i-amphtml-layout" 
-src="images/image12-w1920-h1080.webp" 
-srcset="images/image12-w1920-h1080.webp 1440w,
-            images/image12-w1400-h787.webp 1400w,
-            images/image12-w1177-h662.webp 1177w,
-            images/image12-w760-h427.webp 760w,
-            images/image12-w200-h112.webp 200w" width="920" height="880" layout="responsive" i-amphtml-layout="responsive" alt="" style="--loader-delay-offset:13ms !important;"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 95.6522%;"></i-amphtml-sizer>
-<img decoding="async" sizes="(max-width: 1517px) 1080px, 100vw" alt="" 
-            srcset="images/image10-w1920-h1080.webp 1440w,
-            images/image12-w1400-h787.webp 1400w,
-            images/image12-w1177-h662.webp 1177w,
-            images/image12-w760-h427.webp 760w,
-            images/image12-w200-h112.webp 200w"
-            src="images/image12-w1920-h1080.webp" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-
-<div class="t m0 lyz n1 byz ff1 fyz fc2 sc0 ls0 ws0">Example question: drug repurposing </div>
-<div class="t m0 lxy n2 bab ff1 fxy fc2 sc0 ls0 ws0" id="bulletin">For a given drug, what<br>diseases might it be<br>used to treat?</div>
-<div class="t m0 lyx n3 bba ff1 fjx fc2 sc0 ls0 ws0" >'RE:fine drugs': an interactive dashboard to access drug repurposing opportunities.</div>
-
-
-
+<amp-img 
+     src="images/abc-1-w2037-h620.png" 
+     layout="responsive" 
+     width="1368" 
+     height="768">
+</amp-img>
+</div>
 </div>
 </div>
 </div>
 </amp-story-grid-layer>
-<div class="i-amphtml-story-spinner" aria-hidden="true" aria-label="Loading video"><div class="i-amphtml-story-spinner-container"><div class="i-amphtml-story-spinner-layer"><div class="i-amphtml-story-spinner-circle-clipper left"></div><div class="i-amphtml-story-spinner-circle-clipper right"></div></div></div></div>
 
 
+<amp-story-grid-layer template="vertical" position="landscape-half-right">
 
-<div class="i-amphtml-story-page-open-attachment-host" role="button"></div>
-<style>.i-amphtml-story-page-open-attachment{-ms-flex-align:center!important;align-items:center!important;-ms-flex-direction:column!important;flex-direction:column!important;position:absolute!important;bottom:0!important;left:0!important;width:100%!important;pointer-events:none!important;z-index:3!important;-webkit-touch-callout:default!important;text-decoration:none!important;--i-amphtml-chip-background-color:hsla(0,0%,100%,0.5)!important;--i-amphtml-img-background-color:#fff!important;--i-amphtml-label-text-color:#fff!important;--i-amphtml-arrow-color:#000!important;--i-amphtml-page-attachment-ui-animation-delay:1s!important;--i-amphtml-page-attachment-ui-animation-duration:.6s!important;display:none!important}[theme=dark].i-amphtml-story-page-open-attachment{--i-amphtml-chip-background-color:rgba(0,0,0,0.5)!important;--i-amphtml-img-background-color:#000!important;--i-amphtml-label-text-color:#000!important;--i-amphtml-arrow-color:#fff!important}.i-amphtml-story-page-open-attachment[active]{display:-ms-flexbox!important;display:flex!important}.i-amphtml-story-page-open-attachment>*{cursor:pointer!important;pointer-events:auto!important}.i-amphtml-story-page-open-attachment-label{position:relative!important;padding:12px 32px 20px!important;height:16px!important;max-width:calc(100% - 64px)!important;color:#fff!important;line-height:16px!important;text-shadow:0px 0px 6px rgba(0,0,0,0.36)!important}.i-amphtml-story-page-attachment-label,.i-amphtml-story-page-open-attachment-label{font-family:Roboto,sans-serif!important;font-size:16px!important;font-weight:700!important;letter-spacing:0.3px;overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important}.i-amphtml-story-page-attachment-label{max-width:210px!important;line-height:18px!important}.i-amphtml-story-page-open-attachment-label{color:var(--i-amphtml-label-text-color)!important}.i-amphtml-story-inline-page-attachment-chip{background-color:var(--i-amphtml-chip-background-color)!important;display:-ms-flexbox!important;display:flex!important;border-radius:24px!important;-ms-flex-align:center!important;align-items:center!important;overflow:hidden!important;margin-bottom:12px!important}.i-amphtml-story-page-open-attachment-inline[active] .i-amphtml-story-inline-page-attachment-chip{animation:i-amphtml-tap-scale var(--i-amphtml-page-attachment-ui-animation-duration) var(--i-amphtml-page-attachment-ui-animation-delay) both!important}.i-amphtml-story-inline-page-attachment-chip:only-child{margin-bottom:20px!important}.i-amphtml-story-inline-page-attachment-img{background-size:contain!important;background-repeat:no-repeat!important;height:48px!important;width:48px!important;background-color:var(--i-amphtml-img-background-color)!important}.i-amphtml-story-inline-page-attachment-img:nth-child(2){margin-inline-start:1px!important}.i-amphtml-story-inline-page-attachment-arrow{position:relative!important;height:32px!important;width:32px!important;border-radius:50%!important;background-color:var(--i-amphtml-img-background-color)!important}.i-amphtml-story-inline-page-attachment-arrow:not(:only-child){margin:8px!important}.i-amphtml-story-inline-page-attachment-arrow:before{content:""!important;position:absolute!important;top:0!important;left:0!important;width:100%!important;height:100%!important;background-image:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="8"><path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"/></svg>')!important;background-position:50%!important;background-size:auto!important;background-repeat:no-repeat!important}.i-amphtml-story-page-open-attachment-inline[active] .i-amphtml-story-inline-page-attachment-arrow:before{animation:i-amphtml-move-up-arrow-in-circle var(--i-amphtml-page-attachment-ui-animation-duration) var(--i-amphtml-page-attachment-ui-animation-delay) both!important}[theme=dark] .i-amphtml-story-inline-page-attachment-arrow:before{background-image:url('data:image/svg+xml;charset=utf-8,<svg fill="%23fff" xmlns="http://www.w3.org/2000/svg" width="20" height="8"><path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"/></svg>')!important}.i-amphtml-story-page-open-attachment-inline .i-amphtml-story-page-attachment-label{margin-bottom:20px!important;color:var(--i-amphtml-label-text-color)!important}.i-amphtml-story-page-open-attachment-inline{background:linear-gradient(0,rgba(0,0,0,0.15),transparent)!important;border:none!important;padding:0!important}[theme=dark].i-amphtml-story-page-open-attachment-inline{background:linear-gradient(0,hsla(0,0%,100%,0.25),hsla(0,0%,100%,0))!important}.i-amphtml-story-page-open-attachment-outlink{--i-amphtml-outlink-cta-background-color:#fff!important;--i-amphtml-outlink-cta-text-color:#000!important}[theme=dark].i-amphtml-story-page-open-attachment-outlink{--i-amphtml-outlink-cta-background-color:#000!important;--i-amphtml-outlink-cta-text-color:#fff!important}.i-amphtml-story-page-open-attachment-outlink[active]:not(.i-amphtml-story-page-open-attachment-outlink-no-animation-exp){animation:i-amphtml-tap-scale var(--i-amphtml-page-attachment-ui-animation-duration) var(--i-amphtml-page-attachment-ui-animation-delay) both!important}.i-amphtml-story-outlink-page-attachment-arrow{display:block!important;cursor:pointer!important;margin-bottom:10px!important;fill:var(--i-amphtml-outlink-cta-background-color)!important;filter:drop-shadow(0px 2px 6px rgba(0,0,0,0.3))!important}.i-amphtml-story-page-open-attachment[active]:not(.i-amphtml-story-page-open-attachment-outlink-no-animation-exp) .i-amphtml-story-outlink-page-attachment-arrow{animation:i-amphtml-move-up-arrow var(--i-amphtml-page-attachment-ui-animation-duration) var(--i-amphtml-page-attachment-ui-animation-delay) both!important}@keyframes i-amphtml-move-up-arrow{0%,to{opacity:1;transform:translateY(0)}45%{opacity:0;transform:translateY(-7px)}45.01%{transform:translateY(5px)}}@keyframes i-amphtml-move-up-arrow-in-circle{0%,to{opacity:1;transform:translateY(0)}45%{opacity:0;transform:translateY(-4px)}45.01%{transform:translateY(3px)}}@keyframes i-amphtml-tap-scale{0%,to{transform:scale(1)}45%{transform:scale(.9)}}.i-amphtml-story-outlink-page-attachment-outlink-chip{display:-ms-flexbox!important;display:flex!important;position:relative!important;padding:10px 6px!important;margin:0 0 20px!important;height:16px!important;max-width:calc(100% - 64px)!important;border-radius:30px!important;background:var(--i-amphtml-outlink-cta-background-color)!important;place-items:center!important;box-shadow:0px 4px 10px rgba(0,0,0,.15)!important}.i-amphtml-story-outlink-page-attachment-img{height:24px!important;width:24px!important;vertical-align:middle!important;background-size:cover!important;background-repeat:no-repeat!important;background-position:50%!important;border-radius:50%!important}.i-amphtml-story-page-open-attachment-outlink .i-amphtml-story-page-attachment-label{padding-inline-start:6px!important;padding-inline-end:8px!important;color:var(--i-amphtml-outlink-cta-text-color)!important}.i-amphtml-story-outlink-page-attachment-label:only-child,.i-amphtml-story-page-open-attachment-outlink .i-amphtml-story-page-attachment-label:only-child{padding-inline-start:8px!important}.i-amphtml-story-page-open-attachment-link-icon{width:24px!important;height:24px!important;fill:var(--i-amphtml-outlink-cta-text-color)!important}
-/*# sourceURL=/extensions/amp-story-page-attachment/0.1/amp-story-open-page-attachment.css*/</style>
-<a class="i-amphtml-story-page-open-attachment i-amphtml-story-page-open-attachment-outlink" role="button" target="_top" theme="custom" aria-label="More about Netflix" href="http://www.ncbi.nlm.nih.gov/pubmed/27189611 system-architectures-for-personalization-and-recommendation-e081aa94b5d8#25fd" style="--i-amphtml-outlink-cta-background-color:#FFF !important; --i-amphtml-outlink-cta-text-color:#1F64FF !important;" active="">
+<div class="myContainer" 
+     id="title" 
+     animate-in="fade-in" 
+     animate-in-duration="4s">
 
-	<svg class="i-amphtml-story-outlink-page-attachment-arrow"  id="attach" viewBox="0 0 20 8" width="20px" height="8px"><path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"></path></svg><div class="i-amphtml-story-outlink-page-attachment-outlink-chip"><div class="i-amphtml-story-outlink-page-attachment-img" ></div><span class="i-amphtml-story-page-attachment-label">More about Pubmed</span></div></a>
-<svg class="i-amphtml-story-outlink-page-attachment-arrow" viewBox="0 0 20 8" width="20px" height="8px"><path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"></path></svg>
-<div class="i-amphtml-story-outlink-page-attachment-outlink-chip"><div class="i-amphtml-story-outlink-page-attachment-img"></div><span class="i-amphtml-story-page-attachment-label">More about Pubmed</span></div>
+<h2 id="start">Implicit relations for hypothesis generation ABC model</h2>
+</div>
+
+<div class="slide5" 
+     animate-in="fade-in" 
+     animate-in-duration="4s" 
+     animate-in-delay="1s">
+<h4> Swanson (1986) Fish oil, Raynaud’s syndrome and undiscovered public knowledge </h4>
+</div> 
+</amp-story-grid-layer>
+
+
+<a class="i-amphtml-story-page-open-attachment i-amphtml-story-page-open-attachment-outlink" 
+   role="button" 
+   target="_top" 
+   theme="custom" 
+   aria-label="More about Swanson" 
+   href="http://muse.jhu.edu/article/403510/pdf" 
+   style="--i-amphtml-outlink-cta-background-color:#FFF !important; --i-amphtml-outlink-cta-text-color:#1F64FF !important;" active="">
+   
+   <svg class="i-amphtml-story-outlink-page-attachment-arrow"  
+   id="attach" 
+   viewBox="0 0 20 8" 
+   width="20px" 
+   height="8px">
+   <path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z">
+   </path>
+   </svg>
+   <div class="i-amphtml-story-outlink-page-attachment-outlink-chip">
+   <div class="i-amphtml-story-outlink-page-attachment-img">
+   </div>
+   <span class="i-amphtml-story-page-attachment-label">More about Swanson</span>
+   </div>
 </a>
-</div>
 </amp-story-page>
 
 
-<amp-story-page id="slide" class="i-amphtml-element i-amphtml-layout-container i-amphtml-built i-amphtml-layout i-amphtml-story-page-loaded" i-amphtml-layout="container" role="region" distance="0" aria-hidden="false" active="">
-<amp-story-grid-layer template="fill" class="i-amphtml-element i-amphtml-layout-container i-amphtml-story-layer i-amphtml-built i-amphtml-layout" i-amphtml-layout="container"><amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-130F30-constellation" src="images/strip-light-bright-wallpaper-preview.jpg" width="997" height="997" layout="responsive" class="i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="responsive" alt="" style="--loader-delay-offset:13ms !important;"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="images/strip-light-bright-wallpaper-preview.jpg" data-item-role="background" data-item-type="static" data-item-label="background-130F30-constellation" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img></amp-story-grid-layer>
 
-<amp-story-grid-layer template="vertical" class="center i-amphtml-element i-amphtml-layout-container i-amphtml-story-layer i-amphtml-built i-amphtml-layout" i-amphtml-layout="container">
+
+
+<amp-story-page id="item-truett-10" 
+                data-item-label="Open Discovery and Closed Discovery" 
+                role="region" 
+                aria-hidden="false">
+
+<amp-story-grid-layer template="fill">
+
+    <amp-img 
+           id="" 
+           data-item-role="background" 
+           data-item-type="static" 
+           data-item-label="istockphoto" 
+           src="images/istockphoto-1174989482-170667a.jpg" 
+           width="997" 
+           height="997" 
+           layout="responsive">
+    </amp-img>
+</amp-story-grid-layer>
+
+<amp-story-grid-layer template="vertical" position="landscape-half-left">
+<div class="darken" 
+     animate-in="fade-in" 
+     animate-in-duration="4s" 
+     animate-in-delay="0.5s" 
+     style="opacity: 1;">
+
 <div id="myContainer">
 <div id="pf7" class="pf w0 h0" data-page-no="7">
 <div class="pc pc7 w0 h0">
 
-<amp-img class="bi x0 y0 w0 h0 i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built 
-i-amphtml-layout" 
-src="images/image13-w1920-h1080.webp" 
-srcset="images/image13-w1920-h1080.webp 1440w,
-            images/image13-w1400-h787.webp 1400w,
-            images/image13-w1177-h662.webp 1177w,
-            images/image13-w760-h427.webp 760w,
-            images/image13-w200-h112.webp 200w" width="920" height="880" layout="responsive" i-amphtml-layout="responsive" alt="" style="--loader-delay-offset:13ms !important;"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 95.6522%;"></i-amphtml-sizer>
-<img decoding="async" sizes="(max-width: 1517px) 1080px, 100vw" alt="" 
-            srcset="images/image13-w1920-h1080.webp 1440w,
+<amp-img 
+     src="images/abc-2-1865-w473.png" 
+     layout="responsive" 
+     width="1368" 
+     height="768">
+</amp-img>
+</div>
+</div>
+</div>
+</div>
+</amp-story-grid-layer>
+
+<amp-story-grid-layer template="vertical" position="landscape-half-right">
+
+<div class="myContainer" 
+     id="title" 
+     animate-in="fade-in" 
+     animate-in-duration="4s">
+
+<h2 id="start">Open Discovery and Closed Discovery</h2>
+</div>
+
+<div class="slide5" 
+     animate-in="fade-in" 
+     animate-in-duration="4s" 
+     animate-in-delay="1s">
+
+<h4> Open, you don’t know what C or B is (e.g. disease -> ?drug) </h4>
+<h4> Closed, you know what C is and are looking for B (e.g. disease – why? – drug) </h4>
+</div> 
+</amp-story-grid-layer>
+</amp-story-page>
+
+
+
+
+<amp-story-page id="item-truett-11" 
+                data-item-label="Example question: drug repurposing" 
+                role="region" 
+                aria-hidden="false">
+
+<amp-story-grid-layer template="fill">
+
+    <amp-img 
+           id="" 
+           data-item-role="background" 
+           data-item-type="static" 
+           data-item-label="istockphoto" 
+           src="images/istockphoto-1174989482-170667a.jpg" 
+           width="997" 
+           height="997" 
+           layout="responsive">
+    </amp-img>
+</amp-story-grid-layer>
+
+<amp-story-grid-layer template="vertical" position="landscape-half-left">
+<div class="darken" 
+     animate-in="fade-in" 
+     animate-in-duration="4s" 
+     animate-in-delay="0.5s" 
+     style="opacity: 1;">
+
+<div id="myContainer">
+<div id="pf7" class="pf w0 h0" data-page-no="7">
+<div class="pc pc7 w0 h0">
+
+<amp-img 
+     src="images/image12-w788-h621.png" 
+     layout="responsive" 
+     width="1368" 
+     height="768">
+</amp-img>
+
+</div>
+</div>
+</div>
+</div>
+</amp-story-grid-layer>
+
+
+<amp-story-grid-layer template="vertical" position="landscape-half-right">
+
+<div class="myContainer" 
+     id="title" 
+     animate-in="fade-in" 
+     animate-in-duration="4s">
+
+<h2 id="start">Example question: drug repurposing </h2>
+</div>
+
+<div class="slide5" 
+     animate-in="fade-in" 
+     animate-in-duration="4s" 
+     animate-in-delay="1s">
+
+<h4> For a given drug, what diseases might it be used to treat?</h4>
+<h4> 'RE:fine drugs': an interactive dashboard to access drug repurposing opportunities</h4>
+</div> 
+</amp-story-grid-layer>
+
+<a class="i-amphtml-story-page-open-attachment i-amphtml-story-page-open-attachment-outlink" 
+   role="button" 
+   target="_top" 
+   theme="custom" 
+   aria-label="More about Pubmed" 
+   href="http://www.ncbi.nlm.nih.gov/pubmed/27189611" 
+   style="--i-amphtml-outlink-cta-background-color:#FFF !important; --i-amphtml-outlink-cta-text-color:#1F64FF !important;" active="">
+   
+   <svg class="i-amphtml-story-outlink-page-attachment-arrow"  
+   id="attach" 
+   viewBox="0 0 20 8" 
+   width="20px" 
+   height="8px">
+   <path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z">
+   </path>
+   </svg>
+   <div class="i-amphtml-story-outlink-page-attachment-outlink-chip">
+   <div class="i-amphtml-story-outlink-page-attachment-img">
+   </div>
+   <span class="i-amphtml-story-page-attachment-label">More about Pubmed</span>
+   </div>
+</a>
+</amp-story-page>
+
+
+
+
+
+
+
+<amp-story-page id="item-truett-12"
+                data-item-label="Implicit relations for hypothesis generation" 
+                role="region"
+                aria-hidden="false">
+
+<amp-story-grid-layer template="fill">
+
+    <amp-img id="" 
+             data-item-role="background" 
+             data-item-type="static" 
+             data-item-label="strip-light" 
+             src="images/strip-light-bright-wallpaper-preview.jpg" 
+             width="997" 
+             height="997" 
+             layout="responsive">
+    </amp-img>
+</amp-story-grid-layer>
+
+<amp-story-grid-layer template="vertical">
+
+<div id="myContainer">
+<div id="pf7" class="pf w0 h0" data-page-no="7">
+<div class="pc pc7 w0 h0">
+
+<amp-img class="bi x0 y0 w0 h0"
+       src="images/image13-w1920-h1080.webp"
+    srcset="images/image13-w1920-h1080.webp 1440w,
             images/image13-w1400-h787.webp 1400w,
             images/image13-w1177-h662.webp 1177w,
             images/image13-w760-h427.webp 760w,
             images/image13-w200-h112.webp 200w"
-            src="images/image13-w1920-h1080.webp" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+    width="1420"
+    height="1080"
+    layout="responsive">
+</amp-img>
+
 
 <div class="t m0 lmn n1 bcd ff1 fjk fc2 sc0 ls0 ws0">Implicit relations for hypothesis generation</div>
 <div class="t m0 lmm n2 bce ff1 fjl fc2 sc0 ls0 ws0" >ABC model for drug repurposing</div>
@@ -6799,7 +8308,7 @@ srcset="images/image13-w1920-h1080.webp 1440w,
 <div class="t m0 lmg n2 bcn ff1 fqb fc2 sc0 ls0 ws0" >Physical<br>interaction</div>
 <div class="t m0 lqa n2 bqa ff1 fjm fvj sc0 ls0 ws0" >drug</div>
 <div class="t m0 lqb n2 bqb ff1 fjn fvj sc0 ls0 ws0" >disease</div>
-<div class="t m0 lqc n2 bqc ff1 fqc fc2 sc0 ls0 ws0">genes</div>
+<div class="t m0 lqc n2 bqc ff1 fqc fc2 sc0 ls0 ws0">genes</div>-->
 
 </div>
 </div>
@@ -6810,14 +8319,33 @@ srcset="images/image13-w1920-h1080.webp 1440w,
 
 
 
-<amp-story-page id="item-13" data-item-label="how-to-know" class="i-amphtml-element i-amphtml-layout-container i-amphtml-built i-amphtml-layout i-amphtml-story-page-loaded" i-amphtml-layout="container" role="region" active="" distance="0" aria-hidden="false">
-<amp-story-grid-layer template="fill" class="i-amphtml-element i-amphtml-layout-container i-amphtml-story-layer i-amphtml-built i-amphtml-layout" i-amphtml-layout="container"><amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-440044-constellation" 
-    src="images/istockphoto-1174989482-170667a.jpg" width="997" height="997" layout="responsive" class="i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="responsive" alt="" style="--loader-delay-offset:361ms !important;"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt=""
-     src="images/istockphoto-1174989482-170667a.jpg" data-item-role="background" data-item-type="static" data-item-label="background-440044-constellation" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img></amp-story-grid-layer>
-<amp-story-grid-layer template="vertical" position="landscape-half-left" class="i-amphtml-element i-amphtml-layout-container i-amphtml-story-layer i-amphtml-built i-amphtml-layout" i-amphtml-layout="container">
 
+<amp-story-page id="item-truett-13" 
+                data-item-label="Querying a knowledge graph with SPARQL" 
+                role="region" 
+                aria-hidden="false">
 
-<div class="darken" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="0.5s" style="opacity: 1;">
+<amp-story-grid-layer template="fill">
+
+    <amp-img 
+           id="" 
+           data-item-role="background" 
+           data-item-type="static" 
+           data-item-label="istockphoto" 
+           src="images/istockphoto-1174989482-170667a.jpg" 
+           width="997" 
+           height="997" 
+           layout="responsive">
+    </amp-img>
+</amp-story-grid-layer>
+
+<amp-story-grid-layer template="vertical" position="landscape-half-left">
+<div class="darken" 
+     animate-in="fade-in" 
+     animate-in-duration="4s" 
+     animate-in-delay="0.5s" 
+     style="opacity: 1;">
+
 
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="200 0 1166 768" style="enable-background:new 0 0 1366 768;" xml:space="preserve">
@@ -7682,200 +9210,336 @@ srcset="images/image13-w1920-h1080.webp 1440w,
 </div>
 </amp-story-grid-layer>
 
-<amp-story-grid-layer template="vertical" position="landscape-half-right" class="i-amphtml-element i-amphtml-layout-container i-amphtml-story-layer i-amphtml-built i-amphtml-layout" i-amphtml-layout="container">
-<div class="slide5" id="header" animate-in="fade-in" animate-in-duration="4s">
-<h2 id="graph">Querying a knowledge graph with SPARQL</h2>
-</div>
-<div class="slide5" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="1s">
-<p> “SPARQL protocol and RDF query language”</p>
-<p> RDF: Resource Description Framework (common standard for storing knowledge graphs)</p>
-<p>A SPARQL query = a partially completed <span>graph</span> </p>
-<p id="sparol" >?’s show what you are looking for </p>
-<p id="sparol" >rest constrains the search</p>
+<amp-story-grid-layer template="vertical" position="landscape-half-right">
 
+<div class="myContainer" 
+     id="header" 
+     animate-in="fade-in" 
+     animate-in-duration="4s">
+
+<h2 id="start">Querying a knowledge graph with SPARQL</h2>
+</div>
+
+<div class="slide5" 
+     animate-in="fade-in" 
+     animate-in-duration="4s" 
+     animate-in-delay="1s">
+
+<h4>“SPARQL protocol and RDF query language”</h4> 
+<h4>RDF: Resource Description Framework (common standard for storing knowledge graphs)</h4> 
+<h4>A SPARQL query = a partially completed <span>graph</span> </h4> 
+<h4 id="sparol" >?’s show what you are looking for </h4> 
+<h4 id="sparol" >rest constrains the search</h4> 
 </div>
 </amp-story-grid-layer>
-<div class="i-amphtml-story-page-open-attachment-host" role="button"></div>
-<style>.i-amphtml-story-page-open-attachment{-ms-flex-align:center!important;align-items:center!important;-ms-flex-direction:column!important;flex-direction:column!important;position:absolute!important;bottom:0!important;left:0!important;width:100%!important;pointer-events:none!important;z-index:3!important;-webkit-touch-callout:default!important;text-decoration:none!important;--i-amphtml-chip-background-color:hsla(0,0%,100%,0.5)!important;--i-amphtml-img-background-color:#fff!important;--i-amphtml-label-text-color:#fff!important;--i-amphtml-arrow-color:#000!important;--i-amphtml-page-attachment-ui-animation-delay:1s!important;--i-amphtml-page-attachment-ui-animation-duration:.6s!important;display:none!important}[theme=dark].i-amphtml-story-page-open-attachment{--i-amphtml-chip-background-color:rgba(0,0,0,0.5)!important;--i-amphtml-img-background-color:#000!important;--i-amphtml-label-text-color:#000!important;--i-amphtml-arrow-color:#fff!important}.i-amphtml-story-page-open-attachment[active]{display:-ms-flexbox!important;display:flex!important}.i-amphtml-story-page-open-attachment>*{cursor:pointer!important;pointer-events:auto!important}.i-amphtml-story-page-open-attachment-label{position:relative!important;padding:12px 32px 20px!important;height:16px!important;max-width:calc(100% - 64px)!important;color:#fff!important;line-height:16px!important;text-shadow:0px 0px 6px rgba(0,0,0,0.36)!important}.i-amphtml-story-page-attachment-label,.i-amphtml-story-page-open-attachment-label{font-family:Roboto,sans-serif!important;font-size:16px!important;font-weight:700!important;letter-spacing:0.3px;overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important}.i-amphtml-story-page-attachment-label{max-width:210px!important;line-height:18px!important}.i-amphtml-story-page-open-attachment-label{color:var(--i-amphtml-label-text-color)!important}.i-amphtml-story-inline-page-attachment-chip{background-color:var(--i-amphtml-chip-background-color)!important;display:-ms-flexbox!important;display:flex!important;border-radius:24px!important;-ms-flex-align:center!important;align-items:center!important;overflow:hidden!important;margin-bottom:12px!important}.i-amphtml-story-page-open-attachment-inline[active] .i-amphtml-story-inline-page-attachment-chip{animation:i-amphtml-tap-scale var(--i-amphtml-page-attachment-ui-animation-duration) var(--i-amphtml-page-attachment-ui-animation-delay) both!important}.i-amphtml-story-inline-page-attachment-chip:only-child{margin-bottom:20px!important}.i-amphtml-story-inline-page-attachment-img{background-size:contain!important;background-repeat:no-repeat!important;height:48px!important;width:48px!important;background-color:var(--i-amphtml-img-background-color)!important}.i-amphtml-story-inline-page-attachment-img:nth-child(2){margin-inline-start:1px!important}.i-amphtml-story-inline-page-attachment-arrow{position:relative!important;height:32px!important;width:32px!important;border-radius:50%!important;background-color:var(--i-amphtml-img-background-color)!important}.i-amphtml-story-inline-page-attachment-arrow:not(:only-child){margin:8px!important}.i-amphtml-story-inline-page-attachment-arrow:before{content:""!important;position:absolute!important;top:0!important;left:0!important;width:100%!important;height:100%!important;background-image:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="8"><path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"/></svg>')!important;background-position:50%!important;background-size:auto!important;background-repeat:no-repeat!important}.i-amphtml-story-page-open-attachment-inline[active] .i-amphtml-story-inline-page-attachment-arrow:before{animation:i-amphtml-move-up-arrow-in-circle var(--i-amphtml-page-attachment-ui-animation-duration) var(--i-amphtml-page-attachment-ui-animation-delay) both!important}[theme=dark] .i-amphtml-story-inline-page-attachment-arrow:before{background-image:url('data:image/svg+xml;charset=utf-8,<svg fill="%23fff" xmlns="http://www.w3.org/2000/svg" width="20" height="8"><path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"/></svg>')!important}.i-amphtml-story-page-open-attachment-inline .i-amphtml-story-page-attachment-label{margin-bottom:20px!important;color:var(--i-amphtml-label-text-color)!important}.i-amphtml-story-page-open-attachment-inline{background:linear-gradient(0,rgba(0,0,0,0.15),transparent)!important;border:none!important;padding:0!important}[theme=dark].i-amphtml-story-page-open-attachment-inline{background:linear-gradient(0,hsla(0,0%,100%,0.25),hsla(0,0%,100%,0))!important}.i-amphtml-story-page-open-attachment-outlink{--i-amphtml-outlink-cta-background-color:#fff!important;--i-amphtml-outlink-cta-text-color:#000!important}[theme=dark].i-amphtml-story-page-open-attachment-outlink{--i-amphtml-outlink-cta-background-color:#000!important;--i-amphtml-outlink-cta-text-color:#fff!important}.i-amphtml-story-page-open-attachment-outlink[active]:not(.i-amphtml-story-page-open-attachment-outlink-no-animation-exp){animation:i-amphtml-tap-scale var(--i-amphtml-page-attachment-ui-animation-duration) var(--i-amphtml-page-attachment-ui-animation-delay) both!important}.i-amphtml-story-outlink-page-attachment-arrow{display:block!important;cursor:pointer!important;margin-bottom:10px!important;fill:var(--i-amphtml-outlink-cta-background-color)!important;filter:drop-shadow(0px 2px 6px rgba(0,0,0,0.3))!important}.i-amphtml-story-page-open-attachment[active]:not(.i-amphtml-story-page-open-attachment-outlink-no-animation-exp) .i-amphtml-story-outlink-page-attachment-arrow{animation:i-amphtml-move-up-arrow var(--i-amphtml-page-attachment-ui-animation-duration) var(--i-amphtml-page-attachment-ui-animation-delay) both!important}@keyframes i-amphtml-move-up-arrow{0%,to{opacity:1;transform:translateY(0)}45%{opacity:0;transform:translateY(-7px)}45.01%{transform:translateY(5px)}}@keyframes i-amphtml-move-up-arrow-in-circle{0%,to{opacity:1;transform:translateY(0)}45%{opacity:0;transform:translateY(-4px)}45.01%{transform:translateY(3px)}}@keyframes i-amphtml-tap-scale{0%,to{transform:scale(1)}45%{transform:scale(.9)}}.i-amphtml-story-outlink-page-attachment-outlink-chip{display:-ms-flexbox!important;display:flex!important;position:relative!important;padding:10px 6px!important;margin:0 0 20px!important;height:16px!important;max-width:calc(100% - 64px)!important;border-radius:30px!important;background:var(--i-amphtml-outlink-cta-background-color)!important;place-items:center!important;box-shadow:0px 4px 10px rgba(0,0,0,.15)!important}.i-amphtml-story-outlink-page-attachment-img{height:24px!important;width:24px!important;vertical-align:middle!important;background-size:cover!important;background-repeat:no-repeat!important;background-position:50%!important;border-radius:50%!important}.i-amphtml-story-page-open-attachment-outlink .i-amphtml-story-page-attachment-label{padding-inline-start:6px!important;padding-inline-end:8px!important;color:var(--i-amphtml-outlink-cta-text-color)!important}.i-amphtml-story-outlink-page-attachment-label:only-child,.i-amphtml-story-page-open-attachment-outlink .i-amphtml-story-page-attachment-label:only-child{padding-inline-start:8px!important}.i-amphtml-story-page-open-attachment-link-icon{width:24px!important;height:24px!important;fill:var(--i-amphtml-outlink-cta-text-color)!important}
-/*# sourceURL=/extensions/amp-story-page-attachment/0.1/amp-story-open-page-attachment.css*/</style>
-<a class="i-amphtml-story-page-open-attachment i-amphtml-story-page-open-attachment-outlink" role="button" target="_top" theme="custom" aria-label="More about SPARQL" href="https://www.w3.org/TR/rdf-sparql-query/system-architectures-for-personalization-and-recommendation-e081aa94b5d8#25fd" style="--i-amphtml-outlink-cta-background-color:#FFF !important; --i-amphtml-outlink-cta-text-color:#1F64FF !important;" active="">
 
-	<svg class="i-amphtml-story-outlink-page-attachment-arrow"  id="attach" viewBox="0 0 20 8" width="20px" height="8px"><path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"></path></svg><div class="i-amphtml-story-outlink-page-attachment-outlink-chip"><div class="i-amphtml-story-outlink-page-attachment-img" ></div><span class="i-amphtml-story-page-attachment-label">More about SPARQL</span></div></a>
-<svg class="i-amphtml-story-outlink-page-attachment-arrow" viewBox="0 0 20 8" width="20px" height="8px"><path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"></path></svg>
-<div class="i-amphtml-story-outlink-page-attachment-outlink-chip"><div class="i-amphtml-story-outlink-page-attachment-img"></div><span class="i-amphtml-story-page-attachment-label">More about SPARQL</span></div>
+<a class="i-amphtml-story-page-open-attachment i-amphtml-story-page-open-attachment-outlink" 
+   role="button" 
+   target="_top" 
+   theme="custom" 
+   aria-label="More about SPARQL" 
+   href="https://www.w3.org/TR/rdf-sparql-query/" 
+   style="--i-amphtml-outlink-cta-background-color:#FFF !important; --i-amphtml-outlink-cta-text-color:#1F64FF !important;" active="">
+   
+   <svg class="i-amphtml-story-outlink-page-attachment-arrow"  
+   id="attach" 
+   viewBox="0 0 20 8" 
+   width="20px" 
+   height="8px">
+   <path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z">
+   </path>
+   </svg>
+   <div class="i-amphtml-story-outlink-page-attachment-outlink-chip">
+   <div class="i-amphtml-story-outlink-page-attachment-img">
+   </div>
+   <span class="i-amphtml-story-page-attachment-label">More about SPARQL</span>
+   </div>
 </a>
-</div>
 </amp-story-page>
 
 
 
 
+<amp-story-page id="item-truett-14" 
+                data-item-label="Metformin’s" 
+                role="region" 
+                aria-hidden="false">
 
-<amp-story-page id="slide" class="i-amphtml-element i-amphtml-layout-container i-amphtml-built i-amphtml-layout i-amphtml-story-page-loaded" i-amphtml-layout="container" role="region" distance="0" aria-hidden="false" active="">
-<amp-story-grid-layer template="fill" class="i-amphtml-element i-amphtml-layout-container i-amphtml-story-layer i-amphtml-built i-amphtml-layout" i-amphtml-layout="container"><amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-130F30-constellation" src="images/strip-light-bright-wallpaper-preview.jpg" width="997" height="997" layout="responsive" class="i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="responsive" alt="" style="--loader-delay-offset:13ms !important;"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="images/strip-light-bright-wallpaper-preview.jpg" data-item-role="background" data-item-type="static" data-item-label="background-130F30-constellation" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img></amp-story-grid-layer>
+<amp-story-grid-layer template="fill">
 
-<amp-story-grid-layer template="vertical" class="center i-amphtml-element i-amphtml-layout-container i-amphtml-story-layer i-amphtml-built i-amphtml-layout" i-amphtml-layout="container">
+    <amp-img 
+           id="" 
+           data-item-role="background" 
+           data-item-type="static" 
+           data-item-label="istockphoto" 
+           src="images/istockphoto-1174989482-170667a.jpg" 
+           width="997" 
+           height="997" 
+           layout="responsive">
+    </amp-img>
+</amp-story-grid-layer>
+
+<amp-story-grid-layer template="vertical" position="landscape-half-left">
+<div class="darken" 
+     animate-in="fade-in" 
+     animate-in-duration="4s" 
+     animate-in-delay="0.5s" 
+     style="opacity: 1;">
+
 <div id="myContainer">
 <div id="pf7" class="pf w0 h0" data-page-no="7">
 <div class="pc pc7 w0 h0">
 
-<amp-img class="bi x0 y0 w0 h0 i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" 
-       src="images/image15-w1920-h1080.webp" 
-    srcset="images/image15-w1920-h1080.webp 1440w,
-            images/image15-w1400-h787.webp 1400w,
-            images/image15-w760-h427.webp 1177w,
-            images/image15-w760-h427.webp 760w,
-            images/image15-w200-h122.webp 200w" width="920" height="880" layout="responsive" i-amphtml-layout="responsive" alt="" style="--loader-delay-offset:13ms !important;"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 95.6522%;"></i-amphtml-sizer>
-<img decoding="async" sizes="(max-width: 1517px) 1080px, 100vw" alt="" 
-    srcset="images/image15-w1920-h1080.webp 1440w,
-            images/image15-w1400-h787.webp 1400w,
-            images/image15-w760-h427.webp 1177w,
-            images/image15-w760-h427.webp 760w,
-            images/image15-w200-h122.webp 200w"
-       src="images/image15-w1920-h1080.webp" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-
-<div class="t m0 aa1 n1 bb1 ff1 fz1 fc2 sc0 ls0 ws0">Metformin’s unique id:  Q19484</div>
-<div class="t m0 aa2 n2 bb2 ff1 fz2 fc2 sc0 ls0 ws0">Treats property id: P2175</div>
-<div class="t m0 aa3 n3 bb3 ff1 fz3 fj1 sc0 ls0 ws0">=</div>
-<div class="t m0 aa4 n2 bb4 ff1 fz4 fvj sc0 ls0 ws0" >Metformin</div>
-<div class="t m0 aa5 n2 bb5 ff1 fz5 fvj sc0 ls0 ws0" >?disease</div>
-<div class="t m0 aa6 n2 bb6 ff1 fz6 fc2 sc0 ls0 ws0" >treats</div>
-
-
+<amp-img 
+     src="images/metformin-2-w2142-h1005.png" 
+     layout="responsive" 
+     width="1368" 
+     height="768">
+</amp-img>
+</div>
 </div>
 </div>
 </div>
 </amp-story-grid-layer>
-<div class="i-amphtml-story-spinner" aria-hidden="true" aria-label="Loading video"><div class="i-amphtml-story-spinner-container"><div class="i-amphtml-story-spinner-layer"><div class="i-amphtml-story-spinner-circle-clipper left"></div><div class="i-amphtml-story-spinner-circle-clipper right"></div></div></div></div>
-<div class="i-amphtml-story-page-open-attachment-host" role="button"></div>
-<style>.i-amphtml-story-page-open-attachment{-ms-flex-align:center!important;align-items:center!important;-ms-flex-direction:column!important;flex-direction:column!important;position:absolute!important;bottom:0!important;left:0!important;width:100%!important;pointer-events:none!important;z-index:3!important;-webkit-touch-callout:default!important;text-decoration:none!important;--i-amphtml-chip-background-color:hsla(0,0%,100%,0.5)!important;--i-amphtml-img-background-color:#fff!important;--i-amphtml-label-text-color:#fff!important;--i-amphtml-arrow-color:#000!important;--i-amphtml-page-attachment-ui-animation-delay:1s!important;--i-amphtml-page-attachment-ui-animation-duration:.6s!important;display:none!important}[theme=dark].i-amphtml-story-page-open-attachment{--i-amphtml-chip-background-color:rgba(0,0,0,0.5)!important;--i-amphtml-img-background-color:#000!important;--i-amphtml-label-text-color:#000!important;--i-amphtml-arrow-color:#fff!important}.i-amphtml-story-page-open-attachment[active]{display:-ms-flexbox!important;display:flex!important}.i-amphtml-story-page-open-attachment>*{cursor:pointer!important;pointer-events:auto!important}.i-amphtml-story-page-open-attachment-label{position:relative!important;padding:12px 32px 20px!important;height:16px!important;max-width:calc(100% - 64px)!important;color:#fff!important;line-height:16px!important;text-shadow:0px 0px 6px rgba(0,0,0,0.36)!important}.i-amphtml-story-page-attachment-label,.i-amphtml-story-page-open-attachment-label{font-family:Roboto,sans-serif!important;font-size:16px!important;font-weight:700!important;letter-spacing:0.3px;overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important}.i-amphtml-story-page-attachment-label{max-width:210px!important;line-height:18px!important}.i-amphtml-story-page-open-attachment-label{color:var(--i-amphtml-label-text-color)!important}.i-amphtml-story-inline-page-attachment-chip{background-color:var(--i-amphtml-chip-background-color)!important;display:-ms-flexbox!important;display:flex!important;border-radius:24px!important;-ms-flex-align:center!important;align-items:center!important;overflow:hidden!important;margin-bottom:12px!important}.i-amphtml-story-page-open-attachment-inline[active] .i-amphtml-story-inline-page-attachment-chip{animation:i-amphtml-tap-scale var(--i-amphtml-page-attachment-ui-animation-duration) var(--i-amphtml-page-attachment-ui-animation-delay) both!important}.i-amphtml-story-inline-page-attachment-chip:only-child{margin-bottom:20px!important}.i-amphtml-story-inline-page-attachment-img{background-size:contain!important;background-repeat:no-repeat!important;height:48px!important;width:48px!important;background-color:var(--i-amphtml-img-background-color)!important}.i-amphtml-story-inline-page-attachment-img:nth-child(2){margin-inline-start:1px!important}.i-amphtml-story-inline-page-attachment-arrow{position:relative!important;height:32px!important;width:32px!important;border-radius:50%!important;background-color:var(--i-amphtml-img-background-color)!important}.i-amphtml-story-inline-page-attachment-arrow:not(:only-child){margin:8px!important}.i-amphtml-story-inline-page-attachment-arrow:before{content:""!important;position:absolute!important;top:0!important;left:0!important;width:100%!important;height:100%!important;background-image:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="8"><path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"/></svg>')!important;background-position:50%!important;background-size:auto!important;background-repeat:no-repeat!important}.i-amphtml-story-page-open-attachment-inline[active] .i-amphtml-story-inline-page-attachment-arrow:before{animation:i-amphtml-move-up-arrow-in-circle var(--i-amphtml-page-attachment-ui-animation-duration) var(--i-amphtml-page-attachment-ui-animation-delay) both!important}[theme=dark] .i-amphtml-story-inline-page-attachment-arrow:before{background-image:url('data:image/svg+xml;charset=utf-8,<svg fill="%23fff" xmlns="http://www.w3.org/2000/svg" width="20" height="8"><path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"/></svg>')!important}.i-amphtml-story-page-open-attachment-inline .i-amphtml-story-page-attachment-label{margin-bottom:20px!important;color:var(--i-amphtml-label-text-color)!important}.i-amphtml-story-page-open-attachment-inline{background:linear-gradient(0,rgba(0,0,0,0.15),transparent)!important;border:none!important;padding:0!important}[theme=dark].i-amphtml-story-page-open-attachment-inline{background:linear-gradient(0,hsla(0,0%,100%,0.25),hsla(0,0%,100%,0))!important}.i-amphtml-story-page-open-attachment-outlink{--i-amphtml-outlink-cta-background-color:#fff!important;--i-amphtml-outlink-cta-text-color:#000!important}[theme=dark].i-amphtml-story-page-open-attachment-outlink{--i-amphtml-outlink-cta-background-color:#000!important;--i-amphtml-outlink-cta-text-color:#fff!important}.i-amphtml-story-page-open-attachment-outlink[active]:not(.i-amphtml-story-page-open-attachment-outlink-no-animation-exp){animation:i-amphtml-tap-scale var(--i-amphtml-page-attachment-ui-animation-duration) var(--i-amphtml-page-attachment-ui-animation-delay) both!important}.i-amphtml-story-outlink-page-attachment-arrow{display:block!important;cursor:pointer!important;margin-bottom:10px!important;fill:var(--i-amphtml-outlink-cta-background-color)!important;filter:drop-shadow(0px 2px 6px rgba(0,0,0,0.3))!important}.i-amphtml-story-page-open-attachment[active]:not(.i-amphtml-story-page-open-attachment-outlink-no-animation-exp) .i-amphtml-story-outlink-page-attachment-arrow{animation:i-amphtml-move-up-arrow var(--i-amphtml-page-attachment-ui-animation-duration) var(--i-amphtml-page-attachment-ui-animation-delay) both!important}@keyframes i-amphtml-move-up-arrow{0%,to{opacity:1;transform:translateY(0)}45%{opacity:0;transform:translateY(-7px)}45.01%{transform:translateY(5px)}}@keyframes i-amphtml-move-up-arrow-in-circle{0%,to{opacity:1;transform:translateY(0)}45%{opacity:0;transform:translateY(-4px)}45.01%{transform:translateY(3px)}}@keyframes i-amphtml-tap-scale{0%,to{transform:scale(1)}45%{transform:scale(.9)}}.i-amphtml-story-outlink-page-attachment-outlink-chip{display:-ms-flexbox!important;display:flex!important;position:relative!important;padding:10px 6px!important;margin:0 0 20px!important;height:16px!important;max-width:calc(100% - 64px)!important;border-radius:30px!important;background:var(--i-amphtml-outlink-cta-background-color)!important;place-items:center!important;box-shadow:0px 4px 10px rgba(0,0,0,.15)!important}.i-amphtml-story-outlink-page-attachment-img{height:24px!important;width:24px!important;vertical-align:middle!important;background-size:cover!important;background-repeat:no-repeat!important;background-position:50%!important;border-radius:50%!important}.i-amphtml-story-page-open-attachment-outlink .i-amphtml-story-page-attachment-label{padding-inline-start:6px!important;padding-inline-end:8px!important;color:var(--i-amphtml-outlink-cta-text-color)!important}.i-amphtml-story-outlink-page-attachment-label:only-child,.i-amphtml-story-page-open-attachment-outlink .i-amphtml-story-page-attachment-label:only-child{padding-inline-start:8px!important}.i-amphtml-story-page-open-attachment-link-icon{width:24px!important;height:24px!important;fill:var(--i-amphtml-outlink-cta-text-color)!important}
-/*# sourceURL=/extensions/amp-story-page-attachment/0.1/amp-story-open-page-attachment.css*/</style>
-<a class="i-amphtml-story-page-open-attachment i-amphtml-story-page-open-attachment-outlink" role="button" target="_top" theme="custom" aria-label="More about query" href="https://query.wikidata.org/
-system-architectures-for-personalization-and-recommendation-e081aa94b5d8#25fd" style="--i-amphtml-outlink-cta-background-color:#FFF !important; --i-amphtml-outlink-cta-text-color:#1F64FF !important;" active="">
 
-	<svg class="i-amphtml-story-outlink-page-attachment-arrow"  id="attach" viewBox="0 0 20 8" width="20px" height="8px"><path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"></path></svg><div class="i-amphtml-story-outlink-page-attachment-outlink-chip"><div class="i-amphtml-story-outlink-page-attachment-img" ></div><span class="i-amphtml-story-page-attachment-label">More about Wiki</span></div></a>
-<svg class="i-amphtml-story-outlink-page-attachment-arrow" viewBox="0 0 20 8" width="20px" height="8px"><path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"></path></svg>
-<div class="i-amphtml-story-outlink-page-attachment-outlink-chip"><div class="i-amphtml-story-outlink-page-attachment-img"></div><span class="i-amphtml-story-page-attachment-label">More about Wiki</span></div>
+<amp-story-grid-layer template="vertical" position="landscape-half-right">
+
+<div class="slide5" 
+     animate-in="fade-in" 
+     animate-in-duration="4s" 
+     animate-in-delay="1s">
+
+<h4> Metformin’s unique id:  Q19484</h4>
+<h4> Treats property id: P2175</h4>
+
+</div> 
+</amp-story-grid-layer>
+
+<a class="i-amphtml-story-page-open-attachment i-amphtml-story-page-open-attachment-outlink" 
+   role="button" 
+   target="_top" 
+   theme="custom" 
+   aria-label="More about Wiki" 
+   href="https://query.wikidata.org/" 
+   style="--i-amphtml-outlink-cta-background-color:#FFF !important; --i-amphtml-outlink-cta-text-color:#1F64FF !important;" active="">
+   
+   <svg class="i-amphtml-story-outlink-page-attachment-arrow"  
+   id="attach" 
+   viewBox="0 0 20 8" 
+   width="20px" 
+   height="8px">
+   <path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z">
+   </path>
+   </svg>
+   <div class="i-amphtml-story-outlink-page-attachment-outlink-chip">
+   <div class="i-amphtml-story-outlink-page-attachment-img">
+   </div>
+   <span class="i-amphtml-story-page-attachment-label">More about Wiki</span>
+   </div>
 </a>
-</div>
 </amp-story-page>
 
 
 
-<amp-story-page id="slide" class="i-amphtml-element i-amphtml-layout-container i-amphtml-built i-amphtml-layout i-amphtml-story-page-loaded" i-amphtml-layout="container" role="region" distance="0" aria-hidden="false" active="">
-<amp-story-grid-layer template="fill" class="i-amphtml-element i-amphtml-layout-container i-amphtml-story-layer i-amphtml-built i-amphtml-layout" i-amphtml-layout="container"><amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-130F30-constellation" src="images/strip-light-bright-wallpaper-preview.jpg" width="997" height="997" layout="responsive" class="i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="responsive" alt="" style="--loader-delay-offset:13ms !important;"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="images/strip-light-bright-wallpaper-preview.jpg" data-item-role="background" data-item-type="static" data-item-label="background-130F30-constellation" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img></amp-story-grid-layer>
 
-<amp-story-grid-layer template="vertical" class="center i-amphtml-element i-amphtml-layout-container i-amphtml-story-layer i-amphtml-built i-amphtml-layout" i-amphtml-layout="container">
+
+
+
+<amp-story-page id="item-truett-15" 
+                data-item-label="Metformin’s" 
+                role="region" 
+                aria-hidden="false">
+
+<amp-story-grid-layer template="fill">
+
+    <amp-img 
+           id="" 
+           data-item-role="background" 
+           data-item-type="static" 
+           data-item-label="istockphoto" 
+           src="images/istockphoto-1174989482-170667a.jpg" 
+           width="997" 
+           height="997" 
+           layout="responsive">
+    </amp-img>
+</amp-story-grid-layer>
+
+<amp-story-grid-layer template="vertical" position="landscape-half-left">
+<div class="darken" 
+     animate-in="fade-in" 
+     animate-in-duration="4s" 
+     animate-in-delay="0.5s" 
+     style="opacity: 1;">
+
 <div id="myContainer">
 <div id="pf7" class="pf w0 h0" data-page-no="7">
 <div class="pc pc7 w0 h0">
 
-<amp-img class="bi x0 y0 w0 h0 i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" 
-       src="images/image16-w1920-h1080.webp" 
-    srcset="images/image16-w1920-h1080.webp 1440w,
-            images/image16-w1400-h787.webp 1400w,
-            images/image16-w760-h427.webp 1177w,
-            images/image16-w760-h427.webp 760w,
-            images/image16-w200-h122.webp 200w" width="920" height="880" layout="responsive" i-amphtml-layout="responsive" alt="" style="--loader-delay-offset:13ms !important;"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 95.6522%;"></i-amphtml-sizer>
-<img decoding="async" sizes="(max-width: 1517px) 1080px, 100vw" alt="" 
-    srcset="images/image16-w1920-h1080.webp 1440w,
-            images/image16-w1400-h787.webp 1400w,
-            images/image16-w760-h427.webp 1177w,
-            images/image16-w760-h427.webp 760w,
-            images/image16-w200-h122.webp 200w"
-       src="images/image16-w1920-h1080.webp" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-
-<div class="t m0 aa1 n1 bb1 ff1 fz1 fc2 sc0 ls0 ws0">Metformin’s unique id:  Q19484</div>
-<div class="t m0 aa2 n2 bb2 ff1 fz2 fc2 sc0 ls0 ws0">Treats property id: P2175</div>
-<div class="t m0 aa7 n2 bb7 ff1 fz4 fvj sc0 ls0 ws0" >Metformin</div>
-<div class="t m0 aa8 n2 bb8 ff1 fz5 fvj sc0 ls0 ws0" >?disease</div>
-<div class="t m0 aa9 n2 bb9 ff1 fz6 fc2 sc0 ls0 ws0" >treats</div>
-
-
+<amp-img 
+     src="images/metformin-3-w2243-h915.png" 
+     layout="responsive" 
+     width="1368" 
+     height="768">
+</amp-img>
+</div>
 </div>
 </div>
 </div>
 </amp-story-grid-layer>
-<div class="i-amphtml-story-spinner" aria-hidden="true" aria-label="Loading video"><div class="i-amphtml-story-spinner-container"><div class="i-amphtml-story-spinner-layer"><div class="i-amphtml-story-spinner-circle-clipper left"></div><div class="i-amphtml-story-spinner-circle-clipper right"></div></div></div></div>
-<div class="i-amphtml-story-page-open-attachment-host" role="button"></div>
-<style>.i-amphtml-story-page-open-attachment{-ms-flex-align:center!important;align-items:center!important;-ms-flex-direction:column!important;flex-direction:column!important;position:absolute!important;bottom:0!important;left:0!important;width:100%!important;pointer-events:none!important;z-index:3!important;-webkit-touch-callout:default!important;text-decoration:none!important;--i-amphtml-chip-background-color:hsla(0,0%,100%,0.5)!important;--i-amphtml-img-background-color:#fff!important;--i-amphtml-label-text-color:#fff!important;--i-amphtml-arrow-color:#000!important;--i-amphtml-page-attachment-ui-animation-delay:1s!important;--i-amphtml-page-attachment-ui-animation-duration:.6s!important;display:none!important}[theme=dark].i-amphtml-story-page-open-attachment{--i-amphtml-chip-background-color:rgba(0,0,0,0.5)!important;--i-amphtml-img-background-color:#000!important;--i-amphtml-label-text-color:#000!important;--i-amphtml-arrow-color:#fff!important}.i-amphtml-story-page-open-attachment[active]{display:-ms-flexbox!important;display:flex!important}.i-amphtml-story-page-open-attachment>*{cursor:pointer!important;pointer-events:auto!important}.i-amphtml-story-page-open-attachment-label{position:relative!important;padding:12px 32px 20px!important;height:16px!important;max-width:calc(100% - 64px)!important;color:#fff!important;line-height:16px!important;text-shadow:0px 0px 6px rgba(0,0,0,0.36)!important}.i-amphtml-story-page-attachment-label,.i-amphtml-story-page-open-attachment-label{font-family:Roboto,sans-serif!important;font-size:16px!important;font-weight:700!important;letter-spacing:0.3px;overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important}.i-amphtml-story-page-attachment-label{max-width:210px!important;line-height:18px!important}.i-amphtml-story-page-open-attachment-label{color:var(--i-amphtml-label-text-color)!important}.i-amphtml-story-inline-page-attachment-chip{background-color:var(--i-amphtml-chip-background-color)!important;display:-ms-flexbox!important;display:flex!important;border-radius:24px!important;-ms-flex-align:center!important;align-items:center!important;overflow:hidden!important;margin-bottom:12px!important}.i-amphtml-story-page-open-attachment-inline[active] .i-amphtml-story-inline-page-attachment-chip{animation:i-amphtml-tap-scale var(--i-amphtml-page-attachment-ui-animation-duration) var(--i-amphtml-page-attachment-ui-animation-delay) both!important}.i-amphtml-story-inline-page-attachment-chip:only-child{margin-bottom:20px!important}.i-amphtml-story-inline-page-attachment-img{background-size:contain!important;background-repeat:no-repeat!important;height:48px!important;width:48px!important;background-color:var(--i-amphtml-img-background-color)!important}.i-amphtml-story-inline-page-attachment-img:nth-child(2){margin-inline-start:1px!important}.i-amphtml-story-inline-page-attachment-arrow{position:relative!important;height:32px!important;width:32px!important;border-radius:50%!important;background-color:var(--i-amphtml-img-background-color)!important}.i-amphtml-story-inline-page-attachment-arrow:not(:only-child){margin:8px!important}.i-amphtml-story-inline-page-attachment-arrow:before{content:""!important;position:absolute!important;top:0!important;left:0!important;width:100%!important;height:100%!important;background-image:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="8"><path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"/></svg>')!important;background-position:50%!important;background-size:auto!important;background-repeat:no-repeat!important}.i-amphtml-story-page-open-attachment-inline[active] .i-amphtml-story-inline-page-attachment-arrow:before{animation:i-amphtml-move-up-arrow-in-circle var(--i-amphtml-page-attachment-ui-animation-duration) var(--i-amphtml-page-attachment-ui-animation-delay) both!important}[theme=dark] .i-amphtml-story-inline-page-attachment-arrow:before{background-image:url('data:image/svg+xml;charset=utf-8,<svg fill="%23fff" xmlns="http://www.w3.org/2000/svg" width="20" height="8"><path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"/></svg>')!important}.i-amphtml-story-page-open-attachment-inline .i-amphtml-story-page-attachment-label{margin-bottom:20px!important;color:var(--i-amphtml-label-text-color)!important}.i-amphtml-story-page-open-attachment-inline{background:linear-gradient(0,rgba(0,0,0,0.15),transparent)!important;border:none!important;padding:0!important}[theme=dark].i-amphtml-story-page-open-attachment-inline{background:linear-gradient(0,hsla(0,0%,100%,0.25),hsla(0,0%,100%,0))!important}.i-amphtml-story-page-open-attachment-outlink{--i-amphtml-outlink-cta-background-color:#fff!important;--i-amphtml-outlink-cta-text-color:#000!important}[theme=dark].i-amphtml-story-page-open-attachment-outlink{--i-amphtml-outlink-cta-background-color:#000!important;--i-amphtml-outlink-cta-text-color:#fff!important}.i-amphtml-story-page-open-attachment-outlink[active]:not(.i-amphtml-story-page-open-attachment-outlink-no-animation-exp){animation:i-amphtml-tap-scale var(--i-amphtml-page-attachment-ui-animation-duration) var(--i-amphtml-page-attachment-ui-animation-delay) both!important}.i-amphtml-story-outlink-page-attachment-arrow{display:block!important;cursor:pointer!important;margin-bottom:10px!important;fill:var(--i-amphtml-outlink-cta-background-color)!important;filter:drop-shadow(0px 2px 6px rgba(0,0,0,0.3))!important}.i-amphtml-story-page-open-attachment[active]:not(.i-amphtml-story-page-open-attachment-outlink-no-animation-exp) .i-amphtml-story-outlink-page-attachment-arrow{animation:i-amphtml-move-up-arrow var(--i-amphtml-page-attachment-ui-animation-duration) var(--i-amphtml-page-attachment-ui-animation-delay) both!important}@keyframes i-amphtml-move-up-arrow{0%,to{opacity:1;transform:translateY(0)}45%{opacity:0;transform:translateY(-7px)}45.01%{transform:translateY(5px)}}@keyframes i-amphtml-move-up-arrow-in-circle{0%,to{opacity:1;transform:translateY(0)}45%{opacity:0;transform:translateY(-4px)}45.01%{transform:translateY(3px)}}@keyframes i-amphtml-tap-scale{0%,to{transform:scale(1)}45%{transform:scale(.9)}}.i-amphtml-story-outlink-page-attachment-outlink-chip{display:-ms-flexbox!important;display:flex!important;position:relative!important;padding:10px 6px!important;margin:0 0 20px!important;height:16px!important;max-width:calc(100% - 64px)!important;border-radius:30px!important;background:var(--i-amphtml-outlink-cta-background-color)!important;place-items:center!important;box-shadow:0px 4px 10px rgba(0,0,0,.15)!important}.i-amphtml-story-outlink-page-attachment-img{height:24px!important;width:24px!important;vertical-align:middle!important;background-size:cover!important;background-repeat:no-repeat!important;background-position:50%!important;border-radius:50%!important}.i-amphtml-story-page-open-attachment-outlink .i-amphtml-story-page-attachment-label{padding-inline-start:6px!important;padding-inline-end:8px!important;color:var(--i-amphtml-outlink-cta-text-color)!important}.i-amphtml-story-outlink-page-attachment-label:only-child,.i-amphtml-story-page-open-attachment-outlink .i-amphtml-story-page-attachment-label:only-child{padding-inline-start:8px!important}.i-amphtml-story-page-open-attachment-link-icon{width:24px!important;height:24px!important;fill:var(--i-amphtml-outlink-cta-text-color)!important}
-/*# sourceURL=/extensions/amp-story-page-attachment/0.1/amp-story-open-page-attachment.css*/</style>
-<a class="i-amphtml-story-page-open-attachment i-amphtml-story-page-open-attachment-outlink" role="button" target="_top" theme="custom" aria-label="More about query" href="http://tinyurl.com/gwd6pep
-system-architectures-for-personalization-and-recommendation-e081aa94b5d8#25fd" style="--i-amphtml-outlink-cta-background-color:#FFF !important; --i-amphtml-outlink-cta-text-color:#1F64FF !important;" active="">
 
-	<svg class="i-amphtml-story-outlink-page-attachment-arrow"  id="attach" viewBox="0 0 20 8" width="20px" height="8px"><path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"></path></svg><div class="i-amphtml-story-outlink-page-attachment-outlink-chip"><div class="i-amphtml-story-outlink-page-attachment-img" ></div><span class="i-amphtml-story-page-attachment-label">More about Tiny</span></div></a>
-<svg class="i-amphtml-story-outlink-page-attachment-arrow" viewBox="0 0 20 8" width="20px" height="8px"><path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"></path></svg>
-<div class="i-amphtml-story-outlink-page-attachment-outlink-chip"><div class="i-amphtml-story-outlink-page-attachment-img"></div><span class="i-amphtml-story-page-attachment-label">More about Tiny</span></div>
+<amp-story-grid-layer template="vertical" position="landscape-half-right">
+
+<div class="slide5"
+     animate-in="fade-in" 
+     animate-in-duration="4s" 
+     animate-in-delay="1s">
+
+<h4> Metformin’s unique id:  Q19484</h4>
+<h4> Treats property id: P2175</h4>
+
+</div> 
+</amp-story-grid-layer>
+
+<a class="i-amphtml-story-page-open-attachment i-amphtml-story-page-open-attachment-outlink" 
+   role="button" 
+   target="_top" 
+   theme="custom" 
+   aria-label="More about Wiki" 
+   href="http://tinyurl.com/gwd6pep" 
+   style="--i-amphtml-outlink-cta-background-color:#FFF !important; --i-amphtml-outlink-cta-text-color:#1F64FF !important;" active="">
+   
+   <svg class="i-amphtml-story-outlink-page-attachment-arrow"  
+   id="attach" 
+   viewBox="0 0 20 8" 
+   width="20px" 
+   height="8px">
+   <path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z">
+   </path>
+   </svg>
+   <div class="i-amphtml-story-outlink-page-attachment-outlink-chip">
+   <div class="i-amphtml-story-outlink-page-attachment-img">
+   </div>
+   <span class="i-amphtml-story-page-attachment-label">More about Wiki</span>
+   </div>
 </a>
-</div>
 </amp-story-page>
 
 
 
-<amp-story-page id="slide" class="i-amphtml-element i-amphtml-layout-container i-amphtml-built i-amphtml-layout i-amphtml-story-page-loaded" i-amphtml-layout="container" role="region" distance="0" aria-hidden="false" active="">
-<amp-story-grid-layer template="fill" class="i-amphtml-element i-amphtml-layout-container i-amphtml-story-layer i-amphtml-built i-amphtml-layout" i-amphtml-layout="container"><amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-130F30-constellation" src="images/strip-light-bright-wallpaper-preview.jpg" width="997" height="997" layout="responsive" class="i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="responsive" alt="" style="--loader-delay-offset:13ms !important;"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="images/strip-light-bright-wallpaper-preview.jpg" data-item-role="background" data-item-type="static" data-item-label="background-130F30-constellation" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img></amp-story-grid-layer>
 
-<amp-story-grid-layer template="vertical" class="center i-amphtml-element i-amphtml-layout-container i-amphtml-story-layer i-amphtml-built i-amphtml-layout" i-amphtml-layout="container">
-<div id="myContainer">
+
+<amp-story-page id="item-truett-16" 
+                data-item-label="Example question: drug repurposing" 
+                role="region" 
+                aria-hidden="false">
+
+<amp-story-grid-layer template="fill">
+
+    <amp-img 
+           id="" 
+           data-item-role="background" 
+           data-item-type="static" 
+           data-item-label="istockphoto" 
+           src="images/istockphoto-1174989482-170667a.jpg" 
+           width="997" 
+           height="997" 
+           layout="responsive">
+    </amp-img>
+</amp-story-grid-layer>
+
+<amp-story-grid-layer template="vertical" position="landscape-half-left">
+<div class="darken" 
+     animate-in="fade-in" 
+     animate-in-duration="4s" 
+     animate-in-delay="0.5s" 
+     style="opacity: 1;">
+
+<div id="repurposing">
 <div id="pf7" class="pf w0 h0" data-page-no="7">
-<div class="pc pc7 w0 h0">
 
-<amp-img class="bi x0 y0 w0 h0 i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" 
-       src="images/image17-w1920-h1080.webp" 
-    srcset="images/image17-w1920-h1080.webp 1440w,
-            images/image17-w1400-h787.webp 1400w,
-            images/image17-w760-h427.webp 1177w,
-            images/image17-w760-h427.webp 760w,
-            images/image17-w200-h122.webp 200w" width="920" height="880" layout="responsive" i-amphtml-layout="responsive" alt="" style="--loader-delay-offset:13ms !important;"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 95.6522%;"></i-amphtml-sizer>
-<img decoding="async" sizes="(max-width: 1517px) 1080px, 100vw" alt="" 
-    srcset="images/image17-w1920-h1080.webp 1440w,
-            images/image17-w1400-h787.webp 1400w,
-            images/image17-w760-h427.webp 1177w,
-            images/image17-w760-h427.webp 760w,
-            images/image17-w200-h122.webp 200w"
-       src="images/image17-w1920-h1080.webp" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+<amp-img 
+       src="images/drug-gene-disease-1-w794-h531.png" 
+       layout="responsive"  
+       width="197" 
+       height="97" >
+</amp-img>
+</div>
+</div>
 
-<div class="t m0 lyz n1 byz ff1 fyz fc2 sc0 ls0 ws0">Example question: drug repurposing </div>
-<div class="t m0 ab9 n2 bc9 ff1 fxy fc2 sc0 ls0 ws0" >“For a given drug, what<br>  diseases might it be<br>  used to treat?”</div>
-<div class="t m0 ab1 n1 bc1 ff1 fx1 fvj sc0 ls0 ws0">?drug</div>
-<div class="t m0 ab2 n2 bc2 ff1 fx1 fvj sc0 ls0 ws0">?disease</div>
-<div class="t m0 ab3 n3 bc3 ff1 fx1 fj1 sc0 ls0 ws0">treats??</div>
-<div class="t m0 ab4 n2 bc4 ff1 fx1 fvj sc0 ls0 ws0" >gene</div>
-<div class="t m0 ab5 n2 bc5 ff1 fx1 fvj sc0 ls0 ws0" >protein</div>
-<div class="t m0 ab6 n2 bc6 ff1 fx1 fc2 sc0 ls0 ws0" >interacts<br>with</div>
-<div class="t m0 ab7 n2 bc7 ff1 fx1 fc2 sc0 ls0 ws0" >encoded by</div>
-<div class="t m0 ab8 n2 bc8 ff1 fx1 fc2 sc0 ls0 ws0" >genetic<br>association</div>
+<div id="repurposing">
+<div id="pf7" class="pf w0 h0" data-page-no="7">
+
+<amp-img 
+        src="images/drug-gene-disease-protein-w953-h630.png" 
+        layout="responsive" 
+        width="197" 
+        height="97">
+</amp-img>
 </div>
 </div>
 </div>
 </amp-story-grid-layer>
-<div class="i-amphtml-story-spinner" aria-hidden="true" aria-label="Loading video"><div class="i-amphtml-story-spinner-container"><div class="i-amphtml-story-spinner-layer"><div class="i-amphtml-story-spinner-circle-clipper left"></div><div class="i-amphtml-story-spinner-circle-clipper right"></div></div></div></div>
+
+
+<amp-story-grid-layer template="vertical" position="landscape-half-right" >
+
+<div class="myContainer" 
+     id="title" 
+     animate-in="fade-in" 
+     animate-in-duration="4s">
+
+<h2 id="start">Example question: drug repurposing</h2>
+</div>
+
+<div class="slide5" 
+     animate-in="fade-in" 
+     animate-in-duration="4s" 
+     animate-in-delay="1s">
+
+<h4> “For a given drug, what diseases might it be used to treat?”</h4>
+</div> 
+</amp-story-grid-layer>
 </amp-story-page>
 
 
 
-<amp-story-page id="slide" class="i-amphtml-element i-amphtml-layout-container i-amphtml-built i-amphtml-layout i-amphtml-story-page-loaded" i-amphtml-layout="container" role="region" distance="0" aria-hidden="false" active="">
-<amp-story-grid-layer template="fill" class="i-amphtml-element i-amphtml-layout-container i-amphtml-story-layer i-amphtml-built i-amphtml-layout" i-amphtml-layout="container"><amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-130F30-constellation" src="images/strip-light-bright-wallpaper-preview.jpg" width="997" height="997" layout="responsive" class="i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="responsive" alt="" style="--loader-delay-offset:13ms !important;"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="images/strip-light-bright-wallpaper-preview.jpg" data-item-role="background" data-item-type="static" data-item-label="background-130F30-constellation" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img></amp-story-grid-layer>
+
+
+<amp-story-page id="item-truett-17" 
+                data-item-label="Example question: repurposing Metformin" 
+                role="region" 
+                aria-hidden="false">
+
+<amp-story-grid-layer template="fill">
+
+    <amp-img id="" 
+             data-item-role="background" 
+             data-item-type="static" 
+             data-item-label="background-130F30-constellation" 
+             src="images/strip-light-bright-wallpaper-preview.jpg" 
+             width="997" 
+             height="997" 
+             layout="responsive">
+    </amp-img>
+</amp-story-grid-layer>
 
 <amp-story-grid-layer template="vertical" class="center i-amphtml-element i-amphtml-layout-container i-amphtml-story-layer i-amphtml-built i-amphtml-layout" i-amphtml-layout="container">
 <div id="myContainer">
 <div id="pf7" class="pf w0 h0" data-page-no="7">
 <div class="pc pc7 w0 h0">
 
-<amp-img class="bi x0 y0 w0 h0 i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" 
-       src="images/image18-w1920-h1080.webp" 
+<amp-img class="bi x0 y0 w0 h0"
+       src="images/image18-w1920-h1080.webp"
     srcset="images/image18-w1920-h1080.webp 1440w,
             images/image18-w1400-h787.webp 1400w,
-            images/image18-w760-h427.webp 1177w,
+            images/image18-w1177-h662.webp 1177w,
             images/image18-w760-h427.webp 760w,
-            images/image18-w200-h122.webp 200w" width="920" height="880" layout="responsive" i-amphtml-layout="responsive" alt="" style="--loader-delay-offset:13ms !important;"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 95.6522%;"></i-amphtml-sizer>
-<img decoding="async" sizes="(max-width: 1517px) 1080px, 100vw" alt="" 
-    srcset="images/image18-w1920-h1080.webp 1440w,
-            images/image18-w1400-h787.webp 1400w,
-            images/image18-w760-h427.webp 1177w,
-            images/image18-w760-h427.webp 760w,
-            images/image18-w200-h122.webp 200w"
-       src="images/image18-w1920-h1080.webp" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+            images/image18-w200-h112.webp 200w"
+    width="1420"
+    height="1080"
+    layout="responsive">
+</amp-img>
+
 
 <div class="t m0 ca1 n1 cb1 ff1 fb1 fc2 sc0 ls0 ws0">Example question: repurposing Metformin</div>
 <div class="t m0 ca2 n1 cb2 ff1 fw1 fvj sc0 ls0 ws0">Solute carrier<br>   family 22<br>  member 3</div>
@@ -7890,20 +9554,199 @@ system-architectures-for-personalization-and-recommendation-e081aa94b5d8#25fd" s
 </div>
 </div>
 </amp-story-grid-layer>
+
 <div class="i-amphtml-story-spinner" aria-hidden="true" aria-label="Loading video"><div class="i-amphtml-story-spinner-container"><div class="i-amphtml-story-spinner-layer"><div class="i-amphtml-story-spinner-circle-clipper left"></div><div class="i-amphtml-story-spinner-circle-clipper right"></div></div></div></div>
 
 
-<div class="i-amphtml-story-page-open-attachment-host" role="button"></div>
-<style>.i-amphtml-story-page-open-attachment{-ms-flex-align:center!important;align-items:center!important;-ms-flex-direction:column!important;flex-direction:column!important;position:absolute!important;bottom:0!important;left:0!important;width:100%!important;pointer-events:none!important;z-index:3!important;-webkit-touch-callout:default!important;text-decoration:none!important;--i-amphtml-chip-background-color:hsla(0,0%,100%,0.5)!important;--i-amphtml-img-background-color:#fff!important;--i-amphtml-label-text-color:#fff!important;--i-amphtml-arrow-color:#000!important;--i-amphtml-page-attachment-ui-animation-delay:1s!important;--i-amphtml-page-attachment-ui-animation-duration:.6s!important;display:none!important}[theme=dark].i-amphtml-story-page-open-attachment{--i-amphtml-chip-background-color:rgba(0,0,0,0.5)!important;--i-amphtml-img-background-color:#000!important;--i-amphtml-label-text-color:#000!important;--i-amphtml-arrow-color:#fff!important}.i-amphtml-story-page-open-attachment[active]{display:-ms-flexbox!important;display:flex!important}.i-amphtml-story-page-open-attachment>*{cursor:pointer!important;pointer-events:auto!important}.i-amphtml-story-page-open-attachment-label{position:relative!important;padding:12px 32px 20px!important;height:16px!important;max-width:calc(100% - 64px)!important;color:#fff!important;line-height:16px!important;text-shadow:0px 0px 6px rgba(0,0,0,0.36)!important}.i-amphtml-story-page-attachment-label,.i-amphtml-story-page-open-attachment-label{font-family:Roboto,sans-serif!important;font-size:16px!important;font-weight:700!important;letter-spacing:0.3px;overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important}.i-amphtml-story-page-attachment-label{max-width:210px!important;line-height:18px!important}.i-amphtml-story-page-open-attachment-label{color:var(--i-amphtml-label-text-color)!important}.i-amphtml-story-inline-page-attachment-chip{background-color:var(--i-amphtml-chip-background-color)!important;display:-ms-flexbox!important;display:flex!important;border-radius:24px!important;-ms-flex-align:center!important;align-items:center!important;overflow:hidden!important;margin-bottom:12px!important}.i-amphtml-story-page-open-attachment-inline[active] .i-amphtml-story-inline-page-attachment-chip{animation:i-amphtml-tap-scale var(--i-amphtml-page-attachment-ui-animation-duration) var(--i-amphtml-page-attachment-ui-animation-delay) both!important}.i-amphtml-story-inline-page-attachment-chip:only-child{margin-bottom:20px!important}.i-amphtml-story-inline-page-attachment-img{background-size:contain!important;background-repeat:no-repeat!important;height:48px!important;width:48px!important;background-color:var(--i-amphtml-img-background-color)!important}.i-amphtml-story-inline-page-attachment-img:nth-child(2){margin-inline-start:1px!important}.i-amphtml-story-inline-page-attachment-arrow{position:relative!important;height:32px!important;width:32px!important;border-radius:50%!important;background-color:var(--i-amphtml-img-background-color)!important}.i-amphtml-story-inline-page-attachment-arrow:not(:only-child){margin:8px!important}.i-amphtml-story-inline-page-attachment-arrow:before{content:""!important;position:absolute!important;top:0!important;left:0!important;width:100%!important;height:100%!important;background-image:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="8"><path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"/></svg>')!important;background-position:50%!important;background-size:auto!important;background-repeat:no-repeat!important}.i-amphtml-story-page-open-attachment-inline[active] .i-amphtml-story-inline-page-attachment-arrow:before{animation:i-amphtml-move-up-arrow-in-circle var(--i-amphtml-page-attachment-ui-animation-duration) var(--i-amphtml-page-attachment-ui-animation-delay) both!important}[theme=dark] .i-amphtml-story-inline-page-attachment-arrow:before{background-image:url('data:image/svg+xml;charset=utf-8,<svg fill="%23fff" xmlns="http://www.w3.org/2000/svg" width="20" height="8"><path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"/></svg>')!important}.i-amphtml-story-page-open-attachment-inline .i-amphtml-story-page-attachment-label{margin-bottom:20px!important;color:var(--i-amphtml-label-text-color)!important}.i-amphtml-story-page-open-attachment-inline{background:linear-gradient(0,rgba(0,0,0,0.15),transparent)!important;border:none!important;padding:0!important}[theme=dark].i-amphtml-story-page-open-attachment-inline{background:linear-gradient(0,hsla(0,0%,100%,0.25),hsla(0,0%,100%,0))!important}.i-amphtml-story-page-open-attachment-outlink{--i-amphtml-outlink-cta-background-color:#fff!important;--i-amphtml-outlink-cta-text-color:#000!important}[theme=dark].i-amphtml-story-page-open-attachment-outlink{--i-amphtml-outlink-cta-background-color:#000!important;--i-amphtml-outlink-cta-text-color:#fff!important}.i-amphtml-story-page-open-attachment-outlink[active]:not(.i-amphtml-story-page-open-attachment-outlink-no-animation-exp){animation:i-amphtml-tap-scale var(--i-amphtml-page-attachment-ui-animation-duration) var(--i-amphtml-page-attachment-ui-animation-delay) both!important}.i-amphtml-story-outlink-page-attachment-arrow{display:block!important;cursor:pointer!important;margin-bottom:10px!important;fill:var(--i-amphtml-outlink-cta-background-color)!important;filter:drop-shadow(0px 2px 6px rgba(0,0,0,0.3))!important}.i-amphtml-story-page-open-attachment[active]:not(.i-amphtml-story-page-open-attachment-outlink-no-animation-exp) .i-amphtml-story-outlink-page-attachment-arrow{animation:i-amphtml-move-up-arrow var(--i-amphtml-page-attachment-ui-animation-duration) var(--i-amphtml-page-attachment-ui-animation-delay) both!important}@keyframes i-amphtml-move-up-arrow{0%,to{opacity:1;transform:translateY(0)}45%{opacity:0;transform:translateY(-7px)}45.01%{transform:translateY(5px)}}@keyframes i-amphtml-move-up-arrow-in-circle{0%,to{opacity:1;transform:translateY(0)}45%{opacity:0;transform:translateY(-4px)}45.01%{transform:translateY(3px)}}@keyframes i-amphtml-tap-scale{0%,to{transform:scale(1)}45%{transform:scale(.9)}}.i-amphtml-story-outlink-page-attachment-outlink-chip{display:-ms-flexbox!important;display:flex!important;position:relative!important;padding:10px 6px!important;margin:0 0 20px!important;height:16px!important;max-width:calc(100% - 64px)!important;border-radius:30px!important;background:var(--i-amphtml-outlink-cta-background-color)!important;place-items:center!important;box-shadow:0px 4px 10px rgba(0,0,0,.15)!important}.i-amphtml-story-outlink-page-attachment-img{height:24px!important;width:24px!important;vertical-align:middle!important;background-size:cover!important;background-repeat:no-repeat!important;background-position:50%!important;border-radius:50%!important}.i-amphtml-story-page-open-attachment-outlink .i-amphtml-story-page-attachment-label{padding-inline-start:6px!important;padding-inline-end:8px!important;color:var(--i-amphtml-outlink-cta-text-color)!important}.i-amphtml-story-outlink-page-attachment-label:only-child,.i-amphtml-story-page-open-attachment-outlink .i-amphtml-story-page-attachment-label:only-child{padding-inline-start:8px!important}.i-amphtml-story-page-open-attachment-link-icon{width:24px!important;height:24px!important;fill:var(--i-amphtml-outlink-cta-text-color)!important}
-/*# sourceURL=/extensions/amp-story-page-attachment/0.1/amp-story-open-page-attachment.css*/</style>
-<a class="i-amphtml-story-page-open-attachment i-amphtml-story-page-open-attachment-outlink" role="button" target="_top" theme="custom" aria-label="More about Netflix" href="http://tinyurl.com/zem3oxz system-architectures-for-personalization-and-recommendation-e081aa94b5d8#25fd" style="--i-amphtml-outlink-cta-background-color:#FFF !important; --i-amphtml-outlink-cta-text-color:#1F64FF !important;" active="">
-
-	<svg class="i-amphtml-story-outlink-page-attachment-arrow"  id="attach" viewBox="0 0 20 8" width="20px" height="8px"><path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"></path></svg><div class="i-amphtml-story-outlink-page-attachment-outlink-chip"><div class="i-amphtml-story-outlink-page-attachment-img" ></div><span class="i-amphtml-story-page-attachment-label">More about Tiny</span></div></a>
-<svg class="i-amphtml-story-outlink-page-attachment-arrow" viewBox="0 0 20 8" width="20px" height="8px"><path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"></path></svg>
-<div class="i-amphtml-story-outlink-page-attachment-outlink-chip"><div class="i-amphtml-story-outlink-page-attachment-img"></div><span class="i-amphtml-story-page-attachment-label">More about Tiny</span></div>
+<a class="i-amphtml-story-page-open-attachment i-amphtml-story-page-open-attachment-outlink" 
+   role="button" 
+   target="_top" 
+   theme="custom" 
+   aria-label="More about query" 
+   href="http://tinyurl.com/zem3oxz" 
+   style="--i-amphtml-outlink-cta-background-color:#FFF !important; --i-amphtml-outlink-cta-text-color:#1F64FF !important;" active="">
+   
+   <svg class="i-amphtml-story-outlink-page-attachment-arrow"  
+   id="attach" 
+   viewBox="0 0 20 8" 
+   width="20px" 
+   height="8px">
+   <path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z">
+   </path>
+   </svg>
+   <div class="i-amphtml-story-outlink-page-attachment-outlink-chip">
+   <div class="i-amphtml-story-outlink-page-attachment-img">
+   </div>
+   <span class="i-amphtml-story-page-attachment-label">More about Tiny</span>
+   </div>
 </a>
-</div>
 </amp-story-page>
+
+
+
+
+
+
+
+<!-- Sowa amp -->
+
+
+<amp-story-page id="sowa_1">
+
+<amp-story-grid-layer
+  template="vertical"
+  class=""
+>
+
+
+<amp-img data-hero="" src="images/sowabackground.jpg" srcset="images/sowabackground.jpg 1920w,
+                        images/sowabackground.jpg 1438w,
+                        images/sowabackground.jpg 1000w,
+                        images/sowabackground.jpg 700w,
+                        images/sowabackground.jpg 500w,
+                        images/sowabackground.jpg 300w" width="1920" height="1080" layout="responsive" class="i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="responsive" alt="">
+<i-amphtml-sizer slot="i-amphtml-svc" ></i-amphtml-sizer>
+<img decoding="async" sizes="(max-width: 1280px) 1280px, 100vw" alt="" srcset="images/sowabackground.jpg 1920w,
+                        images/sowabackground.jpg 1438w,
+                        images/sowabackground.jpg 1000w,
+                        images/sowabackground.jpg 700w,
+                        images/sowabackground.jpg 500w,
+                        images/sowabackground.jpg 300w" src="images/sowabackground.jpg" data-hero="" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+
+<div id="page-container">
+
+<div id="" class="pf0 w00 h00" data-page-no="2.1">
+<div class="pc pc2 w00 h00">
+
+<!-- template -->
+<div id="title">
+<h2>Summary</h2>
+</div>
+<section class="p-s">
+<dl class="chartlegend">
+
+<dt>Existential graphs &#x28;EGs&#x29; are an excellent pedagogical tool.</dt>
+<dt>EG rules of inference are notation-independent&#x003A;</dt>
+<dd><span class="c-c0334d mr-s"></span>The same rules can be used for propositional logic, first-order logic, and many variations and extensions of FOL.</dd>
+<dd><span class="c-f3d480 mr-s"></span>They can be used with graphic and linear notations, including versions of natural language.</dd>
+<dd><span class="c-f1931b mr-s"></span>They could even be implemented in neural networks.</dd>
+
+<dt>Peirce claimed that EGs represent &#x201C;a moving picture of the action of the mind in thought.&#x201D;</dt>
+<dt>The psychologist Philip Johnson-Laird agreed&#x003A; Peirce&#x2019;s EGs and rules of inference are a good candidate for a natural logic.</dt>
+
+</dl>
+</section>
+</div>
+</div>
+</div>
+</amp-story-grid-layer>
+</amp-story-page>
+
+
+
+
+<amp-story-page id="sowa_1" >
+
+<amp-story-grid-layer template="fill">
+
+    <amp-img 
+             id="" 
+             data-item-role="background" 
+             data-item-type="static" 
+             data-item-label="background-130F30-constellation" 
+             src="images/sowabackground.jpg" 
+             idth="997" 
+             height="997" 
+             layout="responsive">
+    </amp-img>
+
+</amp-story-grid-layer>
+
+<amp-story-grid-layer template="thirds" aspect-ratio="">
+<div grid-area="upper-third">
+
+<div class="myContainer" 
+      id="title" 
+      animate-in="fade-in" 
+      animate-in-duration="4s">
+
+<h2 id="exam">Summary</h2>
+</div>
+
+<section class="p-s" 
+         animate-in="fade-in" 
+         animate-in-duration="4s" 
+         animate-in-delay="1s">
+
+<dl class="chartlegend">
+
+<h4 id="sowah4">Existential graphs &#x28;EGs&#x29; are an excellent pedagogical tool.</h4>
+<h4 id="sowah4">EG rules of inference are notation-independent&#x003A;</h4>
+<h5><span class="c-c0334d mr-s"></span>The same rules can be used for propositional logic, first-order logic, and many variations and extensions of FOL.</h5>
+<h5><span class="c-f3d480 mr-s"></span>They can be used with graphic and linear notations, including versions of natural language.</h5>
+<h5><span class="c-f1931b mr-s"></span>They could even be implemented in neural networks.</h5>
+
+<h4 id="sowah4">Peirce claimed that EGs represent &#x201C;a moving picture of the action of the mind in thought.&#x201D;</h4>
+<h4 id="sowah4">The psychologist Philip Johnson-Laird agreed&#x003A; Peirce&#x2019;s EGs and rules of inference are a good candidate for a natural logic.</h4>
+
+</dl>
+</section>
+
+</div> 
+</amp-story-grid-layer>
+</amp-story-page>
+
+
+
+
+<amp-story-page id="s0wa_2">
+
+<amp-story-grid-layer
+  template="vertical"
+  class=""
+>
+
+<amp-img data-hero="" src="images/sowabackground.jpg" srcset="images/sowabackground.jpg 1920w,
+                        images/sowabackground.jpg 1438w,
+                        images/sowabackground.jpg 1000w,
+                        images/sowabackground.jpg 700w,
+                        images/sowabackground.jpg 500w,
+                        images/sowabackground.jpg 300w" width="1920" height="1080" layout="responsive" class="i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="responsive" alt="">
+<i-amphtml-sizer slot="i-amphtml-svc" ></i-amphtml-sizer>
+<img decoding="async" sizes="(max-width: 1280px) 1280px, 100vw" alt="" srcset="images/sowabackground.jpg 1920w,
+                        images/sowabackground.jpg 1438w,
+                        images/sowabackground.jpg 1000w,
+                        images/sowabackground.jpg 700w,
+                        images/sowabackground.jpg 500w,
+                        images/sowabackground.jpg 300w" src="images/sowabackground.jpg" data-hero="" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+
+<div id="myContainer">
+<div id="pf4" class="pf w0 h0" data-page-no="4">
+<div class="pc pc4 w0 h0">
+
+
+<amp-img class="bi x0 y0 w0 h0 i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout amp-notsupported" alt="" src="images/page-04-w1586-h1190.webp" srcset="images/page-04-w1586-h1190.webp 1586w,
+            images/page-04-w1400-h1050.webp 1400w,
+            images/page-04-w1177-h662.webp 1177w,
+            images/page-04-w760-h427.webp 760w,
+            images/page-04-w200-h112.webp 200w" width="1586" height="1190" layout="responsive" i-amphtml-layout="responsive">
+            <i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 75.0315%;"></i-amphtml-sizer>
+            <img decoding="async" sizes="(max-width: 1366px) 1190px, 100vw" alt=""
+             srcset="sowa_images/page-04-w1586-h1190.webp 1586w,
+            images/page-04-w1400-h1050.webp 1400w,
+            images/page-04-w1177-h662.webp 1177w,
+            images/page-04-w760-h427.webp 760w,
+            images/page-04-w200-h112.webp 200w" src="images/page-04-w1586-h1190.webp" class="i-amphtml-fill-content i-amphtml-replaced-content i-amphtml-ghost"></amp-img>
+
+<!-- <div class="t m0 x6 h6 y6 ff4 fs4 fc0 sc0 ls0 ws0">4</div> -->
+<div class="t m0 x19 h7 y1f ff4 fs5 fc0 sc0 ls0 ws0">A Minimal Notation for FOL</div>
+<div class="t m0 x1a hb y20 ff4 fs9 fc0 sc0 ls0 ws0">A line for existence.  An oval for negation.  Conjunction is implicit.</div>
+</div>
+</div>
+</div>
+</amp-story-grid-layer>
+</amp-story-page>
+
 </amp-story>
 
 </body>
