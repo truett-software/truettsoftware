@@ -4,12 +4,11 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width"/>
 <link rel="shortcut icon" href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg"/>
-<title>
-AMP Story Template
-</title>
+<title>AMP Story Template</title>
 <link rel="canonical" href="index.html" />
 <script async                            src="https://cdn.ampproject.org/v0.js"></script>
-<script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+<script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js">
+</script>
 
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
@@ -133,9 +132,11 @@ AMP Story Template
 @font-face {
     font-family: ff8;
     font-display: optional;
-    src: local("Arial Bold Italic"), local("Arial-BoldItalic"),
-        url(https://s3.amazonaws.com/benetta.net/fonts/arial/Arial-BoldItalic.woff2)
-            format("woff2");
+    src: local("Arial Bold"), local("Arial-Bold"),
+        url(https://s3.amazonaws.com/benetta.net/fonts/arial/Arial-Bold.woff2)
+            format("woff2"),
+        url(https://s3.amazonaws.com/benetta.net/fonts/arial/Arial-Bold.woff)
+            format("woff");
 }
 .ff8 {
     font-family: ff8;
@@ -177,20 +178,33 @@ AMP Story Template
 /**********************
 * Sowa Attachment DL-DT-DD
 */
-
-#page-container {
-    zoom: 0.95;
-    -moz-transform: scale(0.95);
+.dl-adjust {
+    font-family: ff2;
+    margin-left:3vw;
+}
+.box {
+    position: relative;
+    display: inline-block; /* Make the width of box same as image */
 }
 
-#page-container h2 {
+.box .text {
+    position: absolute;
+    z-index: 999;
+    font-family: ff2;
+    font-size: 2.2em;
+    margin-left: 10vw;
+    text-align: left;
+    top: 8%; /* Adjust this value to move the positioned div up and down */
     color: #000;
-    padding-top: 2%;
-}
-#sowah4 {
-    margin-left: 1em;
+    width: 100%; /* Set the width of the positioned div */
 }
 
+.box amp-img {
+    position: relative;
+       /*width: 65%;
+      height: 65%;*/
+        left: 18%;
+}
 /* test switch to em */
 .chartlegend span {
     display: inline-block;
@@ -217,7 +231,7 @@ p {
     border: none;
 }
 
-dt {
+/*dt {
     font-family: NotoSerif;
     font-size: 1.2em;
     font-weight: 400;
@@ -225,7 +239,7 @@ dt {
     padding-top: 0.2em;
     padding-bottom: 0.2em;
     margin-left: 1em;
-    color: #fff;
+    color: #000;
     border: none;
 }
 
@@ -238,8 +252,8 @@ dd {
     padding-top: 0.2em;
     padding-bottom: 0.2em;
     border: none;
-    color:#fff;
-}
+    color:#000;
+}*/
 .li {
     font-family: NotoSerif;
     font-size: 1rem;
@@ -6657,50 +6671,7 @@ h4:hover {
     }
 }
 
-/* ----------- galaxy mobile ----------- */
-/* Portrait */
-@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
-    #myContainer {
-        zoom: 0.28;
-        -moz-transform: scale(0.28);
-    }
-    .myContainer h3 {
-        font-size: 15px;
-    }
-    .myContainer h4 {
-        font-size: 20px;
-    }
-    .myContainer h2 {
-        text-align: center;
-    }
-    a {
-        font-size: 15px;
-        color: white;
-        text-decoration: none;
-    }
-}
 
-/* Landscape */
-@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
-    #myContainer {
-        zoom: 0.35;
-        -moz-transform: scale(0.35);
-    }
-    .myContainer h3 {
-        font-size: 15px;
-    }
-    .myContainer h4 {
-        font-size: 20px;
-    }
-    .myContainer h2 {
-        text-align: center;
-    }
-    a {
-        font-size: 15px;
-        color: white;
-        text-decoration: none;
-    }
-}
 
 /* ----------- Tablet View ----------- */
 
@@ -7069,7 +7040,7 @@ SVG CSS
 <!-- add SVG -->
 <amp-story-page id="item-truett-0" data-item-label="goal-representing-knowledge" role="region" aria-hidden="false">
   <amp-story-grid-layer template="fill">
-    <amp-img id="" data-item-role="background" data-item-type="static" data-item-label="strip-light" src="images/strip-light-bright-wallpaper-preview.jpg" width="997" height="997" layout="responsive">
+    <amp-img id="" data-item-role="background" data-item-type="static" data-item-label="strip-light"   src="images/strip-light-bright-wallpaper-preview.jpg" width="997" height="997" layout="responsive">
     </amp-img>
   </amp-story-grid-layer>
   <amp-story-grid-layer template="thirds">
@@ -7130,6 +7101,7 @@ SVG CSS
 
 </amp-story-page>
 
+
 <amp-story-page id="item-truett-3" data-item-label="The Gene Ontology" role="region" aria-hidden="false">
   <amp-story-grid-layer template="fill">
     <amp-img id="" data-item-role="background" data-item-type="static" data-item-label="istockphoto" src="images/istockphoto-1174989482-170667a.jpg" width="997" height="997" layout="responsive">
@@ -7155,16 +7127,14 @@ SVG CSS
   </amp-story-grid-layer>
 
 <!-- CTA -->
-  <a role="button" target="_top" theme="custom" aria-label="More about query" href="http://www.ebi.ac.uk/QuickGO">
-    <svg id="attach" viewBox="0 0 20 8" width="20px" height="8px">
-      <path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"/>
-    </svg>
-    <div>
-      <span>More about QuickGO</span>
-    </div>
-  </a>
-
+  <amp-story-page-outlink layout="nodisplay" 
+                          theme="custom" 
+                          cta-accent-color="#1F64FF" 
+                          cta-accent-element="text">
+                    <a href="http://www.ebi.ac.uk/QuickGO">More about QuickGO</a>
+  </amp-story-page-outlink>
 </amp-story-page>
+
 
 <amp-story-page id="item-truett-4" data-item-label="GO branches" role="region" aria-hidden="false">
   <amp-story-grid-layer template="fill">
@@ -7279,14 +7249,12 @@ SVG CSS
     </div>
   </amp-story-grid-layer>
 <!-- CTA Layer -->
-  <a role="button" target="_top" theme="custom" aria-label="More about google" href="https://googleblog.blogspot.com/2012/05/introducing-knowledge-graph-things-not.html">
-    <svg id="attach" viewBox="0 0 20 8" width="20px" height="8px">
-      <path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"/>
-    </svg>
-    <div>
-      <span>More about Google</span>
-    </div>
-  </a>
+  <amp-story-page-outlink layout="nodisplay" 
+                          theme="custom" 
+                          cta-accent-color="#1F64FF" 
+                          cta-accent-element="text">
+                    <a href="https://googleblog.blogspot.com/2012/05/introducing-knowledge-graph-things-not.html">More about Knowledge Graph</a>
+  </amp-story-page-outlink>
 
 </amp-story-page>
 
@@ -7326,14 +7294,13 @@ SVG CSS
   </amp-story-grid-layer>
 
 <!-- CTA layer -->
-  <a role="button" target="_top" theme="custom" aria-label="More about Swanson" href="http://muse.jhu.edu/article/403510/pdf">
-    <svg id="attach" viewBox="0 0 20 8" width="20px" height="8px">
-      <path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"/>
-    </svg>
-    <div>
-      <span>More about Swanson</span>
-    </div>
-  </a>
+  <amp-story-page-outlink layout="nodisplay" 
+                          theme="custom" 
+                          cta-accent-color="#1F64FF" 
+                          cta-accent-element="text">
+                    <a href="http://muse.jhu.edu/article/403510/pdf">More about Swanson</a>
+  </amp-story-page-outlink>
+
 
 </amp-story-page>
 
@@ -7383,15 +7350,13 @@ SVG CSS
       <h4>'RE:fine drugs': an interactive dashboard to access drug repurposing opportunities</h4>
 </div>
   </amp-story-grid-layer>
-  <!-- missing CTA -->
-  <a role="button" target="_top" theme="custom" aria-label="More about Pubmed" href="http://www.ncbi.nlm.nih.gov/pubmed/27189611">
-    <svg id="attach" viewBox="0 0 20 8" width="20px" height="8px">
-      <path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"/>
-    </svg>
-    <div>
-      <span>More about Pubmed</span>
-</div>
-  </a>
+  <!-- CTA -->
+  <amp-story-page-outlink layout="nodisplay" 
+                          theme="custom" 
+                          cta-accent-color="#1F64FF" 
+                          cta-accent-element="text">
+                    <a href="http://www.ncbi.nlm.nih.gov/pubmed/27189611">More about Pubmed</a>
+  </amp-story-page-outlink>
 </amp-story-page>
 
 <amp-story-page id="item-truett-12" data-item-label="Implicit relations for hypothesis generation" role="region" aria-hidden="false">
@@ -8085,15 +8050,13 @@ SVG CSS
       <h4 id="sparol">rest constrains the search</h4>
 </div>
   </amp-story-grid-layer>
-  <!-- missing CTA -->
-  <a role="button" target="_top" theme="custom" aria-label="More about SPARQL" href="https://www.w3.org/TR/rdf-sparql-query/">
-    <svg id="attach" viewBox="0 0 20 8" width="20px" height="8px">
-      <path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"/>
-    </svg>
-    <div>
-      <span>More about SPARQL</span>
-</div>
-  </a>
+  <!-- CTA -->
+  <amp-story-page-outlink layout="nodisplay" 
+                          theme="custom" 
+                          cta-accent-color="#1F64FF" 
+                          cta-accent-element="text">
+                    <a href="http://www.w3.org/TR/rdf-sparql-query/">More about SPARQL</a>
+  </amp-story-page-outlink>
 </amp-story-page>
 
 <amp-story-page id="item-truett-14" data-item-label="Metformin’s" role="region" aria-hidden="false">
@@ -8116,15 +8079,13 @@ SVG CSS
       <h4>Treats property id: P2175</h4>
 </div>
   </amp-story-grid-layer>
-  <!-- missing CTA -->
-  <a class=" " role="button" target="_top" theme="custom" aria-label="More about Wiki" href="https://query.wikidata.org/">
-    <svg id="attach" viewBox="0 0 20 8" width="20px" height="8px">
-      <path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"/>
-    </svg>
-    <div>
-      <span>More about Wiki</span>
-</div>
-  </a>
+  <!-- CTA -->
+  <amp-story-page-outlink layout="nodisplay" 
+                          theme="custom" 
+                          cta-accent-color="#1F64FF" 
+                          cta-accent-element="text">
+                    <a href="https://query.wikidata.org/">More about SPARQL</a>
+  </amp-story-page-outlink>
 </amp-story-page>
 
 <amp-story-page id="item-truett-15" data-item-label="Metformin’s" role="region" aria-hidden="false">
@@ -8151,15 +8112,13 @@ SVG CSS
       <h4>Treats property id: P2175</h4>
 </div>
   </amp-story-grid-layer>
-  <!-- missing CTA -->
-  <a class=" " role="button" target="_top" theme="custom" aria-label="More about Wiki" href="http://tinyurl.com/gwd6pep">
-    <svg id="attach" viewBox="0 0 20 8" width="20px" height="8px">
-      <path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"/>
-    </svg>
-    <div>
-      <span>More about Wiki</span>
-</div>
-  </a>
+  <!-- CTA -->
+  <amp-story-page-outlink layout="nodisplay" 
+                          theme="custom" 
+                          cta-accent-color="#1F64FF" 
+                          cta-accent-element="text">
+                    <a href="http://tinyurl.com/gwd6pep">More about SPARQL</a>
+  </amp-story-page-outlink>
 </amp-story-page>
 
 <amp-story-page id="item-truett-16" data-item-label="Example question: drug repurposing" role="region" aria-hidden="false">
@@ -8190,6 +8149,8 @@ SVG CSS
   </amp-story-grid-layer>
 </amp-story-page>
 
+
+
 <amp-story-page id="item-truett-17" data-item-label="Example question: repurposing Metformin" role="region" aria-hidden="false">
   <amp-story-grid-layer template="fill">
     <amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-130F30-constellation" src="images/strip-light-bright-wallpaper-preview.jpg" width="997" height="997" layout="responsive">
@@ -8205,459 +8166,146 @@ SVG CSS
             images/image18-w760-h427.webp 760w,
             images/image18-w200-h112.webp 200w" width="1420" height="1080" layout="responsive">
                                                   </amp-img>
-          <div class="t m0 ca1 n1 cb1 ff1 fb1 fc2 sc0 ls0 ws0">Example question: repurposing Metformin</div>
-        <div class="t m0 ca6 n2 cb6 ff1 fw1 fvj sc0 ls0 ws0">Metformin</div>
-          <div class="t m0 ca2 n1 cb2 ff1 fw1 fvj sc0 ls0 ws0">Solute carrier</br>family 22</br>member 3</div>
-          <div class="t m0 ca3 n2 cb3 ff1 fw1 fvj sc0 ls0 ws0">Prostate</br>cancer</div>
-        <div class="t m0 ca4 n3 cb4 ff1 fw1 fj1 sc0 ls0 ws0">treats??</div>
-        <div class="t m0 ca5 n2 cb5 ff1 fw1 fvj sc0 ls0 ws0">SLC22A3</div>
-        <div class="t m0 ca7 n2 cb7 ff1 fw1 fc2 sc0 ls0 ws0">interacts</br>with</div>
-      <div class="t m0 ca8 n2 cb8 ff1 fw1 fc2 sc0 ls0 ws0">encoded by</div>
-      <div class="t m0 ca9 n2 cb9 ff1 fw1 fc2 sc0 ls0 ws0">genetic</br>association</div>
+            <div class="t m0 ca1 n1 cb1 ff1 fb1 fc2 sc0 ls0 ws0">Example question: repurposing Metformin</div>
+            <div class="t m0 ca6 n2 cb6 ff1 fw1 fvj sc0 ls0 ws0">Metformin</div>
+            <div class="t m0 ca2 n1 cb2 ff1 fw1 fvj sc0 ls0 ws0">Solute carrier</br>family 22</br>member 3</div>
+            <div class="t m0 ca3 n2 cb3 ff1 fw1 fvj sc0 ls0 ws0">Prostate</br>cancer</div>
+            <div class="t m0 ca4 n3 cb4 ff1 fw1 fj1 sc0 ls0 ws0">treats??</div>
+            <div class="t m0 ca5 n2 cb5 ff1 fw1 fvj sc0 ls0 ws0">SLC22A3</div>
+            <div class="t m0 ca7 n2 cb7 ff1 fw1 fc2 sc0 ls0 ws0">interacts</br>with</div>
+            <div class="t m0 ca8 n2 cb8 ff1 fw1 fc2 sc0 ls0 ws0">encoded by</div>
+            <div class="t m0 ca9 n2 cb9 ff1 fw1 fc2 sc0 ls0 ws0">genetic</br>association</div>
 </div>
 </div>
 </div>
 </amp-story-grid-layer>
-<!-- missing CTA -->
-<amp-story-grid-layer template="vertical" class="center">
-  <a role="button" target="_top" theme="custom" aria-label="More about query" href="http://tinyurl.com/zem3oxz">
-    <svg id="attach" viewBox="0 0 20 8" width="20px" height="8px">
-      <path d="m18 7.7-.7-.2-7.3-4-7.3 4c-.7.4-1.6.2-2-.6-.4-.7-.1-1.6.6-2l8-4.4a2 2 0 0 1 1.5 0l8 4.4c.7.4 1 1.3.6 2-.4.5-.9.8-1.4.8z"/>
-    </svg>
-    <div>
-      <span>More about Tiny</span>
-</div>
-  </a>
-</amp-story-grid-layer>
-</amp-story-page>
+<!-- CTA -->
 
-<!-- Sowa amp -->
-<amp-story-page id="sowa_1">
-  <amp-story-grid-layer template="fill">
-    <amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-130F30-constellation" src="images/sowabackground.jpg" width="997" height="997" layout="responsive">
-                                                      </amp-img>
-  </amp-story-grid-layer>
-  <amp-story-grid-layer template="thirds">
-    <div grid-area="upper-third">
-      <div class="myContainer" id="title" animate-in="fade-in" animate-in-duration="4s">
-        <h2 id="exam">Summary</h2>
-</div>
-      
-<section class="p-s" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="1s">
+  <amp-story-page-outlink layout="nodisplay" 
+                          theme="custom" 
+                          cta-accent-color="#1F64FF" 
+                          cta-accent-element="text">
+                    <a href="http://tinyurl.com/zem3oxz">More about SPARQL</a>
+  </amp-story-page-outlink>
 
-
-      <!-- incorrect structure-->
-        <dl class="chartlegend">
-          <h4 id="sowah4">Existential graphs &#x28;EGs&#x29; are an excellent pedagogical tool.</h4>
-          <h4 id="sowah4">EG rules of inference are notation-independent&#x003A;</h4>
-          <h5>
-            <span class="c-c0334d mr-s"></span>The same rules can be used for propositional logic, first-order logic, and many variations and extensions of FOL.</h5>
-          <h5>
-            <span class="c-f3d480 mr-s"></span>They can be used with graphic and linear notations, including versions of natural language.</h5>
-          <h5>
-            <span class="c-f1931b mr-s"></span>They could even be implemented in neural networks.</h5>
-          <h4 id="sowah4">Peirce claimed that EGs represent &#x201C;a moving picture of the action of the mind in thought.&#x201D;</h4>
-          <h4 id="sowah4">The psychologist Philip Johnson-Laird agreed&#x003A; Peirce&#x2019;s EGs and rules of inference are a good candidate for a natural logic.</h4>-->
-
-
-        </dl>
-      </section>
-</div>
-  </amp-story-grid-layer>
-</amp-story-page>
-
-<amp-story-page id="sowa_2">
-  <amp-story-grid-layer template="vertical">
-    <div id="myContainer">
-      <div id="pf4" class="pf w0 h0">
-        <div class="pc pc4 w0 h0">
-          <amp-img class="bi x0 y0 w0 h0" alt="" src="images/page-04-w1586-h1190.webp" srcset="images/page-04-w1586-h1190.webp 1586w,
-            images/page-04-w1400-h1050.webp 1400w,
-            images/page-04-w1177-h662.webp 1177w,
-            images/page-04-w760-h427.webp 760w,
-            images/page-04-w200-h112.webp 200w" width="1586" height="1190" layout="responsive"></amp-img>
-
-          <!-- <div class="t m0 x6 h6 y6 ff4 fs4 fc0 sc0 ls0 ws0">4</div> -->
-          <div class="t m0 x19 h7 y1f ff4 fs5 fc0 sc0 ls0 ws0">A Minimal Notation for FOL</div>
-          <div class="t m0 x1a hb y20 ff4 fs9 fc0 sc0 ls0 ws0">A line for existence.  An oval for negation.  Conjunction is implicit.</div>
-</div>
-</div>
-</div>
-</amp-story-grid-layer>
-</amp-story-page>
-
-
-<amp-story-page id="sowa_3">
-
-<amp-story-grid-layer  template="vertical">
-
-<div id="myContainer">
-
-<div id="pf5" class="pf w0 h0" data-page-no="5">
-<div class="pc pc5 w0 h0">
-
-<amp-img class="bi x0 y0 w0 h0"  src="images/page-05-w1586-h1190.webp" srcset="images/page-05-w1586-h1190.webp 1586w,
-            images/page-05-w1400-h1050.webp 1400w,
-            images/page-05-w1177-h662.webp 1177w,
-            images/page-05-w760-h427.webp 760w,
-            images/page-05-w200-h112.webp 200w" 
-            width="1586" 
-            height="1190" 
-            layout="responsive">
-</amp-img>
-
-
-<!-- <div class="t m0 x6 h6 y6 ff4 fs4 fc0 sc0 ls0 ws0">5</div> -->
-
-<div class="t m0 x1b h7 y1f ff4 fs5 fc0 sc0 ls0 ws0">EGs Without Negation</div>
-<div class="t m0 x5 hd y21 ff4 fs9 fc0 sc0 ls0 ws0">The <span class="ff2 fsa">existential graphs</span> (EGs) above have three kinds of symbols:</div>
-<div class="t m0 x1c he y22 ff5 fsb fc0 sc0 ls0 ws0">&#x25CF;</div>
-<div class="t m0 xe hf y23 ff4 fsc fc0 sc0 ls0 ws0"> Short lines, called <span class="ff2 fsd">lines of identity<span class="ff4 fsc">, state that something exists.  In the</span></span></div>
-<div class="t m0 x1c h10 y24 ff4 fsc fc0 sc0 ls0 ws0">   algebraic notation, they are represented by <span class="ff4 fsc">∃<span class="ff4 fsc"> followed by a letter<span class="fsc">. </span></span></span></div>
-<div class="t m0 x1c he y25 ff5 fsb fc0 sc0 ls0 ws0">&#x25CF;</div>
-<div class="t m0 xe hf y26 ff4 fsc fc0 sc0 ls0 ws0"> Character strings name <span class="ff2 fsd">relations</span>.</div>
-<div class="t m0 x1c he y27 ff5 fsb fc0 sc0 ls0 ws0">&#x25CF;</div>
-<div class="t m0 xe hf y28 ff4 fsc fc0 sc0 ls0 ws0"> A <span class="ff2 fsd">ligature</span> connects lines of identity.  It corresponds to an equal sign  =.</div>
-<div class="t m0 x5 h9 y29 ff4 fs9 fc0 sc0 ls0 ws0">The three EGs may be translated to Peirce-Peano algebra&#x003A;</div>
-<div class="t m0 x1c he y2a ff5 fsb fc0 sc0 ls0 ws0">&#x25CF;</div>
-<div class="t m0 xa hc y2b ff5 fsc fc0 sc0 ls0 ws0">∃<span class="ff4">x Man(x).                            <span class="ff2 fs9">There is an x, and x is a man</span>.</span></div>
-<div class="t m0 x1c he y2c ff5 fsb fc0 sc0 ls0 ws0">&#x25CF;</div>
-<div class="t m0 xa hc y2d ff5 fsc fc0 sc0 ls0 ws0">∃<span class="ff4">x King(x).                            <span class="ff2 fs9">There is an x, and x is a king</span>.</span></div>
-<div class="t m0 x1c he y2e ff5 fsb fc0 sc0 ls0 ws0">&#x25CF;</div>
-<div class="t m0 xa hc y2f ff5 fsc fc0 sc0 ls0 ws0">∃<span class="ff4">x (Man(x)  <span class="ff4">∧ King(x)).      <span class="ff2 fs9">There is an x, x is a man, and x is a king</span><span class="ff2">.</span></span></span></div>
-<div class="t m0 x5 h11 y30 ff4 fse fc0 sc0 ls0 ws0">Peirce drew the six EGs in this slide and the next in MS 145, page 21.</div>
-</div>
-</div>
-</div>
-</amp-story-grid-layer>
 </amp-story-page>
 
 
 
 
 
-<amp-story-page id="sowa_4">
 
-<amp-story-grid-layer template="vertical">
+<!-- Sowa -->
 
-<div id="myContainer">
+<amp-story-page id="Sowa-1">
 
-<div id="pf6" class="pf w0 h0" data-page-no="6">
-<div class="pc pc6 w0 h0">
-
-    <amp-img class="bi x0 y0 w0 h0"  src="images/page-06-w1586-h1190.webp" srcset="images/page-06-w1586-h1190.webp 1586w,
-                 images/page-06-w1400-h1050.webp 1400w,
-                 images/page-06-w1177-h662.webp 1177w,
-                 images/page-06-w760-h427.webp 760w,
-                 images/page-06-w200-h112.webp 200w" 
-            width="1586" 
-            height="1190" 
-            layout="responsive">
+<amp-story-grid-layer template="fill">
+    <amp-img id="" 
+             data-item-role="background" 
+             data-item-type="static" 
+             data-item-label="sowabackground" 
+             src="images/sowabackground.jpg" 
+             width="997" 
+             height="997" 
+             layout="responsive">
     </amp-img>
-
-<div class="t m0 x1d h7 y1f ff4 fs5 fc0 sc0 ls0 ws0">EGs With Negation</div>
-
-<div class="t m0 x5 hd y21 ff4 fs9 fc0 sc0 ls0 ws0">A shaded oval states that the nested graph or subgraph is false&#x003A;</div>
-<div class="t m0 xe hf y23 ff4 fsc fc0 sc0 ls0 ws0"> When a line of identity is extended into an oval enclosure, existence is</div>
-<div class="t m0 x1c h10 y24 ff4 fsc fc0 sc0 ls0 ws0">  declared in the area that contains the outermost point of the line.</div>
-<div class="t m0 x1c he y25 ff5 fsb fc0 sc0 ls0 ws0">&#x25CF;</div>
-<div class="t m0 x1c he y2c ff5 fsb fc0 sc0 ls0 ws0">&#x25CF;</div>
-<div class="t m0 xe hf y26 ff4 fsc fc0 sc0 ls0 ws0"> In the algebraic formulas, negation is represented by the symbol &#x7E;.</div>
-<div class="t m0 x1c he y27 ff5 fsb fc0 sc0 ls0 ws0">&#x25CF;</div>
-<div class="t m0 x5 h9 y29 ff4 fs9 fc0 sc0 ls0 ws0">Translation of these three EGs to algebraic formulas&#x003A;</div>
-<div class="t m0 x1c he y2a ff5 fsb fc0 sc0 ls0 ws0">&#x25CF;</div>
-<div class="t m0 xa hc y2b ff5 fsc fc0 sc0 ls0 ws0">&#x7E;<span class="ff4">&#x2203;x<span class="ff4"> Man&#x28;x&#x29;.                          <span class="ff2 fs9">It is false that there is an x who is a man</span>.</span></span></div>
-
-<div class="t m0 xa hc y2d ff5 fsc fc0 sc0 ls0 ws0"><span class="ff5">&#x2203;<span class="ff4">x &#x7E;Man&#x28;x&#x29;.                         <span class="ff2 fs9">There is an x, and x is not a man<span class="ff2 fsc">.</span></span></span></span></div>
-<div class="t m0 x1c he y2e ff5 fsb fc0 sc0 ls0 ws0">&#x25CF;</div>
-<div class="t m0 xa hc y2f ff5 fsc fc0 sc0 ls0 ws0"><span class="ff5">&#x2203;<span class="ff4">x &#x28;King&#x28;x&#x29; <span class="ff7">&#x2227;</span><span class="ff4">&#x7E;Man&#x28;x&#x29;&#x29;.     <span class="ff2 fs9">There is an x, x is a king, and x is not a man</span>.</span></span></span></span></div>
-
-</div>
-</div>
-</div>
 </amp-story-grid-layer>
-</amp-story-page>
-
-
-
-
-<amp-story-page id="sowa_5">
 
 <amp-story-grid-layer template="vertical">
 
-<div id="myContainer">
+<div class="dl-adjust">
+<h2 style="font-size:3em;">Summary</h2>
 
-<div id="pf7" class="pf w0 h0" data-page-no="7">
-<div class="pc pc7 w0 h0">
+<section class="p-s">
+<dl class="chartlegend">
 
-    <amp-img class="bi x0 y0 w0 h0"  src="images/page-07-w1586-h1190.webp" srcset="images/page-07-w1586-h1190.webp 1586w,
-                 images/page-07-w1400-h1050.webp 1400w,
-                 images/page-07-w1177-h662.webp 1177w,
-                 images/page-07-w760-h427.webp 760w,
-                 images/page-07-w200-h112.webp 200w" 
-            width="1586" 
-            height="1190" 
-            layout="responsive">
-    </amp-img>
+<dt style="font-family: NotoSerif; font-size: 1.2em; font-weight: 400; line-height: 2em; padding-top: 0.2em; padding-bottom: 0.2em; margin-left: 1em; color: #fff;">Existential graphs &#x28;EGs&#x29; are an excellent pedagogical tool.</dt>
+<dt style="font-family: NotoSerif; font-size: 1.2em; font-weight: 400; line-height: 2em; padding-top: 0.2em; padding-bottom: 0.2em; margin-left: 1em; color: #fff;">
+EG rules of inference are notation-independent&#x003A;</dt>
 
-<div class="t m0 x1e h7 y1f ff4 fs5 fc0 sc0 ls0 ws0">Nested Ovals</div>
-<div class="t m0 x5 hd y3d ff4 fs9 fc0 sc0 ls0 ws0">An oval nested in an even number of negations is unshaded.</div>
+<dd style="font-family: NotoSerif; font-size: 1rem; font-weight: 300; line-height: 1.4em; margin-left: 2em; padding-top: 0.2em; padding-bottom: 0.2em; color:#fff;">
+<span class="c-c0334d mr-s"></span>
+The same rules can be used for propositional logic, first-order logic, and many variations and extensions of FOL.</dd>
+<dd style="font-family: NotoSerif; font-size: 1rem; font-weight: 300; line-height: 1.4em; margin-left: 2em; padding-top: 0.2em; padding-bottom: 0.2em; color:#fff;">
+<span class="c-f3d480 mr-s"></span>
+They can be used with graphic and linear notations, including versions of natural language.</dd>
+<dd style="font-family: NotoSerif; font-size: 1rem; font-weight: 300; line-height: 1.4em; margin-left: 2em; padding-top: 0.2em; padding-bottom: 0.2em; color:#fff;">
+<span class="c-f1931b mr-s"></span>
+They could even be implemented in neural networks.</dd>
 
-<div class="t m0 x20 hf y41 ff4 fsc fc0 sc0 ls0 ws0">Since a double negation is positive, evenly nested areas are positive.</div>
-<div class="t m0 x1c he y25 ff5 fsb fc0 sc0 ls0 ws0">&#x25CF;</div>
-<div class="t m0 x20 h12 y3f ff4 fsc fc0 sc0 ls0 ws0">A nest of two ovals represents an if-then statement.</div>
-<div class="t m0 x1c he y27 ff5 fsb fc0 sc0 ls0 ws0">&#x25CF;</div>
+<dt style="font-family: NotoSerif; font-size: 1.2em; font-weight: 400; line-height: 2em; padding-top: 0.2em; padding-bottom: 0.2em; margin-left: 1em; color: #fff;">Peirce claimed that EGs represent &#x201C;a moving picture of the action of the mind in thought.&#x201D;</dt>
+<dt style="font-family: NotoSerif; font-size: 1.2em; font-weight: 400; line-height: 2em; padding-top: 0.2em; padding-bottom: 0.2em; margin-left: 1em; color: #fff;">The psychologist Philip Johnson-Laird agreed&#x003A; Peirce&#x2019;s EGs and rules of inference are a good candidate for a natural logic.</dt>
 
-<div class="t m0 x5 h9 y42 ff4 fs9 fc0 sc0 ls0 ws0">An EG with two or more ovals may be translated to English or</div>
-<div class="t m0 x5 h9 y29 ff4 fs9 fc0 sc0 ls0 ws0">algebraic formulas in several equivalent ways&#x003A;</div>
-
-
-<div class="t m0 x1c he y3e ff5 fsb fc0 sc0 ls0 ws0">&#x25CF;</div>
-<div class="t m0 xa hc y2b ff5 fsc fc0 sc0 ls0 ws0">&#x7E;<span class="ff9">&#x2203;x &#x28;Man&#x28;x&#x29; &#x2227; &#x7E;King&#x28;x&#x29;&#x29;.    <span class="ff5"><span class="ff2 fs9">There is no x who is a man and not a king</span><span class="ff2">.</span></span></div>
-
-<div class="t m0 x1c he y40 ff5 fsb fc0 sc0 ls0 ws0">&#x25CF;</div>
-<div class="t m0 xa hc y2d ff5 fsc fc0 sc0 ls0 ws0">&#x2200;<span class="ff9">x &#x28;Man&#x28;x&#x29; &#x2283;  King&#x28;x&#x29;&#x29;.  <span class="ff7">    <span class="ff2 fs9">For every x, if x is a man, then x is a king</span><span class="ff2">.</span></span></span></div>
-
-<div class="t m0 x1c he y2e ff5 fsb fc0 sc0 ls0 ws0">&#x25CF;</div>
-<div class="t m0 xa hc y2f ff5 fsc fc0 sc0 ls0 ws0"><span class="ff9">&#x2200;<span class="ff9">x &#x28;Man&#x28;x&#x29; &#x2283; King&#x28;x&#x29;&#x29;.       <span class="ff7"><span class="ff2 fs9">Every man x is a king</span><span class="ff2">.</span></span></span></div>
-
-</div>
-</div>
-</div>
-</amp-story-grid-layer>
-</amp-story-page>
-
-
-
-
-<amp-story-page id="sowa_6">
-
-<amp-story-grid-layer template="vertical">
-
-<div id="myContainer">
-
-<div id="pf8" class="pf w0 h0" data-page-no="8">
-<div class="pc pc8 w0 h0">
-<amp-img
-    class="bi x0 y0 w0 h0"
-    src="images/page-08-w1586-h1190.webp"
-    srcset="images/page-08-w1586-h1190.webp 1586w,
-            images/page-08-w1400-h1050.webp 1400w,
-            images/page-08-w1177-h662.webp 1177w,
-            images/page-08-w760-h427.webp 760w,
-            images/page-08-w200-h112.webp 200w"
-    width="1586"
-    height="1190"
-    layout="responsive"
-></amp-img>
-
-<div class="t m0 x1b h7 y1f ff4 fs5 fc0 sc0 ls0 ws0">Boolean Combinations</div>
-
-<div class="t m0 x1a hb y20 ff4 fs9 fc0 sc0 ls0 ws0">Areas nested inside an odd number of negations are shaded.</div>
-
-</div>
-</div>
-</div>
-</amp-story-grid-layer>
-</amp-story-page>
-
-
-
-<amp-story-page id="sowa_7">
-
-<amp-story-grid-layer template="vertical">
-
-<div id="myContainer">
-
-<div id="pf9" class="pf w0 h0" data-page-no="9">
-<div class="pc pc9 w0 h0">
-<amp-img
-    class="bi x0 y0 w0 h0"
-    alt=""
-    src="images/page-09-w1586-h1190.webp"
-    srcset="images/page-09-w1586-h1190.webp 1586w,
-            images/page-09-w1400-h1050.webp 1400w,
-            images/page-09-w1177-h662.webp 1177w,
-            images/page-09-w760-h427.webp 760w,
-            images/page-09-w200-h112.webp 200w"
-    width="1586"
-    height="1190"
-    layout="responsive"
-></amp-img>
-
-<!-- <div class="t m0 x6 h6 y6 ff4 fs4 fc0 sc0 ls0 ws0">9</div> -->
-
-<div class="t m0 x23 h7 y1f ff4 fs5 fc0 sc0 ls0 ws0">The Scope of Quantifiers</div>
-<div class="t m0 x1a h9 y4a ff4 fs9 fc0 sc0 ls0 ws0">The scope is determined by the outermost point of any line.</div>
-<div class="t m0 x1a h9 y4b ff4 fs9 fc0 sc0 ls0 ws0">EGs in these four patterns represent the four sentence types</div>
-<div class="t m0 x1a h9 y4c ff4 fs9 fc0 sc0 ls0 ws0">in Aristotle&#x2019;s syllogisms&#x003A;   <span class="fsc fc1">http://www.jfsowa.com/talks/aristo.pdf</span></div><a class="l" href="http://www.jfsowa.com/talks/aristo.pdf">
-<div class="d m1" style="border-style:none;position:absolute;left:519.600000px;bottom:43.200000px;width:365.300000px;height:18.800000px;background-color:rgba&#x28;255,255,255,0.000001&#x29;;"></div></a>
-
-</div>
-</div>
-</div>
-</amp-story-grid-layer>
-</amp-story-page>
-
-
-
-
-
-
-<!--<amp-story-page id="sowa_8">
-   <amp-story-grid-layer template="fill">
-
-      <amp-img id="" 
-               data-item-role="background" 
-               data-item-type="static" 
-               data-item-label="sowabackground" 
-               src="images/sowabackground.jpg" 
-               width="997" 
-               height="997" 
-               layout="responsive">
-     </amp-img>
-
-  </amp-story-grid-layer>
-  <amp-story-grid-layer template="thirds">
-    <div grid-area="upper-third">
-
-      <div class="myContainer" id="title" animate-in="fade-in" animate-in-duration="4s">
-        <h2 id="exam">Syntax of Existential Graphs</h2>
-      </div>
-
-<section class="p-s" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="1s">
-        
- <dl class="chartlegend">
-
-
-<dt>Existential graphs &#x28;EGs&#x29; are an excellent pedagogical tool.</dt>
-
-   <dd><span class="c-c0334d mr-s"></span>Two lines mean there exists something <span class="ff2 fsa">x</span> and something <span class="ff2 fsa">y</span>.</dd>
-   <dd><span class="c-f3d480 mr-s"></span>Cat and Mat are <span class="ff2 fsa">monadic</span> relations.  On is a <span class="ff2 fsa">dyadic</span> relation.</dd>
-
-
-<dt>Four primitives&#x003A;</dt>
-
-   <dd><span class="c-c0334d mr-s"></span>The same rules can be used for propositional logic, first-order logic, and many variations and extensions of FOL.</dd>
-   <dd><span class="c-f3d480 mr-s"></span>They can be used with graphic and linear notations, including versions of natural language.</dd>
-   <dd><span class="c-f1931b mr-s"></span>They could even be implemented in neural networks.</dd>
-   <dd><span class="c-c0334d mr-s"></span>The same rules can be used for propositional logic, first-order logic, and many variations and extensions of FOL.</dd>
-
-<dt>Peirce claimed that EGs represent &#x201C;a moving picture of the action of the mind in thought.&#x201D;</dt>
-   <dd><span class="c-c0334d mr-s"></span>The same rules can be used for propositional logic, first-order logic, and many variations and extensions of FOL.</dd>
-   <dd><span class="c-f3d480 mr-s"></span>They can be used with graphic and linear notations, including versions of natural language.</dd>
-   <dd><span class="c-f1931b mr-s"></span>They could even be implemented in neural networks.</dd>
-   <dd><span class="c-c0334d mr-s"></span>The same rules can be used for propositional logic, first-order logic, and many variations and extensions of FOL.</dd>
-
-<dt>The psychologist Philip Johnson-Laird agreed&#x003A; Peirce&#x2019;s EGs and rules of inference are a good candidate for a natural logic.</dt>
-
-
-          
-        </dl>
-      </section>
-</div>
-  </amp-story-grid-layer>
-</amp-story-page>-->
-
-<!--<amp-story-page id="sowa_8">
-   <amp-story-grid-layer template="fill">
-
-      <amp-img id="" 
-               data-item-role="background" 
-               data-item-type="static" 
-               data-item-label="sowabackground" 
-               src="images/sowabackground.jpg" 
-               width="997" 
-               height="997" 
-               layout="responsive">
-     </amp-img>
-
-  </amp-story-grid-layer>
-
-  <amp-story-grid-layer template="thirds">
-    <div grid-area="upper-third">
-
-      <div class="myContainer" id="title" animate-in="fade-in" animate-in-duration="4s">
-        <h2 id="exam">Syntax of Existential Graphs</h2>
-      </div>
-
-<section class="p-s" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="1s">
-        
- <dl class="chartlegend">
-
-    <h4 id="sowah4">Example&#x003A;</h4>
-
-          <h5 class="Syntax"><span class="c-c0334d mr-s"></span>Two lines mean there exists something <span class="ff2 fsa">x</span> and something <span class="ff2 fsa">y</span>.</h5>
-
-          <h5 class="Syntax"><span class="c-f3d480 mr-s"></span>Cat and Mat are <span class="ff2 fsa" style="width: 4.5rem;">monadic</span> relations.  On is a <span class="ff2 fsa">dyadic</span> relation.</h5>
-
-    <h4 id="sowah4">Four primitives&#x003A;</h4>
-
-          <h5 class="Syntax"><span class="c-c0334d mr-s"></span>Relation&#x003A;  A character string with zero or more <span class="ff2 fsa" style="width: 2.5rem;">pegs</span>.</h5>
-          <h5 class="Syntax"><span class="c-f3d480 mr-s"></span>Existence&#x003A;  A <span class="ff2 fsa" style="width: 1.9rem;">line</span> that means &#x201C;There exists something.&#x201D;</h5>
-          <h5 class="Syntax"><span class="c-f1931b mr-s"></span>Conjunction&#x003A;  Two or more graphs in the same area.</h5>
-          <h5 class="Syntax"><span class="c-bf988f mr-s"></span>Metalanguage&#x003A;  An <span class="ff2 fsa" 
-          style="width: 2.3rem;">oval</span> that encloses some graph or subgraph.</h5>
-
-
-    <h4 id="sowah4">Four combinations&#x003A;</h4>
-
-          <h5 class="Syntax"><span class="c-c0334d mr-s"></span>Argument&#x003A;  A line attached to a peg of some relation.</h5>
-          <h5 class="Syntax"><span class="c-f3d480 mr-s"></span>Equality&#x003A;  Two or more connected lines &#x28;called a <span class="ff2 fsa" style="width: 3.9rem;">ligature</span>&#x29;.</h5>
-          <h5 class="Syntax"><span class="c-f1931b mr-s"></span>Metacomment&#x003A;  A line that connects an oval to a relation.</h5>
-          <h5 class="Syntax"><span class="c-bf988f mr-s"></span>Negation&#x003A;  A <span class="ff2 fsa" style="width: 6.1rem;">shaded oval</span> that represents the comment <span class="ff2 fsa">not.</span></h5>
-        
-        </dl>
+</dl>
 </section>
 </div>
 </amp-story-grid-layer>
-</amp-story-page>-->
+</amp-story-page>
 
 
 
-
-<amp-story-page id="sowa_7">
-
+<amp-story-page id="Sowa-2">
+<amp-story-grid-layer template="fill" style="background-color:#fff;"></amp-story-grid-layer>
 <amp-story-grid-layer template="vertical">
 
-<div id="myContainer">
+<div class="pc">
+<div class="box">
+<amp-img src="images/page-03-w1586-h1190.webp" width="947px" height="666px"></amp-img>
+<div class="text">
+<h2 style="margin-top:-10vh; 
+           font-size:1.2em; 
+           color:#000; 
+           font-family: ff8; 
+           margin-bottom: 30px;
+           font-weight: bold;">How to say &#x201C;A cat is on a mat.&#x201D;</h2>
 
-<div id="pfb" class="pf w0 h0" data-page-no="b">
-<div class="pc pcb w0 h0">
-<amp-img
-    class="bi x0 y0 w0 h0"
-    alt=""
-    src="images/page-11-w1586-h1190.webp"
-    srcset="images/page-11-w1586-h1190.webp 1586w,
-            images/page-11-w1400-h1050.webp 1400w,
-            images/page-11-w1177-h662.webp 1177w,
-            images/page-11-w760-h427.webp 760w,
-            images/page-11-w200-h112.webp 200w"
-    width="1586"
-    height="1190"
-    layout="responsive"
-></amp-img>
+<dl style="font-family: ff8;">
+<dt >Gottlob Frege &#x28;1879&#x29;&#x003A;</dt>
+<dt style="margin: 110px 0px;"></dt>
+<dt >Charles Sanders Peirce &#x28;1885&#x29;&#x003A; &#x3A3;<sub>&#x1D465;</sub> &#x3A3;<sub>&#x1D466;</sub> Cat<sub>&#x1D465;</sub> &#x2022; Mat<sub>&#x1D466;</sub> &#x2022; On<sub>&#x1D465;</sub><sub>,</sub><sub>&#x1D466;</sub></dt>
+<dt style="margin: 45px 0px;"></dt>
+<dt  >Giuseppe Peano &#x28;1895&#x29;&#x003A; &#x2203;&#x1D465; &#x2203;&#x1D466; Cat&#x28;&#x1D465;&#x29; &#x2227; Mat&#x28;&#x1D466;&#x29; &#x2227; On&#x28;&#x1D465;,&#x1D466;&#x29;</dt>
+<dt style="margin: 45px 0px;"></dt>
+<dt >Charles Sanders Peirce &#x28;1897&#x29;&#x003A;</dt>
+<dt style="margin: 45px 0px;"></dt>
+<dt>Conceptual graph &#x28;1976&#x29;&#x003A;</dt>
+</dl>
+</div>
+</div>
+</div>
+
+</amp-story-grid-layer>
+</amp-story-page>
 
 
-<!-- <div class="t m0 x6 h6 y6 ff4 fs4 fc0 sc0 ls0 ws0">11</div> -->
-<div class="t m0 x25 h7 y1f ff4 fs5 fc0 sc0 ls0 ws0">Metalanguage</div>
-<div class="t m0 x1a h9 y4a ff4 fs9 fc0 sc0 ls0 ws0">A relation attached to an oval makes a metalevel comment</div>
-<div class="t m0 x1a h9 y64 ff4 fs9 fc0 sc0 ls0 ws0">about the proposition expressed by the nested graph. &#x2A;</div>
-<div class="t m0 x1a h9 y65 ff4 fs9 fc0 sc0 ls0 ws0">Peirce allowed the names of relations to contain blanks.</div>
-<div class="t m0 x1a h9 y66 ff4 fs9 fc0 sc0 ls0 ws0">The relation named &apos;You are a good girl&apos; has zero pegs.</div>
-<div class="t m0 x1a hd y67 ff4 fs9 fc0 sc0 ls0 ws0">It is an EG that expresses a proposition <span class="ff4 fsa">p</span>.</div>
-<div class="t m0 x1a h9 y68 ff4 fs9 fc0 sc0 ls0 ws0">The relation named &apos;is much to be wished&apos; has one peg, which</div>
-<div class="t m0 x1a h14 y69 ff4 fs9 fc0 sc0 ls0 ws0">is attached to a line, which says that the proposition <span class="ff4 fsa">p<span class="fs3"> </span></span>exists.</div>
 
-<div class="t m0 x1a h11 y6a ff4 fse fc0 sc0 ls0 ws0">&#x2A; From Charles Sanders Peirce, <span class="ff4">Reasoning and the Logic of Things<span class="ff4">, The Cambridge </span></span></div>
-<div class="t m0 x1a h11 y6b ff4 fse fc0 sc0 ls0 ws0">Conferences Lectures of 1898, Harvard University Press, p. 151.</div>
 
+<amp-story-page id="Sowa-3">
+
+<amp-story-grid-layer template="fill" style="background-color:#fff;">
+</amp-story-grid-layer>
+
+<amp-story-grid-layer template="vertical">
+<div class="pc">
+<div class="box">
+<amp-img src="images/page-04-w1586-h1190.webp" width="900px" height="666px"></amp-img>
+<div class="text">
+<h2 style="margin-top:-10vh; 
+           font-size:1.2em; 
+           color:#000; 
+           font-family: ff8; 
+           margin-bottom: 8px;
+           font-weight: bold;">A Minimal Notation for FOL</h2>
+
+<h3 style="font-size: 1.17rem; 
+           color:#000; 
+           font-family: ff8; 
+           padding-left: 1.25px;">A line for existence. An oval for negation. Conjunction is implicit.</h3>
 </div>
 </div>
 </div>
 </amp-story-grid-layer>
 </amp-story-page>
-
 
 </amp-story>
 
