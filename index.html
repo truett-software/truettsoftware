@@ -7047,6 +7047,7 @@ SVG CSS
 		<div style="color:#fff; position:relative; left:400px;">pubchem-image-8 concept 8.3</div>
 		<div style="color:#fff; position:relative; left:400px;">pubchem-image-8 concept 8.4</div>
 	</amp-story-grid-layer>
+</amp-story-page>
 
 <!-- Knowledge Graph -->
 <!-- add SVG -->
@@ -7171,7 +7172,7 @@ SVG CSS
 			<h3>credit-2 here</h3>
 		</div>
 	</amp-story-grid-layer>
-
+</amp-story-page>
 
 <amp-story-page id="item-truett-3" data-item-label="The Gene Ontology" role="region" aria-hidden="false">
   <amp-story-grid-layer template="fill">
@@ -7319,6 +7320,7 @@ SVG CSS
 			<h3>An integrated collection of assertions or claims represented in something that can be visualized as a graph and is technically very much like a database.</h3>
 		</div>
 	</amp-story-grid-layer>
+</amp-story-page>
 
 <amp-story-page id="item-truett-7" data-item-label="Google Knowledge Graph" role="region" aria-hidden="false">
   <amp-story-grid-layer template="fill">
@@ -7418,6 +7420,7 @@ SVG CSS
 	>
         <a href="https://googleblog.blogspot.com/2012/05/introducing-knowledge-graph-things-not.html">More about Knowledge Graph</a>
 	</amp-story-page-outlink>
+</amp-story-page>
 
 <amp-story-page id="item-truett-9" data-item-label="Implicit relations for hypothesis generation ABC model" role="region" aria-hidden="false">
   <amp-story-grid-layer template="fill">
@@ -7466,7 +7469,7 @@ SVG CSS
 			<amp-img src="images/kg-image-9-why-knowledge-graph-w1287-h862.png" layout="responsive" width="1287" height="826"/>
 		</div>
 	</amp-story-grid-layer>
-
+</amp-story-page>
 
 
 <amp-story-page id="item-truett-11" data-item-label="Example question: drug repurposing" role="region" aria-hidden="false">
@@ -7536,6 +7539,8 @@ SVG CSS
 	<amp-story-grid-layer template="fill">
 		<h2 style="padding-top:1em;">Open Discovery and Closed Discovery</h2>
 	</amp-story-grid-layer>
+</amp-story-page>
+
 
 <amp-story-page id="item-truett-13" data-item-label="Querying a knowledge graph with SPARQL" role="region" aria-hidden="false">
   <amp-story-grid-layer template="fill">
@@ -8258,6 +8263,17 @@ SVG CSS
       <h4>Treats property id: P2175</h4>
 </div>
   </amp-story-grid-layer>
+
+    <amp-story-grid-layer template="thirds" aspect-ratio="12:8">
+        <div grid-area="upper-third">
+            <div style="padding-top:2em;"></div>
+            <h3>Open, you don’t know what C or B is (e.g. disease -> ?drug)</h3>
+            <h3>Closed, you know what C is and are looking for B (e.g. disease – why? – drug)</h3>
+            <amp-img src="images/kg-abc-w1865-w473.png" layout="responsive" width="1865" height="473"></amp-img>
+        </div>
+    </amp-story-grid-layer>
+
+  
   <!-- CTA -->
   <amp-story-page-outlink layout="nodisplay" 
                           theme="custom" 
@@ -8265,17 +8281,10 @@ SVG CSS
                           cta-accent-element="text">
                     <a href="http://tinyurl.com/gwd6pep">More about SPARQL</a>
   </amp-story-page-outlink>
-</amp-story-page>
 
 
-	<amp-story-grid-layer template="thirds" aspect-ratio="12:8">
-		<div grid-area="upper-third">
-			<div style="padding-top:2em;"></div>
-			<h3>Open, you don’t know what C or B is (e.g. disease -> ?drug)</h3>
-			<h3>Closed, you know what C is and are looking for B (e.g. disease – why? – drug)</h3>
-			<amp-img src="images/kg-abc-w1865-w473.png" layout="responsive" width="1865" height="473"></amp-img>
-		</div>
-	</amp-story-grid-layer>
+
+
 
 </amp-story-page>
 
@@ -8594,7 +8603,7 @@ SVG CSS
 	>
         <a href="https://query.wikidata.org/#%23cases%20where%20a%20drug%20physically%20interacts%20with%20the%20product%20of%20gene%20known%20to%20be%20genetically%20associated%20a%20disease%0A%23these%20cases%20may%20show%20opportunities%20to%20repurpose%20a%20drug%20for%20a%20new%20disease%0A%23See%20http%3A%2F%2Fdatabase.oxfordjournals.org%2Fcontent%2F2016%2Fbaw083.long%20%20and%0A%23http%3A%2F%2Fdrug-repurposing.nationwidechildrens.org%2Fsearch%0A%23an%20example%20that%20was%20recently%20validated%20involved%20a%20new%20link%20between%20Metformin%20wd%3AQ19484%20and%20cancer%20survival%20%0A%0ASELECT%20%3Fgene%20%3FgeneLabel%20%3Fdisease%20%3FdiseaseLabel%20WHERE%20%7B%0A%20%20wd%3AQ19484%20wdt%3AP129%20%3Fgene_product%20.%20%20%20%23%20drug%20interacts%20with%20a%20gene_product%20%0A%20%20%3Fgene_product%20wdt%3AP702%20%3Fgene%20.%20%20%23%20gene_product%20is%20encoded%20by%20a%20gene%0A%20%20%3Fgene%09wdt%3AP2293%20%3Fdisease%20.%20%20%20%20%23%20gene%20is%20genetically%20associated%20with%20a%20disease%20%0A%20%20%23%20add%20labels%0A%20%20%09SERVICE%20wikibase%3Alabel%20%7B%0A%20%20%20%20%20%20%20%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22%20.%0A%09%7D%0A%7D%0Alimit%201000">WD query</a>
 	</amp-story-page-outlink>
-
+</amp-story-page>
 
 
 <amp-story-page id="item-truett-17" data-item-label="Example question: repurposing Metformin" role="region" aria-hidden="false">
