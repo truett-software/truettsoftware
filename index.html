@@ -7,11 +7,12 @@ implement colored bullets
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width"/>
 <link rel="shortcut icon" href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg"/>
-<title>AMP Story Template</title>
+<title>
+AMP Story Template
+</title>
 <link rel="canonical" href="index.html" />
 <script async                            src="https://cdn.ampproject.org/v0.js"></script>
-<script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js">
-</script>
+<script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
 
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
@@ -135,11 +136,9 @@ implement colored bullets
 @font-face {
     font-family: ff8;
     font-display: optional;
-    src: local("Arial Bold"), local("Arial-Bold"),
-        url(https://s3.amazonaws.com/benetta.net/fonts/arial/Arial-Bold.woff2)
-            format("woff2"),
-        url(https://s3.amazonaws.com/benetta.net/fonts/arial/Arial-Bold.woff)
-            format("woff");
+    src: local("Arial Bold Italic"), local("Arial-BoldItalic"),
+        url(https://s3.amazonaws.com/benetta.net/fonts/arial/Arial-BoldItalic.woff2)
+            format("woff2");
 }
 .ff8 {
     font-family: ff8;
@@ -181,33 +180,20 @@ implement colored bullets
 /**********************
 * Sowa Attachment DL-DT-DD
 */
-.dl-adjust {
-    font-family: ff2;
-    margin-left:3vw;
-}
-.box {
-    position: relative;
-    display: inline-block; /* Make the width of box same as image */
+
+#page-container {
+    zoom: 0.95;
+    -moz-transform: scale(0.95);
 }
 
-.box .text {
-    position: absolute;
-    z-index: 999;
-    font-family: ff2;
-    font-size: 2.2em;
-    margin-left: 10vw;
-    text-align: left;
-    top: 8%; /* Adjust this value to move the positioned div up and down */
+#page-container h2 {
     color: #000;
-    width: 100%; /* Set the width of the positioned div */
+    padding-top: 2%;
+}
+#sowah4 {
+    margin-left: 1em;
 }
 
-.box amp-img {
-    position: relative;
-       /*width: 65%;
-      height: 65%;*/
-        left: 18%;
-}
 /* test switch to em */
 .chartlegend span {
     display: inline-block;
@@ -234,7 +220,7 @@ p {
     border: none;
 }
 
-/*dt {
+dt {
     font-family: NotoSerif;
     font-size: 1.2em;
     font-weight: 400;
@@ -242,7 +228,7 @@ p {
     padding-top: 0.2em;
     padding-bottom: 0.2em;
     margin-left: 1em;
-    color: #000;
+    color: #fff;
     border: none;
 }
 
@@ -255,8 +241,8 @@ dd {
     padding-top: 0.2em;
     padding-bottom: 0.2em;
     border: none;
-    color:#000;
-}*/
+    color:#fff;
+}
 .li {
     font-family: NotoSerif;
     font-size: 1rem;
@@ -6674,7 +6660,50 @@ h4:hover {
     }
 }
 
+/* ----------- galaxy mobile ----------- */
+/* Portrait */
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    #myContainer {
+        zoom: 0.28;
+        -moz-transform: scale(0.28);
+    }
+    .myContainer h3 {
+        font-size: 15px;
+    }
+    .myContainer h4 {
+        font-size: 20px;
+    }
+    .myContainer h2 {
+        text-align: center;
+    }
+    a {
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+    }
+}
 
+/* Landscape */
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+    #myContainer {
+        zoom: 0.35;
+        -moz-transform: scale(0.35);
+    }
+    .myContainer h3 {
+        font-size: 15px;
+    }
+    .myContainer h4 {
+        font-size: 20px;
+    }
+    .myContainer h2 {
+        text-align: center;
+    }
+    a {
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+    }
+}
 
 /* ----------- Tablet View ----------- */
 
@@ -7000,7 +7029,6 @@ SVG CSS
 	</amp-story-grid-layer>
 </amp-story-page>
 
-
 <amp-story-page id="pubchem-8">
 	<amp-story-grid-layer template="vertical">
 		<h2 style="color:#fff;">PubChem-8</h2>
@@ -7047,6 +7075,7 @@ SVG CSS
 		<div style="color:#fff; position:relative; left:400px;">pubchem-image-8 concept 8.3</div>
 		<div style="color:#fff; position:relative; left:400px;">pubchem-image-8 concept 8.4</div>
 	</amp-story-grid-layer>
+
 </amp-story-page>
 
 <!-- Knowledge Graph -->
@@ -7068,6 +7097,7 @@ SVG CSS
       </div>
     </div>
   </amp-story-grid-layer>
+
 
 </amp-story-page>
 
@@ -7111,10 +7141,14 @@ SVG CSS
 		<amp-img data-item-role="background" data-item-type="static" data-item-label="strip-light" src="images/strip-light-bright-wallpaper-preview.jpg" width="997" height="997" layout="responsive">
 		</amp-img>
 	</amp-story-grid-layer>
+	
+	<amp-story-grid-layer template="vertical">
+		<h2>Goals for representing knowledge (outline)</h2>
+	</amp-story-grid-layer>
+
 	<amp-story-grid-layer template="thirds">
-		<div grid-area="upper-third">
+		<div grid-area="middle-third">
 			<div animate-in="fade-in" animate-in-duration="4s">
-				<h2>Goals for representing knowledge (outline)</h2>
 				<h3>[ Create SVG for source and use here ]</h3>
 			</div>
 <br>
@@ -7132,21 +7166,23 @@ SVG CSS
 		<amp-img data-item-role="background" data-item-type="static" data-item-label="strip-light" src="images/strip-light-bright-wallpaper-preview.jpg" width="997" height="997" layout="responsive">
 		</amp-img>
 	</amp-story-grid-layer>
+
+	<amp-story-grid-layer template="vertical">
+		<h2>Ontology</h2>
+	</amp-story-grid-layer>
+
 	<amp-story-grid-layer template="thirds">
-		<div grid-area="upper-third">
-			<div animate-in="fade-in" animate-in-duration="4s">
-				<h2>Ontology</h2>
-			</div>
+		<div grid-area="middle-third">
 			<div animate-in="fade-in" animate-in-duration="4s" animate-in-delay="1s">
 				<dl>
-				<dt>The word comes from philosophy:</dt>
-				<dd>“The branch of metaphysics dealing with the nature of being”</dd>
-				<dt>In practice they are:</dt>
-				<dd>A set of concepts, definitions and inter-relationships.</dd>
-				<dd>(The dividing line between “controlled vocabulary”, “thesaurus”, “ontology” is hazy and not terribly important for practical purposes.)</dd>
-				<dt>We have hundreds of ontologies in biology, e.g. see:</dt>
-				<dd><a href="http://www.obofoundry.org/">http://www.obofoundry.org/</a> (100+)</dd>
-				<dd><a href="http://bioportal.bioontology.org/">http://bioportal.bioontology.org/</a> (500+)</dd>
+					<dt>The word comes from philosophy:</dt>
+						<dd>“The branch of metaphysics dealing with the nature of being”</dd>
+					<dt>In practice they are:</dt>
+						<dd>A set of concepts, definitions and inter-relationships.</dd>
+						<dd>(The dividing line between “controlled vocabulary”, “thesaurus”, “ontology” is hazy and not terribly important for practical purposes.)</dd>
+					<dt>We have hundreds of ontologies in biology, e.g. see:</dt>
+						<dd><a href="http://www.obofoundry.org/">http://www.obofoundry.org/</a> (100+)</dd>
+						<dd><a href="http://bioportal.bioontology.org/">http://bioportal.bioontology.org/</a> (500+)</dd>
 				</dl>
 			</div>
 		</div>
@@ -7168,10 +7204,11 @@ SVG CSS
 			<amp-img src="images/kg-go-1-w1925-h336.png" layout="responsive" width="1925" height="336"/>
 		</div>
 		<div grid-area="lower-third">
-			<h3>credit-1 here</h3>
-			<h3>credit-2 here</h3>
+			<h6>credit-1 here</h6>
+			<h6>credit-2 here</h6>
 		</div>
 	</amp-story-grid-layer>
+
 </amp-story-page>
 
 <amp-story-page id="item-truett-3" data-item-label="The Gene Ontology" role="region" aria-hidden="false">
@@ -7232,6 +7269,7 @@ SVG CSS
     </div>
   </amp-story-grid-layer>
 
+
 </amp-story-page>
 
 <amp-story-page id="item-truett-13" data-item-label="gene-ontology-2">
@@ -7243,8 +7281,8 @@ SVG CSS
 		<h2>The Gene Ontology</h2>
 	</amp-story-grid-layer>
 
-	<amp-story-grid-layer template="vertical" position="landscape-half-left">
-		<div style="padding-top:4em;"></div>
+	<amp-story-grid-layer template="vertical" position="landscape-half-left" aspect-ratio="2:1">
+		<div style="padding-top:1em;"></div>
 		<div class="darken" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="0.5s">
 			<amp-img src="images/kg-go-2-w1920-h1080.png" layout="responsive" width="1920" height="1080"></amp-img>
 		</div>
@@ -7264,7 +7302,7 @@ SVG CSS
         cta-accent-color="#1F64FF" 
         cta-accent-element="text"
 	>
-        <a href="https://www.ebi.ac.uk/QuickGO/">More Gene Ontology</a>
+		<a href="https://www.ebi.ac.uk/QuickGO/">More Gene Ontology</a>
 	</amp-story-page-outlink>
 </amp-story-page>
 
@@ -7277,7 +7315,7 @@ SVG CSS
 		<h2>The GO branches</h2>
 	</amp-story-grid-layer>
 
-	<amp-story-grid-layer template="vertical" position="landscape-half-left">
+	<amp-story-grid-layer template="vertical" position="landscape-half-left" aspect-ratio="2.2:1">
 		<div class="darken" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="0.5s">
 			<amp-img src="images/kg-gene-ontology-avec-text-w902-h1097.png" layout="responsive" width="902" height="1097"></amp-img>
 		</div>
@@ -7286,17 +7324,17 @@ SVG CSS
 	<amp-story-grid-layer template="vertical" position="landscape-half-right">
 		<div style="padding-top:4em;"></div>
 		<div animate-in="fade-in" animate-in-duration="4s" animate-in-delay="1s">
-			<h3>Molecular Function</h3>
-			<h4>An elemental activity or task or job</h4>
-			<h3>Biological Process</h3>
-			<h4>A commonly recognized series of events</h4>
-			<h3>Cellular Component</h3>
-			<h4>Where a gene product is located</h4>
+			<h4>Molecular Function</h4>
+			<h5>An elemental activity or task or job</h5>
+			<h4>Biological Process</h4>
+			<h5>A commonly recognized series of events</h5>
+			<h4>Cellular Component</h4>
+			<h5>Where a gene product is located</h5>
 		</div>
 	</amp-story-grid-layer>
 </amp-story-page>
 
-
+<!-- FIX SVG -->
 <amp-story-page id="item-truett-15" data-item-label="knowledge-graph">
 	<amp-story-grid-layer template="fill">
 		<amp-img data-item-role="background" data-item-type="static" data-item-label="istockphoto" src="images/istockphoto-1174989482-170667a.jpg" width="997" height="997" layout="responsive"></amp-img>
@@ -7307,7 +7345,6 @@ SVG CSS
 	</amp-story-grid-layer>
 
 	<amp-story-grid-layer template="vertical" position="landscape-half-left">
-		<div style="padding-top:4em;"></div>
 		<div class="darken" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="0.5s">
 		fix SVG
 		</div>
@@ -7316,10 +7353,11 @@ SVG CSS
 	<amp-story-grid-layer template="vertical" position="landscape-half-right">
 		<div style="padding-top:4em;"></div>
 		<div animate-in="fade-in" animate-in-duration="4s" animate-in-delay="1s">
-			<h3>Also called “knowledge bases” to distinguish them from databases.</h3>
-			<h3>An integrated collection of assertions or claims represented in something that can be visualized as a graph and is technically very much like a database.</h3>
+			<h4>Also called “knowledge bases” to distinguish them from databases.</h4>
+			<h4>An integrated collection of assertions or claims represented in something that can be visualized as a graph and is technically very much like a database.</h4>
 		</div>
 	</amp-story-grid-layer>
+
 </amp-story-page>
 
 <amp-story-page id="item-truett-7" data-item-label="Google Knowledge Graph" role="region" aria-hidden="false">
@@ -7353,6 +7391,7 @@ SVG CSS
   </amp-story-page-outlink>
 
 
+
 </amp-story-page>
 
 <amp-story-page id="item-truett-16" data-item-label="example-knowledge-graphs">
@@ -7360,32 +7399,29 @@ SVG CSS
 		<amp-img data-item-role="background" data-item-type="static" data-item-label="background-130F30-constellation" src="images/strip-light-bright-wallpaper-preview.jpg" width="997" height="997" layout="responsive"></amp-img>
 	</amp-story-grid-layer>
 
-	<amp-story-grid-layer template="thirds">
-		<div grid-area="upper-third">
-			<div animate-in="fade-in" animate-in-duration="4s">
-				<h2>Example knowledge graphs</h2>
-				<h3>Wikidata: The structured equivalent of Wikipedia</h3>
-				<dl>
-				<dt></dt>
-				<dd>
-					<a href="http://wikidata.org/">http://wikidata.org/</a>
-				</dd>
-				</dl>
+	<amp-story-grid-layer template="vertical">
+		<h2>Example knowledge graphs</h2>
+	</amp-story-grid-layer>
 
-				<h3>UniProt Knowledge Base: Manually curated Protein knowledge base</h3>
+	<amp-story-grid-layer template="thirds">
+		<div grid-area="middle-third">
+			<div animate-in="fade-in" animate-in-duration="4s">
 				<dl>
-				<dt></dt>
-				<dd>
-					<a href="http://www.uniprot.org/uniprot/">http://www.uniprot.org/uniprot/</a>
-				</dd>
+					<dt>Wikidata: The structured equivalent of Wikipedia</dt>
+						<dd>
+							<a href="http://wikidata.org/">http://wikidata.org/</a>
+						</dd>
+					<dt>UniProt Knowledge Base: Manually curated Protein knowledge base</dt>
+						<dd>
+							<a href="http://www.uniprot.org/uniprot/">http://www.uniprot.org/uniprot/</a>
+						</dd>
+					<dt>Microsoft Knowledge Graph (“Satori”)</dt>
+					<dt>Google Knowledge Graph</dt>
 				</dl>
-				<h3>Microsoft Knowledge Graph (“Satori”)</h3>
-				<h3>Google Knowledge Graph</h3>
 			</div>
 		</div>
 	</amp-story-grid-layer>
 </amp-story-page>
-
 
 <amp-story-page id="item-truett-17" data-item-label="google-knowledge-graph">
 	<amp-story-grid-layer template="fill">
@@ -7399,16 +7435,17 @@ SVG CSS
 	<amp-story-grid-layer template="vertical" position="landscape-half-left">
 		<div style="padding-top:4em;"></div>
 		<div class="darken" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="0.5s">
-			<amp-img src="images/kg-image-8-w1134-h826.png" layout="responsive" width="1134" height="826"/>
+			<amp-img src="images/kg-image-8-w1134-h826.png" layout="responsive" width="1134" height="826"></amp-img>
 		</div>
 	</amp-story-grid-layer>
+	
 	<amp-story-grid-layer template="vertical" position="landscape-half-right">
 		<div style="padding-top:4em;"></div>
 		<div animate-in="fade-in" animate-in-duration="4s" animate-in-delay="1s">
-			<h3>Vemurafenib</h3>
-			<h4>405,000 results</h4>
-			<h4>1 infobox</h4>
-			<h4>1 node in GKG</h4>
+			<h4>Vemurafenib</h4>
+			<h5>405,000 results</h5>
+			<h5>1 infobox</h5>
+			<h5>1 node in GKG</h5>
 		</div>
 	</amp-story-grid-layer>
 
@@ -7418,35 +7455,9 @@ SVG CSS
         cta-accent-color="#1F64FF" 
         cta-accent-element="text"
 	>
-        <a href="https://googleblog.blogspot.com/2012/05/introducing-knowledge-graph-things-not.html">More about Knowledge Graph</a>
+		<a href="https://googleblog.blogspot.com/2012/05/introducing-knowledge-graph-things-not.html">More about Knowledge Graph</a>
 	</amp-story-page-outlink>
 </amp-story-page>
-
-<amp-story-page id="item-truett-9" data-item-label="Implicit relations for hypothesis generation ABC model" role="region" aria-hidden="false">
-  <amp-story-grid-layer template="fill">
-    <amp-img id="" data-item-role="background" data-item-type="static" data-item-label="istockphoto" src="images/istockphoto-1174989482-170667a.jpg" width="997" height="997" layout="responsive"/>
-  </amp-story-grid-layer>
-
-  <amp-story-grid-layer template="vertical">
-      <h2>Implicit relations for hypothesis generation ABC model</h2>
-      <h3>Swanson (1986) Fish oil, Raynaud’s syndrome and undiscovered public knowledge</h3>
-  </amp-story-grid-layer>
-
-  <amp-story-grid-layer template="thirds">
-    <div grid-area="middle-third">
-      <amp-img src="images/image10-w2040-h606.png" layout="responsive" width="2040" height="606" style="background-color:transparent;"/>
-    </div>
-  </amp-story-grid-layer>
-
-<!-- CTA layer -->
-  <amp-story-page-outlink layout="nodisplay" 
-                          theme="custom" 
-                          cta-accent-color="#1F64FF" 
-                          cta-accent-element="text">
-                    <a href="http://muse.jhu.edu/article/403510/pdf">More about Swanson</a>
-  </amp-story-page-outlink>
-
-
 
 </amp-story-page>
 
@@ -7456,19 +7467,16 @@ SVG CSS
 	</amp-story-grid-layer>
 
 	<amp-story-grid-layer template="vertical">
-		<h2>
-		Why Knowledge Graphs?
-		<br>
-		Answer explicit questions; Uncover implicit relations (missing red question mark)
-		</h2>
+		<h2>Why Knowledge Graphs?</h2>
+		<h3>Answer explicit questions; Uncover implicit relations (missing red question mark)</h3>
 	</amp-story-grid-layer>
 
-	<amp-story-grid-layer template="vertical" aspect-ratio="1:1">
-		<div style="padding-top:2em;"></div>
-		<div animate-in="fade-in" animate-in-duration="4s" animate-in-delay="0.5s">
+	<amp-story-grid-layer template="thirds" aspect-ratio="1:1">
+		<div grid-area="middle-third">
 			<amp-img src="images/kg-image-9-why-knowledge-graph-w1287-h862.png" layout="responsive" width="1287" height="826"/>
 		</div>
 	</amp-story-grid-layer>
+
 </amp-story-page>
 
 
@@ -7502,6 +7510,7 @@ SVG CSS
                     <a href="http://www.ncbi.nlm.nih.gov/pubmed/27189611">More about Pubmed</a>
   </amp-story-page-outlink>
 
+
 </amp-story-page>
 
 <amp-story-page id="item-truett-19" data-item-label="implicit-relations-hypothesis-generation-1">
@@ -7509,8 +7518,8 @@ SVG CSS
 		<amp-img data-item-role="background" data-item-type="static" data-item-label="istockphoto" src="images/istockphoto-1174989482-170667a.jpg" width="997" height="997" layout="responsive"/>
 	</amp-story-grid-layer>
 
-	<amp-story-grid-layer template="fill">
-		<h2 style="padding-top:1em;">Implicit relations for hypothesis generation ABC model</h2>
+	<amp-story-grid-layer template="vertical">
+		<h2>Implicit relations for hypothesis generation ABC model</h2>
 	</amp-story-grid-layer>
 
 	<amp-story-grid-layer template="thirds" aspect-ratio="12:8">
@@ -7526,7 +7535,7 @@ SVG CSS
         cta-accent-color="#1F64FF" 
         cta-accent-element="text"
 	>
-        <a href="http://muse.jhu.edu/article/403510/pdf">Raynaud’s syndrome and undiscovered public knowledge</a>
+		<a href="http://muse.jhu.edu/article/403510/pdf">Raynaud’s syndrome and undiscovered public knowledge</a>
 	</amp-story-page-outlink>
 
 </amp-story-page>
@@ -7536,11 +7545,17 @@ SVG CSS
 		<amp-img data-item-role="background" data-item-type="static" data-item-label="istockphoto" src="images/istockphoto-1174989482-170667a.jpg" width="997" height="997" layout="responsive"></amp-img>
 	</amp-story-grid-layer>
 
-	<amp-story-grid-layer template="fill">
-		<h2 style="padding-top:1em;">Open Discovery and Closed Discovery</h2>
+	<amp-story-grid-layer template="vertical">
+		<h2>Open Discovery and Closed Discovery</h2>
+		<h3>Open, you don’t know what C or B is (e.g. disease -> ?drug)</h3>
+		<h3>Closed, you know what C is and are looking for B (e.g. disease – why? – drug)</h3>
 	</amp-story-grid-layer>
 </amp-story-page>
 
+
+
+	<amp-story-grid-layer template="thirds" aspect-ratio="12:8">
+		<div grid-area="middle-third">
 
 <amp-story-page id="item-truett-13" data-item-label="Querying a knowledge graph with SPARQL" role="region" aria-hidden="false">
   <amp-story-grid-layer template="fill">
@@ -8269,6 +8284,7 @@ SVG CSS
 			<div style="padding-top:2em;"></div>
 			<h3>Open, you don’t know what C or B is (e.g. disease -> ?drug)</h3>
 			<h3>Closed, you know what C is and are looking for B (e.g. disease – why? – drug)</h3>
+
 			<amp-img src="images/kg-abc-w1865-w473.png" layout="responsive" width="1865" height="473"></amp-img>
 		</div>
 	</amp-story-grid-layer>
@@ -8289,11 +8305,8 @@ SVG CSS
 	</amp-story-grid-layer>
 
 	<amp-story-grid-layer template="vertical">
-		<h2>
-		Example question: drug repurposing
-		<br>
-		For a given drug, what diseases might it be used to treat?
-		</h2>
+		<h2>Example question: drug repurposing</h2>
+		<h3>For a given drug, what diseases might it be used to treat?</h3>
 	</amp-story-grid-layer>
 
 	<amp-story-grid-layer template="thirds" aspect-ratio="1:1">
@@ -8314,7 +8327,7 @@ SVG CSS
 
 </amp-story-page>
 
-<!-- FIX -->
+<!-- FIX IMAGE -->
 <amp-story-page id="item-truett-22" data-item-label="implicit-relations-hypothesis-generation-1">
 
 	<amp-story-grid-layer template="vertical">
@@ -8323,8 +8336,7 @@ SVG CSS
 	</amp-story-grid-layer>
 
 	<amp-story-grid-layer template="thirds" aspect-ratio="4:3">
-		<div grid-area="upper-third">
-			<div style="padding-top:2em;"></div>
+		<div grid-area="middle-third">
 			<amp-img
 				src="images/abc-3-w1968-h806.png"
 				width="1968"
@@ -8340,10 +8352,13 @@ SVG CSS
 		<amp-img data-item-role="background" data-item-type="static" data-item-label="istockphoto" src="images/istockphoto-1174989482-170667a.jpg" width="997" height="997" layout="responsive"></amp-img>
 	</amp-story-grid-layer>
 
-	<amp-story-grid-layer template="fill">
-		<h2 style="padding-top:1em;">Querying a knowledge graph with SPARQL</h2>
+	<amp-story-grid-layer template="vertical">
+		<h2>Querying a knowledge graph with SPARQL</h2>
 	</amp-story-grid-layer>
 
+<!--
+Error: <path> attribute d: Expected number, "…,2.8-1.1 2.7-1.3l-1.8-3.5l-0.5-1…".
+-->
 	<amp-story-grid-layer template="vertical" position="landscape-half-left">
 		<div style="padding-top:4em;"></div>
 		<div class="darken" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="0.5s">
@@ -8353,12 +8368,12 @@ SVG CSS
 <g><path class="ct2" d="M907,245c-6.1,0-11-4.9-11-11v-51c0-6.1,4.9-11,11-11h211c6.1,0,11,4.9,11,11v51c0,6.1-4.9,11-11,11H907z"/></g>
 <g><path class="ct2" d="M907,559c-6.1,0-11-4.9-11-11v-92c0-6.1,4.9-11,11-11h211c6.1,0,11,4.9,11,11v92c0,6.1-4.9,11-11,11H907z"/></g>
 <g><path class="ct2" d="M713,432.5c-6.1,0-11-4.9-11-11v-28c0-6.1,4.9-11,11-11h44c6.1,0,11,4.9,11,11v28c0,6.1-4.9,11-11,11H713z"/></g>
-<g><path class="ct2" d="M713,626c-6.1,0-11-4.9-11-11v-28c0-6.1,4.9-11,11-11h44c6.1,0,11,4.9,11,11v28c0,6.1-4.9,11-11,11H713z"/></g><text transform="matrix(1 0 0 1 405.2555 219.8109)" class="ct5 ct6 ct7">Metformin</text><text transform="matrix(1 0 0 1 947.0052 219.3105)" class="ct5 ct6 ct7">?disease</text><text transform="matrix(1 0 0 1 405.1055 507.8106)" class="ct5 ct6 ct7">Metformin</text><text transform="matrix(1 0 0 1 919.2552 489.5619)"><tspan x="0" y="0" class="ct5 ct6 ct7">Type 2</tspan><tspan x="0" y="43.2" class="ct5 ct6 ct7">diabetes</tspan></text>
-<g><polygon points="878,479.6 878,511.6 894,495.6 "/></g><line class="ct8" x1="607" y1="496" x2="878" y2="496"/><line class="ct8" x1="607" y1="209" x2="878" y2="209"/>
+<g><path class="ct2" d="M713,626c-6.1,0-11-4.9-11-11v-28c0-6.1,4.9-11,11-11h44c6.1,0,11,4.9,11,11v28c0,6.1-4.9,11-11,11H713z"/></g>
+<text transform="matrix(1 0 0 1 405.2555 219.8109)" class="ct5 ct6 ct7">Metformin</text><text transform="matrix(1 0 0 1 947.0052 219.3105)" class="ct5 ct6 ct7">?disease</text><text transform="matrix(1 0 0 1 405.1055 507.8106)" class="ct5 ct6 ct7">Metformin</text><text transform="matrix(1 0 0 1 919.2552 489.5619)"><tspan x="0" y="0" class="ct5 ct6 ct7">Type 2</tspan><tspan x="0" y="43.2" class="ct5 ct6 ct7">diabetes</tspan></text>
+<g><polygon points="878,479.6 878,511.6 894,495.6 "/></g>
+<line class="ct8" x1="607" y1="496" x2="878" y2="496"/><line class="ct8" x1="607" y1="209" x2="878" y2="209"/>
 <g><polygon points="878,193.1 878,225.1 894.1,209.1"/></g>
-<g>
-<g>
-<g>
+<g><g><g>
 <g><path class="ct4" d="M606.6,489.1l0.9,3.8l0.2,1l0.2,0.6l0.3,1.1l0.9,3.8l2.9-0.8c1-0.2,1.9-0.7,2.8-1c0.9-0.4,1.9-0.7,2.8-1.1 2.7-1.3l-1.8-3.5l-0.5-1l-0.3-0.6l-0.5-0.9l-1.8-3.5l-2.2,1.1c-0.7,0.3-1.5,0.6-2.3,0.9c-0.8,0.3-1.5,0.6-2.3,0.8L606.6,489.1z"/><path class="ct9" d="M618.6,490.6l-2.8,1.3c-0.9,0.4-1.9,0.7-2.9,1.1l-1.4,0.5c-0.5,0.2-1,0.3-1.5,0.4l-3,0.8l0.1,0.4l3-0.8 c0.5-0.1,1-0.3,1.5-0.4l1.5-0.5c1-0.4,2-0.7,2.9-1.1l2.8-1.3L618.6,490.6z"/><path class="ct9" d="M618.3,490l-0.1-0.3l-2.7,1.3c-0.9,0.4-1.9,0.7-2.8,1.1l-1.4,0.5c-0.5,0.2-1,0.3-1.5,0.4l-2.9,0.8l0.1,0.3 l0,0.1l2.9-0.8c0.5-0.1,1-0.2,1.5-0.4l1.4-0.5c0.9-0.4,1.9-0.7,2.8-1.1L618.3,490L618.3,490z"/><path class="ct10" d="M618.6,490.6l-0.3-0.5l-2.8,1.3c-0.9,0.4-1.9,0.7-2.8,1.1l-1.4,0.5c-0.5,0.2-1,0.3-1.5,0.4l-2.9,0.8 l0.1,0.6l0,0.1l3-0.8c0.5-0.1,1-0.3,1.5-0.4l1.4-0.5c1-0.4,1.9-0.7,2.9-1.1L618.6,490.6L618.6,490.6z"/><polygon class="ct11" points="609,495.5 607.3,495.9 606.6,493.2 608.3,492.7 "/><polygon class="ct9" points="609.7,495.2 608.8,495.5 608.1,492.7 608.9,492.5 "/><path class="ct11" d="M619.1,491.5l-0.3-0.6l-2.8,1.3c-0.9,0.4-1.9,0.7-2.9,1.1l-1.5,0.5c-0.5,0.2-1,0.3-1.5,0.4l-3,0.8l0.1,0.6 l0,0.1l3.1-0.8c0.5-0.1,1-0.3,1.5-0.4l1.5-0.6c1-0.4,2-0.7,2.9-1.1L619.1,491.5L619.1,491.5z"/><path class="ct11" d="M617.8,489.1l-2.7,1.3c-0.9,0.4-1.9,0.7-2.8,1.1l-1.4,0.5c-0.5,0.2-1,0.3-1.4,0.4l-2.9,0.8l0.2,0.7 l2.9-0.8c0.5-0.1,1-0.2,1.5-0.4l1.4-0.5c0.9-0.4,1.9-0.7,2.8-1.1l2.7-1.3L617.8,489.1z"/></g>
 <g><path class="ct4" d="M616.6,485.3l1.8,3.5l0.5,0.9l0.3,0.6l0.5,1l1.8,3.5c0.9-0.5,1.7-1,2.6-1.5c0.9-0.5,1.7-1,2.5-1.6 c1.6-1.2,3.3-2.2,4.8-3.6l-2.5-3l-0.7-0.8l-0.4-0.5l-0.7-0.8l-2.5-3.1c-1.2,1.1-2.6,2-3.9,2.9c-0.6,0.5-1.4,0.9-2.1,1.3 C618,484.5,617.3,484.9,616.6,485.3z"/>
 <g><path class="ct11" d="M629.5,484.6l-0.4-0.5c-3.1,2.7-6.7,5-10.3,6.9l0.3,0.6l0,0.1C622.8,489.6,626.4,487.4,629.5,484.6 L629.5,484.6z"/><path class="ct11" d="M627.7,482.4c-3,2.6-6.4,4.8-9.9,6.6l0.3,0.6c3.6-1.9,7-4.1,10-6.7L627.7,482.4z"/><path class="ct9" d="M628.8,483.8c-3.1,2.7-6.6,4.9-10.2,6.8l0.2,0.3c3.7-1.9,7.2-4.2,10.3-6.9L628.8,483.8z"/><path class="ct9" d="M628.4,483.2l-0.2-0.2c-3,2.7-6.5,4.8-10,6.7l0.1,0.3l0,0.1C621.9,488.2,625.4,486,628.4,483.2 L628.4,483.2z"/><path class="ct10" d="M628.8,483.7l-0.4-0.4c-3.1,2.7-6.5,4.9-10.1,6.8l0.3,0.5l0,0.1C622.2,488.7,625.7,486.5,628.8,483.7 L628.8,483.7z"/></g></g>
@@ -8380,9 +8395,7 @@ SVG CSS
 <g><path class="ct11" d="M677.7,408.7l-0.1-0.6c-4,0.6-7.9,1.7-11.6,3.3l0.3,0.6l0,0.1C670,410.4,673.8,409.4,677.7,408.7 L677.7,408.7z"/><path class="ct11" d="M677.3,406c-4.1,0.6-8.2,1.7-12.1,3.5l0.3,0.6c3.8-1.7,7.8-2.8,11.9-3.4L677.3,406z"/><path class="ct9" d="M677.6,407.7c-4,0.6-8,1.7-11.7,3.3l0.2,0.4c3.6-1.7,7.6-2.7,11.6-3.3L677.6,407.7z"/><path class="ct9" d="M677.5,407l0-0.3c-4.1,0.6-8.1,1.7-11.9,3.4l0.1,0.3l0,0.1C669.4,408.7,673.4,407.7,677.5,407L677.5,407z"/><path class="ct10" d="M677.6,407.6l-0.1-0.6c-4.1,0.6-8.1,1.7-11.8,3.4l0.2,0.5l0,0.1C669.6,409.4,673.6,408.3,677.6,407.6 L677.6,407.6z"/></g></g>
 <g><path class="ct4" d="M678.5,408.6l0.5,3.9c3.3-0.5,6.7-0.6,10.2-0.7l-0.1-10.6c-3.8,0-7.6,0.2-11.5,0.8l0.5,3.9L678.5,408.6z"/>
 <g><path class="ct11" d="M684.1,408l0-0.6c-2.2,0.1-4.3,0.3-6.4,0.7l0.1,0.6l0,0.1C679.8,408.4,682,408.2,684.1,408L684.1,408z"/><path class="ct11" d="M683.9,405.2c-2.2,0.1-4.4,0.3-6.6,0.7l0.1,0.7c2.2-0.3,4.4-0.5,6.6-0.7L683.9,405.2z"/><path class="ct9" d="M684,407c-2.2,0.1-4.3,0.3-6.5,0.7l0.1,0.4c2.1-0.3,4.3-0.5,6.4-0.7L684,407z"/><path class="ct9" d="M684,406.3l0-0.3c-2.2,0.1-4.4,0.3-6.6,0.7l0,0.3l0,0.1C679.6,406.7,681.8,406.5,684,406.3L684,406.3z"/><path class="ct10" d="M684,406.9l0-0.6c-2.2,0.1-4.4,0.3-6.5,0.7l0.1,0.6l0,0.1C679.7,407.3,681.9,407.1,684,406.9L684,406.9z"/></g><path class="ct4" d="M679,412.5c3.3-0.5,6.7-0.6,10.2-0.7l-0.1-10.6c-3.8,0-7.6,0.2-11.5,0.8L679,412.5z"/><path class="ct4" d="M689,406.5c-2.7,1.6-5.4,3.3-7.8,5.1"/><path class="ct11" d="M681,406.2l-0.3-2.8c2.3,1,4.5,2,6.6,3.2c-2.1,1.2-4.1,2.5-5.9,3.9l-0.3-2.8l-0.3,0l0.1,0.7l0.3,3.2 c2.4-1.8,5-3.5,7.8-5.1c-2.8-1.5-5.6-3-8.7-4.2l0.3,3.2l0.1,0.7L681,406.2z"/><path class="ct9" d="M681.4,410.4c1.9-1.4,3.9-2.7,5.9-3.9c-2.1-1.1-4.3-2.2-6.6-3.2l0.3,2.8l0,0.4l0.1,0 c0.1-0.4,0.4-0.7,0.9-0.7c0.5,0,1,0.3,1.1,0.9c0,0.5-0.4,1-0.9,1c-0.4,0-0.8-0.2-1-0.6l-0.1,0l0,0.4L681.4,410.4z"/><path class="ct10" d="M682.2,407.7c0.5,0,0.9-0.5,0.9-1c0-0.5-0.5-0.9-1.1-0.9c-0.4,0-0.8,0.3-0.9,0.7c0,0.1,0,0.2,0,0.3 c0,0.1,0,0.2,0.1,0.3C681.4,407.5,681.8,407.8,682.2,407.7z"/></g></g></g></g>
-<g>
-<g>
-<g>
+<g><g><g>
 <g><path class="ct4" d="M608.8,490.2l-1.1,3.8l-0.3,1l-0.2,0.6l-0.3,1.1l-1,3.8c3.3,0.9,6.6,2.1,9.8,3.4l1.5-3.6l0.4-1l0.2-0.6 l0.4-1l1.5-3.6C616.3,492.5,612.6,491.2,608.8,490.2z"/><path class="ct9" d="M618,499.4c-3.8-1.6-7.7-3-11.7-4l-0.1,0.4c4,1.1,7.9,2.4,11.7,4L618,499.4z"/><path class="ct9" d="M618.3,498.7l0.1-0.3c-3.8-1.6-7.8-3-11.8-4.1l-0.1,0.3l0,0.1C610.5,495.8,614.4,497.2,618.3,498.7 L618.3,498.7z"/><path class="ct10" d="M618,499.3l0.2-0.5c-3.8-1.6-7.8-3-11.8-4.1l-0.1,0.6l0,0.1C610.3,496.4,614.2,497.8,618,499.3L618,499.3z "/><polygon class="ct11" points="607.7,496.9 606,496.4 606.8,493.7 608.5,494.2 "/><polygon class="ct9" points="608.4,497.1 607.6,496.8 608.3,494.1 609.2,494.3 "/><path class="ct11" d="M617.6,500.3l0.3-0.6c-3.8-1.6-7.7-3-11.7-4l-0.2,0.6l0,0.1C610,497.5,613.8,498.8,617.6,500.3 L617.6,500.3z"/><path class="ct11" d="M618.7,497.8c-3.9-1.7-7.9-3-11.9-4.1l-0.2,0.7c4,1.1,8,2.4,11.8,4.1L618.7,497.8z"/></g>
 <g><path class="ct4" d="M620.9,494.5l-1.6,3.6l-0.4,0.9l-0.3,0.6l-0.4,1l-1.6,3.6c3.2,1.4,6.2,3,9.2,4.7l2-3.4l0.6-0.9l0.3-0.5 l0.5-0.9l2-3.4C628,497.8,624.5,496,620.9,494.5z"/>
 <g><path class="ct11" d="M628.5,505.9l0.3-0.6c-3.5-2.1-7.2-4-11-5.6l-0.3,0.6l0,0.1C621.3,502,625,503.9,628.5,505.9L628.5,505.9 z"/><path class="ct11" d="M629.9,503.6c-3.6-2.2-7.4-4.1-11.2-5.8l-0.3,0.7c3.8,1.6,7.6,3.6,11.1,5.7L629.9,503.6z"/><path class="ct9" d="M629,505c-3.5-2.1-7.2-4-11-5.7l-0.2,0.4c3.8,1.6,7.4,3.5,11,5.6L629,505z"/><path class="ct9" d="M629.4,504.4l0.2-0.3c-3.6-2.2-7.3-4.1-11.1-5.7l-0.1,0.3l0,0.1C622.1,500.4,625.8,502.3,629.4,504.4 L629.4,504.4z"/><path class="ct10" d="M629.1,505l0.3-0.5c-3.6-2.2-7.3-4.1-11.1-5.7l-0.2,0.5l0,0.1C621.8,501,625.5,502.9,629.1,505L629.1,505 z"/></g></g>
@@ -8409,7 +8422,8 @@ SVG CSS
 <g>
 <g><path class="ct12" d="M1301.1,225.1"/></g></g>
 <g>
-<g><path class="ct12" d="M486.6,321.1"/></g></g><g class="ct13">
+<g><path class="ct12" d="M486.6,321.1"/></g></g>
+<g class="ct13">
 <g>
 <g>
 <g><path class="ct4" d="M485,323.9l3.9,0.5l1,0.1l0.6,0.1l1.1,0.1l3.9,0.4c0.3-2.9,1.2-5.8,2.4-8.5l-3.6-1.6l-1-0.5l-0.6-0.3 l-0.9-0.4l-3.6-1.7C486.6,315.8,485.4,319.8,485,323.9z"/><path class="ct9" d="M493.6,314.2c-1.7,3.6-2.8,7.4-3.1,11.3l0.4,0c0.4-3.9,1.4-7.7,3.1-11.2L493.6,314.2z"/><path class="ct9" d="M493,313.9l-0.3-0.1c-1.7,3.7-2.9,7.6-3.2,11.7l0.3,0l0.1,0C490.2,321.4,491.3,317.5,493,313.9L493,313.9z"/><path class="ct10" d="M493.6,314.2l-0.5-0.2c-1.7,3.6-2.8,7.5-3.2,11.5l0.6,0l0.1,0C490.9,321.6,491.9,317.7,493.6,314.2 L493.6,314.2z"/><polygon class="ct11" points="491.8,324 491.6,325.6 488.8,325.4 489,323.6 "/><polygon class="ct9" points="491.9,323.3 491.8,324.1 489,323.8 489.1,322.9 "/><path class="ct11" d="M494.6,314.6l-0.6-0.3c-1.7,3.5-2.7,7.3-3.1,11.2l0.6,0.1l0.1,0C491.9,321.8,493,318.1,494.6,314.6 L494.6,314.6z"/><path class="ct11" d="M492.1,313.4c-1.8,3.7-2.9,7.8-3.3,11.9l0.7,0.1c0.4-4.1,1.5-8,3.2-11.7L492.1,313.4z"/></g>
@@ -8484,20 +8498,20 @@ SVG CSS
 	<amp-story-grid-layer template="vertical" position="landscape-half-right">
 		<div style="padding-top:4em;"></div>
 		<div animate-in="fade-in" animate-in-duration="4s" animate-in-delay="1s">
-			<h3>“SPARQL protocol and RDF query language”</h3>
-			<h3>RDF: Resource Description Framework (common standard for storing knowledge graphs)</h3>
-			<h3>A SPARQL query = a partially completed <span class="sparql">graph</span></h3>
-			<h4>?’s show what you are looking for </h4>
-			<h4>rest constrains the search</h4>
+			<h4>“SPARQL protocol and RDF query language”</h4>
+			<h4>RDF: Resource Description Framework (common standard for storing knowledge graphs)</h4>
+			<h4>A SPARQL query = a partially completed <span class="sparql">graph</span></h4>
+			<h5>?’s show what you are looking for</h5>
+			<h5>rest constrains the search</h5>
 		</div>
 	</amp-story-grid-layer>
 	<amp-story-page-outlink
 		layout="nodisplay" 
-        theme="custom" 
-        cta-accent-color="#1F64FF" 
-        cta-accent-element="text"
+		theme="custom" 
+		cta-accent-color="#1F64FF" 
+		cta-accent-element="text"
 	>
-        <a href="https://www.w3.org/TR/rdf-sparql-query/">More about SPARQL</a>
+		<a href="https://www.w3.org/TR/rdf-sparql-query/">More about SPARQL</a>
 	</amp-story-page-outlink>
 
 </amp-story-page>
@@ -8524,7 +8538,7 @@ SVG CSS
         cta-accent-color="#1F64FF" 
         cta-accent-element="text"
 	>
-        <a href="https://query.wikidata.org/">More about Wikidata</a>
+		<a href="https://query.wikidata.org/">More about Wikidata</a>
 	</amp-story-page-outlink>
 
 </amp-story-page>
@@ -8546,16 +8560,16 @@ SVG CSS
 	</amp-story-grid-layer>
 
 	<amp-story-page-outlink
-		layout="nodisplay" 
-        theme="custom" 
-        cta-accent-color="#1F64FF" 
-        cta-accent-element="text"
+		layout="nodisplay"
+		theme="custom" 
+		cta-accent-color="#1F64FF" 
+		cta-accent-element="text"
 	>
-        <a href="http://tinyurl.com/gwd6pep">Sample SPARQL query</a>
+		<a href="http://tinyurl.com/gwd6pep">Sample SPARQL query</a>
 	</amp-story-page-outlink>
 </amp-story-page>
 
-<!-- FIX -->
+<!-- FIX IMAGE -->
 <amp-story-page id="item-truett-26" data-item-label="example-question-drug-repurposing-2">
 	<amp-story-grid-layer template="fill">
 		<amp-img data-item-role="background" data-item-type="static" data-item-label="istockphoto" src="images/istockphoto-1174989482-170667a.jpg" width="997" height="997" layout="responsive"></amp-img>
@@ -8566,9 +8580,8 @@ SVG CSS
 		<h3>“For a given drug, what diseases might it be used to treat?”</h3>
 	</amp-story-grid-layer>
 
-	<amp-story-grid-layer template="vertical" aspect-ratio="1:1">
-		<div style="padding-top:2em;"></div>
-		<div animate-in="fade-in" animate-in-duration="4s" animate-in-delay="0.5s">
+	<amp-story-grid-layer template="thirds" aspect-ratio="1:1">
+		<div grid-area="middle-third">
 			<amp-img src="images/kg-drug-gene-disease-w794-h531.png" layout="responsive" width="794" height="531"></amp-img>
 		</div>
 	</amp-story-grid-layer>
@@ -8576,28 +8589,30 @@ SVG CSS
 
 <amp-story-page id="item-truett-27" data-item-label="example-question-drug-repurposing-3">
 
-	<amp-story-grid-layer template="fill">
-		<h2 style="padding-top:1em;">Example question: repurposing Metformin</h2>
+	<amp-story-grid-layer template="vertical">
+		<h2>Example question: repurposing Metformin</h2>
 	</amp-story-grid-layer>
 
-	<amp-story-grid-layer template="vertical" aspect-ratio="12:9">
-		<div style="padding-top:1em;"></div>
-		<amp-img
-			src="images/kg-metformin-repurpose-w2442-h1055.png"
-			width="2442"
-			height="1055"
-			layout="responsive"
-		></amp-img>
+	<amp-story-grid-layer template="thirds" aspect-ratio="12:9">
+		<div grid-area="upper-third">
+		<div style="padding-top:2em;"></div>
+			<amp-img
+				src="images/kg-metformin-repurpose-w2442-h1055.png"
+				width="2442"
+				height="1055"
+				layout="responsive"
+			></amp-img>
 	</amp-story-grid-layer>
 
 	<amp-story-page-outlink
 		layout="nodisplay" 
-        theme="custom" 
-        cta-accent-color="#1F64FF" 
-        cta-accent-element="text"
+		theme="custom" 
+		cta-accent-color="#1F64FF" 
+		cta-accent-element="text"
 	>
-        <a href="https://query.wikidata.org/#%23cases%20where%20a%20drug%20physically%20interacts%20with%20the%20product%20of%20gene%20known%20to%20be%20genetically%20associated%20a%20disease%0A%23these%20cases%20may%20show%20opportunities%20to%20repurpose%20a%20drug%20for%20a%20new%20disease%0A%23See%20http%3A%2F%2Fdatabase.oxfordjournals.org%2Fcontent%2F2016%2Fbaw083.long%20%20and%0A%23http%3A%2F%2Fdrug-repurposing.nationwidechildrens.org%2Fsearch%0A%23an%20example%20that%20was%20recently%20validated%20involved%20a%20new%20link%20between%20Metformin%20wd%3AQ19484%20and%20cancer%20survival%20%0A%0ASELECT%20%3Fgene%20%3FgeneLabel%20%3Fdisease%20%3FdiseaseLabel%20WHERE%20%7B%0A%20%20wd%3AQ19484%20wdt%3AP129%20%3Fgene_product%20.%20%20%20%23%20drug%20interacts%20with%20a%20gene_product%20%0A%20%20%3Fgene_product%20wdt%3AP702%20%3Fgene%20.%20%20%23%20gene_product%20is%20encoded%20by%20a%20gene%0A%20%20%3Fgene%09wdt%3AP2293%20%3Fdisease%20.%20%20%20%20%23%20gene%20is%20genetically%20associated%20with%20a%20disease%20%0A%20%20%23%20add%20labels%0A%20%20%09SERVICE%20wikibase%3Alabel%20%7B%0A%20%20%20%20%20%20%20%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22%20.%0A%09%7D%0A%7D%0Alimit%201000">WD query</a>
+		<a href="https://query.wikidata.org/#%23cases%20where%20a%20drug%20physically%20interacts%20with%20the%20product%20of%20gene%20known%20to%20be%20genetically%20associated%20a%20disease%0A%23these%20cases%20may%20show%20opportunities%20to%20repurpose%20a%20drug%20for%20a%20new%20disease%0A%23See%20http%3A%2F%2Fdatabase.oxfordjournals.org%2Fcontent%2F2016%2Fbaw083.long%20%20and%0A%23http%3A%2F%2Fdrug-repurposing.nationwidechildrens.org%2Fsearch%0A%23an%20example%20that%20was%20recently%20validated%20involved%20a%20new%20link%20between%20Metformin%20wd%3AQ19484%20and%20cancer%20survival%20%0A%0ASELECT%20%3Fgene%20%3FgeneLabel%20%3Fdisease%20%3FdiseaseLabel%20WHERE%20%7B%0A%20%20wd%3AQ19484%20wdt%3AP129%20%3Fgene_product%20.%20%20%20%23%20drug%20interacts%20with%20a%20gene_product%20%0A%20%20%3Fgene_product%20wdt%3AP702%20%3Fgene%20.%20%20%23%20gene_product%20is%20encoded%20by%20a%20gene%0A%20%20%3Fgene%09wdt%3AP2293%20%3Fdisease%20.%20%20%20%20%23%20gene%20is%20genetically%20associated%20with%20a%20disease%20%0A%20%20%23%20add%20labels%0A%20%20%09SERVICE%20wikibase%3Alabel%20%7B%0A%20%20%20%20%20%20%20%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22%20.%0A%09%7D%0A%7D%0Alimit%201000">WD query</a>
 	</amp-story-page-outlink>
+
 
 </amp-story-page>
 
